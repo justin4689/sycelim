@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sycelim Technologies — Ingénierie logicielle, Abidjan</title>
+  <meta name="description" content="Sycelim Technologies — SSII spécialisée en ingénierie logicielle sur mesure : plateformes métiers, applications mobiles, API et modernisation. Abidjan, Côte d'Ivoire." />
+  <meta name="theme-color" content="#00a0ff" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sycelim Technologies — Ingénierie logicielle, Abidjan" />
+  <meta property="og:description" content="Nous construisons les systèmes logiciels sur lesquels reposent les entreprises." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="logos/logo_all.png" />
+
+  <!-- Google Fonts: Sora (titres) + Inter (corps) — §4.3 cahier des charges -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" type="image/png" href="logos/logo_icon.png" />
+</head>
+
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<header class="navbar" id="navbar">
+  <div class="container">
+    <div class="navbar-inner">
+
+      <!-- Logo -->
+      <a href="index.html" class="navbar-logo" aria-label="Sycelim Technologies — Accueil">
+        <img src="logos/logo_all.png" alt="Sycelim Technologies" />
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="navbar-nav" aria-label="Navigation principale">
+        <a href="index.html"          class="nav-link" data-page="index"        data-i18n="nav.home">Accueil</a>
+        <a href="services.html"       class="nav-link" data-page="services"     data-i18n="nav.services">Services</a>
+        <a href="methode.html"        class="nav-link" data-page="methode"      data-i18n="nav.method">Méthode</a>
+        <a href="realisations.html"   class="nav-link" data-page="realisations" data-i18n="nav.work">Réalisations</a>
+        <a href="actualites.html"     class="nav-link" data-page="actualites"   data-i18n="nav.news">Actualités</a>
+        <a href="a-propos.html"       class="nav-link" data-page="a-propos"     data-i18n="nav.about">À propos</a>
+        <a href="equipe.html"         class="nav-link" data-page="equipe"       data-i18n="nav.team">Équipe</a>
+      </nav>
+
+      <!-- Actions -->
+      <div class="navbar-actions">
+        <!-- Language toggle -->
+        <button class="btn-lang" aria-label="Changer de langue" title="Switch language">
+          <span class="lang-fr-label active">FR</span>
+          <span class="sep">/</span>
+          <span class="lang-en-label">EN</span>
+        </button>
+
+        <!-- Theme toggle -->
+        <button class="btn-theme" aria-label="Basculer thème sombre/clair">
+          <!-- Sun (shown in dark mode) -->
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <!-- Moon (shown in light mode) -->
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+
+        <!-- CTA -->
+        <a href="contact.html" class="btn-cta-nav" data-i18n="nav.cta">Demander un devis</a>
+
+        <!-- Hamburger (mobile) -->
+        <button class="btn-hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobile">
+  <a href="index.html"        class="nav-link" data-page="index"        data-i18n="nav.home">Accueil</a>
+  <a href="services.html"     class="nav-link" data-page="services"     data-i18n="nav.services">Services</a>
+  <a href="methode.html"      class="nav-link" data-page="methode"      data-i18n="nav.method">Méthode</a>
+  <a href="realisations.html" class="nav-link" data-page="realisations" data-i18n="nav.work">Réalisations</a>
+  <a href="actualites.html"   class="nav-link" data-page="actualites"   data-i18n="nav.news">Actualités</a>
+  <a href="a-propos.html"     class="nav-link" data-page="a-propos"     data-i18n="nav.about">À propos</a>
+  <a href="equipe.html"       class="nav-link" data-page="equipe"       data-i18n="nav.team">Équipe</a>
+  <div class="mobile-menu-foot">
+    <a href="contact.html" class="btn btn-primary" data-i18n="nav.cta">Demander un devis</a>
+    <button class="btn-lang" aria-label="Changer de langue">
+      <span class="lang-fr-label active">FR</span>
+      <span class="sep">/</span>
+      <span class="lang-en-label">EN</span>
+    </button>
+    <button class="btn-theme" aria-label="Thème">
+      <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/></svg>
+      <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </div>
+</nav>
+
+<main>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" aria-label="En-tête principal">
+
+  <!-- Background layers -->
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-dots" aria-hidden="true"></div>
+  <div class="hero-deco-year" aria-hidden="true">2015</div>
+
+  <div class="container">
+    <div class="hero-layout">
+
+      <!-- ── LEFT : contenu principal ── -->
+      <div class="hero-left">
+
+        <!-- Eyebrow avec dot "live" -->
+        <div class="hero-eyebrow">
+          <span class="hero-pulse-dot" aria-hidden="true"></span>
+          <span data-i18n="hero.eyebrow">Ingénierie logicielle · Abidjan</span>
+        </div>
+
+        <!-- Titre principal -->
+        <h1 class="hero-title anim-fade-up" data-i18n="hero.title">
+          Nous construisons les systèmes logiciels sur lesquels reposent les entreprises.
+        </h1>
+
+        <!-- Sous-titre -->
+        <p class="hero-subtitle anim-fade-up anim-delay-1" data-i18n="hero.subtitle">
+          Plateformes métiers, applications connectées et API robustes. Conçues sur mesure, avec une rigueur d'ingénierie : architecture, qualité, scalabilité et sécurité.
+        </p>
+
+        <!-- Métriques clés (repurposées depuis stat cards) -->
+        <div class="hero-kpi-strip anim-fade-up anim-delay-2">
+          <div class="hero-kpi">
+            <strong class="hero-kpi-num" data-i18n="hero.stat1.num">05+</strong>
+            <span class="hero-kpi-lbl" data-i18n="hero.stat1.label">Organismes mutualistes équipés de nos plateformes</span>
+          </div>
+          <div class="hero-kpi-sep" aria-hidden="true"></div>
+          <div class="hero-kpi">
+            <strong class="hero-kpi-num" data-i18n="hero.stat2.num">UEMOA</strong>
+            <span class="hero-kpi-lbl" data-i18n="hero.stat2.label">Systèmes alignés sur la conformité réglementaire régionale</span>
+          </div>
+        </div>
+
+        <!-- CTAs -->
+        <div class="hero-ctas anim-fade-up anim-delay-3">
+          <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="hero.cta.quote">Demander un devis</a>
+          <a href="realisations.html" class="btn btn-secondary btn-lg" data-i18n="hero.cta.work">Voir nos réalisations</a>
+        </div>
+
+        <!-- Badge + tags technique -->
+        <div class="hero-bottom anim-fade-up anim-delay-4">
+          <span class="badge badge--star" data-i18n="hero.badge">Lauréat Orange Fab Côte d'Ivoire — Saison 1</span>
+          <div class="hero-tech-tags" aria-label="Piliers techniques">
+            <span class="hero-tech-tag" data-i18n="hero.tag1">Architecture</span>
+            <span class="hero-tech-tag" data-i18n="hero.tag2">Qualité</span>
+            <span class="hero-tech-tag" data-i18n="hero.tag3">Scalabilité</span>
+            <span class="hero-tech-tag" data-i18n="hero.tag4">Sécurité</span>
+          </div>
+        </div>
+
+      </div><!-- /hero-left -->
+
+      <!-- ── RIGHT : slider 3 visuels ── -->
+      <div class="hero-right anim-fade-up anim-delay-2">
+        <div class="hero-slider" id="heroSlider">
+
+        <!-- ━━━ Slide 0 : IDE Code ━━━ -->
+        <div class="hero-slide hero-slide--active" data-idx="0">
+
+        <!-- Chip flottante — commit Git -->
+        <div class="hero-chip hero-chip--tl" aria-hidden="true">
+          <span class="chip-icon chip-icon--orange">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 0 1 2 2v7"/><line x1="6" y1="9" x2="6" y2="21"/></svg>
+          </span>
+          <div class="chip-body">
+            <div class="chip-title">feat: endpoint cotisations</div>
+            <div class="chip-sub">main · 3min · ✓ CI passed</div>
+          </div>
+        </div>
+
+        <!-- IDE mockup -->
+        <div class="hero-mock hero-mock--ide">
+
+          <!-- Barre de titre IDE -->
+          <div class="ide-bar">
+            <div class="ide-traffic" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="ide-tabs">
+              <span class="ide-tab ide-tab--active">
+                <span class="ide-tab-dot" aria-hidden="true"></span>
+                MutuelleController.java
+              </span>
+              <span class="ide-tab">Cotisation.java</span>
+            </div>
+          </div>
+
+          <!-- Corps éditeur : arbre + code -->
+          <div class="ide-body">
+
+            <!-- Arbre de fichiers -->
+            <div class="ide-tree" aria-hidden="true">
+              <div class="itree-section">controller</div>
+              <div class="itree-item itree-item--active">
+                <span class="itree-ico">☕</span><span>MutuelleController</span>
+              </div>
+              <div class="itree-item">
+                <span class="itree-ico">☕</span><span>AuthController</span>
+              </div>
+              <div class="itree-section">model</div>
+              <div class="itree-item">
+                <span class="itree-ico">☕</span><span>Cotisation</span>
+              </div>
+              <div class="itree-section">service</div>
+              <div class="itree-item">
+                <span class="itree-ico">☕</span><span>MutuelleService</span>
+              </div>
+            </div>
+
+            <!-- Panneau de code avec syntax highlighting -->
+            <div class="ide-code" aria-label="Extrait de code Spring Boot — API Sycelim">
+              <div class="cl"><span class="ln">1</span><span class="t-an">@RestController</span></div>
+              <div class="cl"><span class="ln">2</span><span class="t-an">@RequestMapping</span><span class="t-pn">(</span><span class="t-st">"/api/v2/mutuelles"</span><span class="t-pn">)</span></div>
+              <div class="cl"><span class="ln">3</span><span class="t-kw">public class </span><span class="t-cl">MutuelleController</span><span class="t-pn"> {</span></div>
+              <div class="cl"><span class="ln">4</span></div>
+              <div class="cl"><span class="ln">5</span>&nbsp;&nbsp;<span class="t-an">@Autowired</span></div>
+              <div class="cl"><span class="ln">6</span>&nbsp;&nbsp;<span class="t-kw">private </span><span class="t-cl">MutuelleService</span><span class="t-pn"> service;</span></div>
+              <div class="cl"><span class="ln">7</span></div>
+              <div class="cl cl--hi"><span class="ln">8</span>&nbsp;&nbsp;<span class="t-an">@GetMapping</span><span class="t-pn">(</span><span class="t-st">"/{id}/cotisations"</span><span class="t-pn">)</span></div>
+              <div class="cl"><span class="ln">9</span>&nbsp;&nbsp;<span class="t-kw">public </span><span class="t-cl">ResponseEntity</span><span class="t-pn">&lt;</span><span class="t-cl">Page</span><span class="t-pn">&lt;</span><span class="t-cl">Cotisation</span><span class="t-pn">&gt;&gt;</span></div>
+              <div class="cl"><span class="ln">10</span>&nbsp;&nbsp;getCotisations<span class="t-pn">(</span><span class="t-an">@PathVariable </span><span class="t-cl">Long</span><span class="t-pn"> id) {</span></div>
+              <div class="cl"><span class="ln">11</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-kw">return </span><span class="t-cl">ResponseEntity</span><span class="t-mt">.ok</span><span class="t-pn">(</span></div>
+              <div class="cl"><span class="ln">12</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;service<span class="t-mt">.getCotisations</span><span class="t-pn">(id));</span></div>
+              <div class="cl"><span class="ln">13</span>&nbsp;&nbsp;<span class="t-pn">}</span></div>
+              <div class="cl"><span class="ln">14</span><span class="t-pn">}</span><span class="code-cursor"></span></div>
+            </div>
+
+          </div><!-- /ide-body -->
+
+          <!-- Terminal intégré -->
+          <div class="ide-term">
+            <div class="iterm-hd">
+              <span class="iterm-hd-dot" aria-hidden="true"></span>
+              <span class="iterm-hd-label">TERMINAL</span>
+              <div class="iterm-badges">
+                <span class="iterm-bdg iterm-bdg--g">✓ 47 tests</span>
+                <span class="iterm-bdg iterm-bdg--g">✓ Build</span>
+                <span class="iterm-bdg iterm-bdg--b">⚡ 0.33s</span>
+              </div>
+            </div>
+            <div class="iterm-body">
+              <div class="iterm-ln">
+                <span class="t-prompt">$</span>
+                <span class="t-cmd">./mvnw spring-boot:run</span>
+              </div>
+              <div class="iterm-ln">
+                <span class="t-ok">▶</span>
+                <span class="t-ok">SycelimPlatform v2.4.1</span>
+                <span class="t-dim">&nbsp;· port 8080 · 0.328s</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /hero-mock--ide -->
+
+        <!-- Chip flottante — déploiement -->
+        <div class="hero-chip hero-chip--br" aria-hidden="true">
+          <span class="chip-icon chip-icon--green">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </span>
+          <div class="chip-body">
+            <div class="chip-title">Déployé en production</div>
+            <div class="chip-sub">3f2a91b · 47 tests · ⚡ 0.33s</div>
+          </div>
+        </div>
+
+        </div><!-- /slide 0 -->
+
+        <!-- ━━━ Slide 1 : hero1.png ━━━ -->
+        <div class="hero-slide" data-idx="1">
+          <div class="hero-img-wrap">
+
+            <!-- Chip TL -->
+            <div class="hero-chip hero-chip--img hero-chip--tl" aria-hidden="true">
+              <span class="chip-icon chip-icon--orange">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </span>
+              <div class="chip-body">
+                <div class="chip-title">Interface responsive</div>
+                <div class="chip-sub">Web · Tablette · Mobile</div>
+              </div>
+            </div>
+
+            <!-- Image -->
+            <div class="hero-img-frame">
+              <img src="images/hero1.png" alt="Sycelim — Plateforme métier" loading="lazy" />
+            </div>
+
+            <!-- Chip BR -->
+            <div class="hero-chip hero-chip--img hero-chip--br" aria-hidden="true">
+              <span class="chip-icon chip-icon--blue">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </span>
+              <div class="chip-body">
+                <div class="chip-title">5+ organismes équipés</div>
+                <div class="chip-sub">MUGEF-CI · MUDCI · MUSARTI</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ━━━ Slide 2 : hero2.png ━━━ -->
+        <div class="hero-slide" data-idx="2">
+          <div class="hero-img-wrap">
+
+            <!-- Chip TL -->
+            <div class="hero-chip hero-chip--img hero-chip--tl" aria-hidden="true">
+              <span class="chip-icon chip-icon--green">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+              </span>
+              <div class="chip-body">
+                <div class="chip-title">Application native</div>
+                <div class="chip-sub">iOS · Android · Flutter</div>
+              </div>
+            </div>
+
+            <!-- Image -->
+            <div class="hero-img-frame">
+              <img src="images/hero2.png" alt="Sycelim — Application mobile" loading="lazy" />
+            </div>
+
+            <!-- Chip BR -->
+            <div class="hero-chip hero-chip--img hero-chip--br" aria-hidden="true">
+              <span class="chip-icon chip-icon--blue">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+              </span>
+              <div class="chip-body">
+                <div class="chip-title">4 opérateurs intégrés</div>
+                <div class="chip-sub">Orange · MTN · Wave · Moov</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        </div><!-- /hero-slider -->
+
+        <!-- Points de navigation -->
+        <div class="hero-slide-dots" role="tablist" aria-label="Choisir un visuel">
+          <button class="hsd-dot hsd-dot--active" data-goto="0" role="tab" aria-selected="true"  aria-label="Code IDE"></button>
+          <button class="hsd-dot"                 data-goto="1" role="tab" aria-selected="false" aria-label="Visuel 1"></button>
+          <button class="hsd-dot"                 data-goto="2" role="tab" aria-selected="false" aria-label="Visuel 2"></button>
+        </div>
+
+      </div><!-- /hero-right -->
+
+    </div><!-- /hero-layout -->
+  </div>
+</section>
+
+<!-- ============================================================
+     CLIENTS BAND
+     ============================================================ -->
+<div class="clients-band">
+  <div class="container">
+    <div class="clients-inner">
+      <p class="clients-label" data-i18n="clients.label">Ils nous confient leurs opérations critiques</p>
+      <div class="clients-list" aria-label="Clients références">
+        <span class="client-name">MUGEF-CI</span>
+        <span class="client-name">MUDCI</span>
+        <span class="client-name">CTERIA-CI</span>
+        <span class="client-name">MUSARTI</span>
+        <span class="client-name">SIGEM</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     KEY FIGURES
+     ============================================================ -->
+<section class="section section--alt" aria-labelledby="figures-title">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow" data-i18n="figures.eyebrow">En chiffres</div>
+      <h2 class="section-title" id="figures-title" data-i18n="figures.title">Sycelim en quelques repères</h2>
+    </div>
+    <div class="figures-grid anim-fade-up">
+      <div class="figure-box">
+        <span class="figure-num">2009</span>
+        <span class="figure-label" data-i18n="figures.2009.label">Origine de l'activité</span>
+      </div>
+      <div class="figure-box">
+        <span class="figure-num">2015</span>
+        <span class="figure-label" data-i18n="figures.2015.label">Forme actuelle de la société</span>
+      </div>
+      <div class="figure-box">
+        <span class="figure-num">5</span>
+        <span class="figure-label" data-i18n="figures.5a.label">Attestations de Bonne Exécution</span>
+      </div>
+      <div class="figure-box">
+        <span class="figure-num">5+</span>
+        <span class="figure-label" data-i18n="figures.5b.label">Organismes mutualistes équipés</span>
+      </div>
+      <div class="figure-box">
+        <span class="figure-num">4</span>
+        <span class="figure-label" data-i18n="figures.4.label">Opérateurs Mobile Money intégrés</span>
+      </div>
+      <div class="figure-box">
+        <span class="figure-num">1<sup>er</sup></span>
+        <span class="figure-label" data-i18n="figures.1er.label">Lauréat Orange Fab Côte d'Ivoire — Saison 1</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROBLEM / SOLUTION
+     ============================================================ -->
+<section class="section" aria-labelledby="ps-title">
+  <div class="container">
+    <div class="eyebrow" style="justify-content:center" data-i18n="ps.eyebrow">Constat</div>
+    <h2 class="ps-title" id="ps-title" data-i18n="ps.title">Un système mal conçu coûte plus cher qu'il ne rapporte.</h2>
+    <div class="ps-grid anim-fade-up">
+      <!-- Problem -->
+      <div class="ps-col ps-col--problem">
+        <div class="ps-col-label" data-i18n="ps.problem.label">Ce qui freine les entreprises</div>
+        <ul class="ps-list">
+          <li class="ps-item">
+            <svg class="ps-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/>
+            </svg>
+            <span data-i18n="ps.problem.1">Des logiciels rigides qui ne suivent plus la réalité du métier.</span>
+          </li>
+          <li class="ps-item">
+            <svg class="ps-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#94A3B8" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+            <span data-i18n="ps.problem.2">Des projets qui dérapent : budgets dépassés, délais glissants, maintenance difficile.</span>
+          </li>
+          <li class="ps-item">
+            <svg class="ps-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#94A3B8" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+            <span data-i18n="ps.problem.3">Une dette technique qui bloque chaque nouvelle évolution.</span>
+          </li>
+          <li class="ps-item">
+            <svg class="ps-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#94A3B8" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+            <span data-i18n="ps.problem.4">Une sécurité et une conformité traitées après coup.</span>
+          </li>
+        </ul>
+      </div>
+      <!-- Solution -->
+      <div class="ps-col ps-col--solution">
+        <div class="ps-col-label" data-i18n="ps.solution.label">La réponse Sycelim</div>
+        <ul class="ps-list">
+          <li class="ps-item">
+            <svg class="ps-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.8)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            <span data-i18n="ps.solution.1">Des systèmes conçus autour de vos processus, et non l'inverse.</span>
+          </li>
+          <li class="ps-item">
+            <svg class="ps-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.8)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="ps.solution.2">Une architecture pensée en amont, pour l'échelle et la durée.</span>
+          </li>
+          <li class="ps-item">
+            <svg class="ps-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.8)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="ps.solution.3">Un développement industrialisé : testé, documenté, maintenable.</span>
+          </li>
+          <li class="ps-item">
+            <svg class="ps-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.8)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="ps.solution.4">La sécurité et la conformité intégrées dès la conception.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     THREE PILLARS
+     ============================================================ -->
+<section class="section section--alt" aria-labelledby="pillars-title">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow" data-i18n="pillars.eyebrow">Nos principes</div>
+      <h2 class="section-title" id="pillars-title" data-i18n="pillars.title">Trois principes derrière chaque système que nous livrons.</h2>
+    </div>
+    <div class="pillars-grid">
+      <!-- Pillar 1 -->
+      <div class="pillar-card anim-fade-up anim-delay-1">
+        <div class="pillar-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+          </svg>
+        </div>
+        <h3 class="pillar-title" data-i18n="pillar.1.title">L'ingénierie d'abord</h3>
+        <p class="pillar-desc" data-i18n="pillar.1.desc">Nous concevons avant de coder. Architecture, modèles de données et arbitrages sont décidés en conscience — pour que le système tienne dans la durée.</p>
+      </div>
+      <!-- Pillar 2 -->
+      <div class="pillar-card anim-fade-up anim-delay-2">
+        <div class="pillar-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/>
+          </svg>
+        </div>
+        <h3 class="pillar-title" data-i18n="pillar.2.title">Le sur-mesure, vraiment</h3>
+        <p class="pillar-desc" data-i18n="pillar.2.desc">Aucun compromis sur étagère. Chaque solution épouse vos règles métier, vos flux de travail et vos contraintes réelles.</p>
+      </div>
+      <!-- Pillar 3 -->
+      <div class="pillar-card anim-fade-up anim-delay-3">
+        <div class="pillar-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <h3 class="pillar-title" data-i18n="pillar.3.title">Sécurité & qualité</h3>
+        <p class="pillar-desc" data-i18n="pillar.3.desc">Tests automatisés, revue de code, API durcies et conformité. La fiabilité n'est pas une option : elle est intégrée.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICES PREVIEW
+     ============================================================ -->
+<section class="section" aria-labelledby="services-title">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow" data-i18n="services.eyebrow">Expertise</div>
+      <h2 class="section-title" id="services-title" data-i18n="services.title">Cinq façons d'ingénierie au service de votre métier.</h2>
+    </div>
+    <div class="services-grid-preview">
+      <article class="service-card anim-fade-up anim-delay-1">
+        <div class="service-num">01</div>
+        <h3 class="service-title" data-i18n="svc.1.title">Solutions métiers sur mesure</h3>
+        <p class="service-desc" data-i18n="svc.1.desc">Des logiciels qui épousent vos processus et suppriment la friction manuelle.</p>
+        <a href="services.html#solutions-metiers" class="service-arrow" data-i18n="services.link">En savoir plus →</a>
+      </article>
+      <article class="service-card anim-fade-up anim-delay-2">
+        <div class="service-num">02</div>
+        <h3 class="service-title" data-i18n="svc.2.title">Plateformes web complexes</h3>
+        <p class="service-desc" data-i18n="svc.2.desc">Des portails multi-acteurs pensés pour l'échelle, avec rôles et flux riches.</p>
+        <a href="services.html#plateformes-web" class="service-arrow" data-i18n="services.link">En savoir plus →</a>
+      </article>
+      <article class="service-card anim-fade-up anim-delay-3">
+        <div class="service-num">03</div>
+        <h3 class="service-title" data-i18n="svc.3.title">Applications mobiles connectées</h3>
+        <p class="service-desc" data-i18n="svc.3.desc">Des applications terrain synchronisées avec votre back-office.</p>
+        <a href="services.html#applications-mobiles" class="service-arrow" data-i18n="services.link">En savoir plus →</a>
+      </article>
+      <article class="service-card anim-fade-up anim-delay-1">
+        <div class="service-num">04</div>
+        <h3 class="service-title" data-i18n="svc.4.title">API & systèmes backend</h3>
+        <p class="service-desc" data-i18n="svc.4.desc">Des API sécurisées et documentées qui font dialoguer vos systèmes.</p>
+        <a href="services.html#api-backend" class="service-arrow" data-i18n="services.link">En savoir plus →</a>
+      </article>
+      <article class="service-card anim-fade-up anim-delay-2">
+        <div class="service-num">05</div>
+        <h3 class="service-title" data-i18n="svc.5.title">Modernisation & refonte</h3>
+        <p class="service-desc" data-i18n="svc.5.desc">Nous remettons à niveau les systèmes vieillissants, sans rupture.</p>
+        <a href="services.html#modernisation" class="service-arrow" data-i18n="services.link">En savoir plus →</a>
+      </article>
+    </div>
+    <div class="text-center mt-48">
+      <a href="services.html" class="btn btn-secondary" data-i18n="services.more">Voir tous les services</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     METHOD PREVIEW
+     ============================================================ -->
+<section class="section section--alt" aria-labelledby="method-title">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow" data-i18n="method.eyebrow">Méthode</div>
+      <h2 class="section-title" id="method-title" data-i18n="method.title">Un chemin industrialisé, du besoin à la production.</h2>
+    </div>
+    <div class="method-steps anim-fade-up">
+      <div class="method-step">
+        <div class="step-dot">01</div>
+        <div class="step-label" data-i18n="step.1">Analyse</div>
+      </div>
+      <div class="method-step">
+        <div class="step-dot">02</div>
+        <div class="step-label" data-i18n="step.2">Architecture</div>
+      </div>
+      <div class="method-step">
+        <div class="step-dot">03</div>
+        <div class="step-label" data-i18n="step.3">Développement</div>
+      </div>
+      <div class="method-step">
+        <div class="step-dot">04</div>
+        <div class="step-label" data-i18n="step.4">Qualité</div>
+      </div>
+      <div class="method-step">
+        <div class="step-dot">05</div>
+        <div class="step-label" data-i18n="step.5">Déploiement</div>
+      </div>
+      <div class="method-step">
+        <div class="step-dot">06</div>
+        <div class="step-label" data-i18n="step.6">Maintenance</div>
+      </div>
+    </div>
+    <div class="text-center mt-48">
+      <a href="methode.html" class="btn btn-secondary" data-i18n="method.link">Voir la méthode complète</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CASE STUDIES PREVIEW
+     ============================================================ -->
+<section class="section" aria-labelledby="work-title">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow" data-i18n="work.eyebrow">Réalisations</div>
+      <h2 class="section-title" id="work-title" data-i18n="work.title">Des systèmes en production, dans des secteurs exigeants.</h2>
+    </div>
+    <div class="cases-grid">
+      <article class="case-card anim-fade-up anim-delay-1">
+        <div class="case-header">
+          <div class="case-client">MUGEF-CI</div>
+          <h3 class="case-title" data-i18n="case.1.title">Carte Unique & Intelligente</h3>
+        </div>
+        <div class="case-body">
+          <p class="case-desc" data-i18n="case.1.desc">Plateforme unifiée : adhésions, cotisations, prestations, facturation et décisionnel.</p>
+          <div class="tags">
+            <span class="tag">Adhésions</span>
+            <span class="tag">Cotisations</span>
+            <span class="tag">Business Intelligence</span>
+          </div>
+          <a href="realisations.html#mugef" class="btn btn-ghost btn-sm" data-i18n="work.link">Voir toutes les réalisations</a>
+        </div>
+      </article>
+      <article class="case-card anim-fade-up anim-delay-2">
+        <div class="case-header">
+          <div class="case-client">MUDCI</div>
+          <h3 class="case-title" data-i18n="case.2.title">Assurance santé intégrée</h3>
+        </div>
+        <div class="case-body">
+          <p class="case-desc" data-i18n="case.2.desc">Solution sur ERP Odoo et app web prestataires reliée par API sécurisées.</p>
+          <div class="tags">
+            <span class="tag">Odoo</span>
+            <span class="tag">API sécurisées</span>
+            <span class="tag">Intégration</span>
+          </div>
+          <a href="realisations.html#mudci" class="btn btn-ghost btn-sm" data-i18n="work.link">Voir toutes les réalisations</a>
+        </div>
+      </article>
+      <article class="case-card anim-fade-up anim-delay-3">
+        <div class="case-header">
+          <div class="case-client">CTERIA-CI</div>
+          <h3 class="case-title" data-i18n="case.3.title">Recouvrement & paiement en ligne</h3>
+        </div>
+        <div class="case-body">
+          <p class="case-desc" data-i18n="case.3.desc">Gestion d'assurance santé avec paiements mobile, carte et PayPal.</p>
+          <div class="tags">
+            <span class="tag">Mobile Money</span>
+            <span class="tag">Carte bancaire</span>
+            <span class="tag">PayPal</span>
+          </div>
+          <a href="realisations.html#cteria" class="btn btn-ghost btn-sm" data-i18n="work.link">Voir toutes les réalisations</a>
+        </div>
+      </article>
+    </div>
+    <div class="text-center mt-48">
+      <a href="realisations.html" class="btn btn-secondary" data-i18n="work.link">Voir toutes les réalisations</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TECHNOLOGIES
+     ============================================================ -->
+<section class="section section--alt" aria-labelledby="tech-title">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow" data-i18n="tech.eyebrow">Technologies</div>
+      <h2 class="section-title" id="tech-title" data-i18n="tech.title">Des outils éprouvés, choisis pour le problème.</h2>
+    </div>
+    <p class="tech-intro" data-i18n="tech.intro">La technologie est un moyen. Nous choisissons chaque outil pour sa fiabilité et sa pertinence — puis nous l'exploitons avec rigueur.</p>
+    <div class="tech-grid anim-fade-up">
+      <div class="tech-group">
+        <div class="tech-group-label">Backend</div>
+        <div class="tech-items">
+          <span class="tech-pill">Node.js</span>
+          <span class="tech-pill">FastAPI</span>
+          <span class="tech-pill">PHP</span>
+          <span class="tech-pill">NestJS</span>
+          <span class="tech-pill">Django REST</span>
+        </div>
+      </div>
+      <div class="tech-group">
+        <div class="tech-group-label">Frontend & Mobile</div>
+        <div class="tech-items">
+          <span class="tech-pill">React</span>
+          <span class="tech-pill">Flutter</span>
+          <span class="tech-pill">Dart</span>
+        </div>
+      </div>
+      <div class="tech-group">
+        <div class="tech-group-label">ERP & Intégration</div>
+        <div class="tech-items">
+          <span class="tech-pill">Odoo</span>
+          <span class="tech-pill">API sécurisées</span>
+        </div>
+      </div>
+      <div class="tech-group">
+        <div class="tech-group-label">Paiements</div>
+        <div class="tech-items">
+          <span class="tech-pill">Mobile Money</span>
+          <span class="tech-pill">Orange Money</span>
+          <span class="tech-pill">MTN</span>
+          <span class="tech-pill">Moov</span>
+          <span class="tech-pill">Wave</span>
+          <span class="tech-pill">PayPal</span>
+        </div>
+      </div>
+      <div class="tech-group">
+        <div class="tech-group-label">Données & Sécurité</div>
+        <div class="tech-items">
+          <span class="tech-pill">Business Intelligence</span>
+          <span class="tech-pill">Cybersécurité</span>
+        </div>
+      </div>
+      <div class="tech-group">
+        <div class="tech-group-label">Infrastructure</div>
+        <div class="tech-items">
+          <span class="tech-pill">USSD</span>
+          <span class="tech-pill">SMS</span>
+          <span class="tech-pill">Conformité UEMOA</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     VALUE-ADDED INTEGRATIONS
+     ============================================================ -->
+<section class="section" aria-labelledby="integ-title">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow" data-i18n="integ.eyebrow">Intégrations à valeur ajoutée</div>
+      <h2 class="section-title" id="integ-title" data-i18n="integ.title">Connectés à l'écosystème numérique de la région.</h2>
+    </div>
+    <div class="integ-grid anim-fade-up">
+      <div class="integ-card">
+        <div class="integ-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.6 12.41 19.79 19.79 0 0 1 1.5 3.82 2 2 0 0 1 3.48 1.65h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.1a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="integ-title" data-i18n="int.1.title">Services Orange USSD & SMS</h3>
+          <p class="integ-desc" data-i18n="int.1.desc">Sycelim a intégré avec Orange Côte d'Ivoire des services USSD et SMS accessibles à tous les abonnés, sans smartphone ni application.</p>
+        </div>
+      </div>
+      <div class="integ-card">
+        <div class="integ-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="integ-title" data-i18n="int.2.title">Paiement Mobile Money</h3>
+          <p class="integ-desc" data-i18n="int.2.desc">API de paiement Mobile Money des opérateurs Orange Money, MTN, Moov et Wave intégrées dans nos solutions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ORANGE FAB DISTINCTION
+     ============================================================ -->
+<section class="section section--alt" aria-labelledby="fab-title">
+  <div class="container">
+    <div class="orangefab anim-fade-up">
+      <div>
+        <div class="orangefab-eyebrow" data-i18n="fab.eyebrow">Distinction</div>
+        <h2 class="orangefab-title" id="fab-title" data-i18n="fab.title">Lauréat Orange Fab Côte d'Ivoire — Saison 1</h2>
+        <p class="orangefab-desc" data-i18n="fab.desc">Orange Fab Côte d'Ivoire, lancé en 2014, est le premier accélérateur du groupe Orange en Afrique. Sycelim Technologies figure parmi les lauréats de la première saison — mentorat, accès aux API Orange et visibilité internationale.</p>
+      </div>
+      <div class="orangefab-badge" aria-label="1er lauréat saison 1">
+        <span class="orangefab-num" data-i18n="fab.num">1er</span>
+        <div class="orangefab-sub" data-i18n="fab.sub">Lauréat · Saison 1</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FINAL CTA
+     ============================================================ -->
+<section class="final-cta" aria-labelledby="final-cta-title">
+  <div class="container">
+    <h2 class="final-cta-title anim-fade-up" id="final-cta-title" data-i18n="cta.title">
+      Vous avez un projet complexe. Nous avons l'ingénierie pour le livrer.
+    </h2>
+    <p class="final-cta-sub anim-fade-up anim-delay-1" data-i18n="cta.sub">
+      Dites-nous où vous voulez aller. Nous revenons vers vous avec une réponse claire, structurée — et un devis.
+    </p>
+    <div class="final-cta-actions anim-fade-up anim-delay-2">
+      <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="cta.btn">Demander un devis</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer" aria-label="Pied de page">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Brand -->
+      <div>
+        <div class="footer-logo">
+          <img src="logos/logo_all.png" alt="Sycelim Technologies" />
+        </div>
+        <p class="footer-tagline" data-i18n="footer.tagline">Ingénierie logicielle pour systèmes d'entreprise sur mesure. Architecture, qualité, scalabilité et sécurité.</p>
+        <div class="tags">
+          <span class="badge">Abidjan, CI</span>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div>
+        <div class="footer-col-title" data-i18n="footer.nav">Navigation</div>
+        <ul class="footer-links">
+          <li><a href="index.html"          class="footer-link" data-i18n="nav.home">Accueil</a></li>
+          <li><a href="services.html"       class="footer-link" data-i18n="nav.services">Services</a></li>
+          <li><a href="methode.html"        class="footer-link" data-i18n="nav.method">Méthode</a></li>
+          <li><a href="realisations.html"   class="footer-link" data-i18n="nav.work">Réalisations</a></li>
+          <li><a href="actualites.html"     class="footer-link" data-i18n="nav.news">Actualités</a></li>
+          <li><a href="a-propos.html"       class="footer-link" data-i18n="nav.about">À propos</a></li>
+          <li><a href="equipe.html"         class="footer-link" data-i18n="nav.team">Équipe</a></li>
+        </ul>
+      </div>
+
+      <!-- Expertise -->
+      <div>
+        <div class="footer-col-title" data-i18n="footer.expertise">Expertise</div>
+        <ul class="footer-links">
+          <li><a href="services.html#solutions-metiers"     class="footer-link" data-i18n="footer.exp.1">Solutions métiers</a></li>
+          <li><a href="services.html#plateformes-web"       class="footer-link" data-i18n="footer.exp.2">Plateformes web</a></li>
+          <li><a href="services.html#applications-mobiles"  class="footer-link" data-i18n="footer.exp.3">Applications mobiles</a></li>
+          <li><a href="services.html#api-backend"           class="footer-link" data-i18n="footer.exp.4">API & backend</a></li>
+          <li><a href="services.html#modernisation"         class="footer-link" data-i18n="footer.exp.5">Modernisation</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <div class="footer-col-title" data-i18n="footer.contact">Contact</div>
+        <div class="footer-contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Cocody Angré 8è Tranche — 09 BP 2170 Abidjan 09, Côte d'Ivoire</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.6 12.41 19.79 19.79 0 0 1 1.5 3.82 2 2 0 0 1 3.48 1.65h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.1a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+225 27 22 50 90 66<br>+225 27 22 50 39 31</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:contact@sycelim.com" class="footer-link" style="color:var(--orange)">contact@sycelim.com</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer bottom -->
+    <div class="footer-bottom">
+      <p class="footer-copy" data-i18n="footer.copy">© Sycelim Technologies — Abidjan, Côte d'Ivoire · Société d'ingénierie logicielle</p>
+      <nav class="footer-legal" aria-label="Liens légaux">
+        <a href="faq.html"              class="footer-legal-link" data-i18n="footer.faq">FAQ</a>
+        <a href="mentions-legales.html" class="footer-legal-link" data-i18n="footer.legal">Mentions légales</a>
+        <a href="confidentialite.html"  class="footer-legal-link" data-i18n="footer.privacy">Confidentialité</a>
+        <a href="cgu.html"              class="footer-legal-link" data-i18n="footer.cgu">CGU</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="js/main.js"></script>
+</body>
+</html>
