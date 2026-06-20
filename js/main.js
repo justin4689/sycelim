@@ -618,6 +618,53 @@ function initHeroSlider() {
 /* ============================================================
    INIT
    ============================================================ */
+function initFabSparkles() {
+  const canvas = document.querySelector('.orangefab-sparkles');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const parent = canvas.parentElement;
+
+  function resize() {
+    canvas.width  = parent.offsetWidth;
+    canvas.height = parent.offsetHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  const dots = Array.from({ length: 55 }, () => ({
+    x:     Math.random(),
+    y:     Math.random(),
+    r:     0.5 + Math.random() * 1.8,
+    phase: Math.random() * Math.PI * 2,
+    speed: 0.4 + Math.random() * 1.6,
+  }));
+
+  function draw(t) {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    dots.forEach(d => {
+      const alpha = (Math.sin(t * 0.0025 * d.speed + d.phase) + 1) / 2;
+      const x = d.x * canvas.width;
+      const y = d.y * canvas.height;
+      const glow = d.r * 5;
+
+      const g = ctx.createRadialGradient(x, y, 0, x, y, glow);
+      g.addColorStop(0, `rgba(255,255,255,${(alpha * 0.6).toFixed(2)})`);
+      g.addColorStop(1, 'rgba(255,255,255,0)');
+      ctx.fillStyle = g;
+      ctx.beginPath();
+      ctx.arc(x, y, glow, 0, Math.PI * 2);
+      ctx.fill();
+
+      ctx.fillStyle = `rgba(255,255,255,${alpha.toFixed(2)})`;
+      ctx.beginPath();
+      ctx.arc(x, y, d.r, 0, Math.PI * 2);
+      ctx.fill();
+    });
+    requestAnimationFrame(draw);
+  }
+  requestAnimationFrame(draw);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   /* Apply persisted settings immediately */
   applyTheme(currentTheme);
@@ -645,4 +692,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactForm();
   initScrollReveal();
   initHeroSlider();
+  initFabSparkles();
 });
