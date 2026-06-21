@@ -179,6 +179,84 @@ const T = {
     'contact.assurance.2':    'Vos informations restent confidentielles.',
     'contact.assurance.3':    'Aucun engagement avant que le périmètre soit clair.',
 
+    /* SERVICES PAGE — detailed */
+    'svc.1.long': 'Des logiciels conçus autour du fonctionnement réel de votre organisation — vos règles, vos rôles, vos flux de travail.',
+    'svc.1.prob': 'Tableurs et outils déconnectés ne suivent plus. Les étapes manuelles multiplient les erreurs et ralentissent chaque décision.',
+    'svc.1.sol':  'Nous modélisons vos processus et bâtissons un système unique qui les automatise — avec les bons accès pour chaque rôle.',
+    'svc.1.res':  'Moins d\'erreurs, des opérations plus rapides, et une source de vérité unique pour vos équipes.',
+    'svc.2.long': 'Des portails multi-acteurs qui réunissent adhérents, prestataires, gestionnaires et partenaires sur une plateforme sécurisée.',
+    'svc.2.prob': 'Des acteurs aux besoins différents, mais une information cloisonnée qui ne se réconcilie jamais.',
+    'svc.2.sol':  'Nous concevons une plateforme scalable avec rôles riches, flux temps réel et un modèle de données clair et traçable.',
+    'svc.2.res':  'Chaque acteur travaille sur la même plateforme fiable — qui grandit avec votre activité.',
+    'svc.3.long': 'Des applications pour le terrain, synchronisées en temps réel avec votre back-office et vos API.',
+    'svc.3.prob': 'Vos équipes et vos adhérents sont mobiles, mais vos outils supposent que chacun reste à son bureau.',
+    'svc.3.sol':  'Nous développons des apps multiplateformes reliées par API sécurisées, avec mode hors-ligne et synchronisation fiable.',
+    'svc.3.res':  'Des services qui suivent vos utilisateurs partout — et des données qui restent cohérentes.',
+    'svc.4.long': 'Les fondations robustes et sécurisées qui permettent à vos systèmes d\'échanger des données en confiance — en interne et avec vos partenaires.',
+    'svc.4.prob': 'Des intégrations fragiles et non documentées. Chaque nouvelle connexion devient un risque.',
+    'svc.4.sol':  'Nous concevons des API documentées, versionnées et sécurisées, et les services backend qui les portent.',
+    'svc.4.res':  'Des intégrations fiables, extensibles et auditables — au lieu de redoutées.',
+    'svc.5.long': 'Nous remettons les systèmes vieillissants au niveau des standards actuels — sans rompre les opérations qui en dépendent.',
+    'svc.5.prob': 'Un système hérité fait encore tourner l\'activité, mais il est risqué, lent et impossible à faire évoluer.',
+    'svc.5.sol':  'Nous auditons, sécurisons et reconstruisons progressivement — en migrant la valeur sans rupture brutale.',
+    'svc.5.res':  'Un système moderne et maintenable — et une activité qui ne s\'arrête jamais.',
+    'svc.prob.label':        'Problème',
+    'svc.sol.label':         'Solution',
+    'svc.res.label':         'Résultat',
+    'svc.cta':               'Discuter de votre projet',
+    'svc.uncertainty.title': 'Vous ne savez pas de quelle expertise relève votre projet ?',
+    'svc.uncertainty.desc':  'Décrivez-le nous. Nous vous aidons à le cadrer — et revenons avec un périmètre clair et un devis.',
+    'svc.uncertainty.cta':   'Parler à un expert',
+
+    /* MÉTHODE PAGE */
+    'methode.eyebrow': 'Méthode',
+    'methode.title':   'Nous n\'improvisons pas le logiciel. Nous l\'ingénions.',
+    'methode.lead':    'Un chemin structuré et industrialisé, du besoin à la production — conçu pour garder le contrôle des projets complexes, sur tous les fronts : périmètre, qualité, sécurité et délais.',
+    'methode.p1.title': 'La rigueur, pas l\'improvisation',
+    'methode.p1.desc':  'Les décisions sont documentées, traçables et délibérées — jamais prises à la volée.',
+    'methode.p2.title': 'Un développement industrialisé',
+    'methode.p2.desc':  'Versionnage, revue de code, tests automatisés et intégration continue : la qualité est dans la chaîne.',
+    'methode.p3.title': 'Visible à chaque étape',
+    'methode.p3.desc':  'Itérations courtes et points réguliers vous gardent maîtres du périmètre et du budget.',
+    'methode.quote':    'Une méthode faite pour les projets qui ne peuvent pas échouer.',
+    'step.del.label':  'Livrables',
+    'step.1.short':    'Analyse',
+    'step.2.short':    'Architecture',
+    'step.3.short':    'Développement',
+    'step.4.short':    'Qualité',
+    'step.5.short':    'Déploiement',
+    'step.6.short':    'Maintenance',
+    'step.1.title':    'Analyse des besoins',
+    'step.1.desc':     'Nous commençons par comprendre votre métier, pas une liste de fonctionnalités. Nous cartographions processus, contraintes, acteurs et risques — et les traduisons en exigences claires et priorisées.',
+    'step.1.del.1':    'Cahier des charges fonctionnel & périmètre',
+    'step.1.del.2':    'Cartographie des processus & des données',
+    'step.1.del.3':    'Évaluation des risques & conformité',
+    'step.2.title':    'Conception de l\'architecture',
+    'step.2.desc':     'Avant la moindre ligne de code de production, nous concevons le système : modèle de données, services, intégrations et sécurité. C\'est ici que se décident la scalabilité et la durée de vie.',
+    'step.2.del.1':    'Architecture technique & modèle de données',
+    'step.2.del.2':    'Plan d\'intégration & de sécurité',
+    'step.2.del.3':    'Choix technologiques, justifiés',
+    'step.3.title':    'Développement agile',
+    'step.3.desc':     'Nous développons en itérations courtes, avec des incréments fonctionnels que vous voyez et pilotez. Revue de code et versionnage sont non négociables à chaque livraison.',
+    'step.3.del.1':    'Incréments fonctionnels à chaque sprint',
+    'step.3.del.2':    'Revue de code systématique',
+    'step.3.del.3':    'Points d\'avancement réguliers',
+    'step.4.title':    'Tests & assurance qualité',
+    'step.4.desc':     'La qualité n\'est pas une phase finale — elle court tout du long. Tests automatisés, QA manuelle et contrôles de sécurité valident chaque livraison avant publication.',
+    'step.4.del.1':    'Couverture de tests automatisés & manuels',
+    'step.4.del.2':    'Revue de sécurité & de performance',
+    'step.4.del.3':    'Recette avec vos équipes',
+    'step.5.title':    'Déploiement',
+    'step.5.desc':     'Nous mettons le système en production de façon fiable et réversible, avec supervision dès le premier jour — pour que la mise en ligne soit un événement maîtrisé, pas un saut dans le vide.',
+    'step.5.del.1':    'Mise en production contrôlée',
+    'step.5.del.2':    'Supervision & alertes',
+    'step.5.del.3':    'Documentation & transfert d\'équipe',
+    'step.6.title':    'Maintenance évolutive',
+    'step.6.desc':     'Un système est vivant. Nous le maintenons sûr, performant et aligné sur votre métier qui évolue — avec une relation de support claire et responsable.',
+    'step.6.del.1':    'Maintenance corrective & évolutive',
+    'step.6.del.2':    'Mises à jour de sécurité',
+    'step.6.del.3':    'Feuille de route des nouveaux besoins',
+
     /* PAGES */
     'services.page.title':    'L\'ingénierie logicielle, structurée autour de vos problèmes.',
     'services.page.lead':     'Cinq expertises complémentaires. Chacune part d\'un problème métier et se termine par un résultat mesurable — jamais d\'une technologie.',
@@ -195,6 +273,98 @@ const T = {
     'faq.page.title':         'Des réponses claires, avant même de se parler.',
     'faq.page.lead':          'Les questions que les organisations nous posent le plus souvent.',
     'read.more':              'Lire l\'article',
+
+    /* RÉALISATIONS PAGE */
+    'real.eyebrow': 'Réalisations',
+    'real.title':   'Des systèmes en production, là où l\'erreur n\'est pas permise.',
+    'real.lead':    'Une expérience concentrée dans le secteur mutualiste et l\'assurance santé — adhésions, cotisations, prestations, paiements et conformité réglementaire.',
+    'real.prob.label': 'Problème',
+    'real.sol.label':  'Solution',
+    'real.imp.label':  'Impact',
+    'real.refs.eyebrow': 'Références',
+    'real.refs.title':   'Attestations de Bonne Exécution',
+    'real.refs.desc':    'Toutes délivrées par des mutuelles et organismes d\'assurance santé ivoiriens — solutions en production.',
+    'real.cta.title': 'Votre projet mérite la même rigueur.',
+
+    /* ACTUALITÉS PAGE */
+    'act.eyebrow': 'Actualités & points de vue',
+    'act.title':   'Ce que nous pensons d\'un logiciel fait pour durer.',
+    'act.lead':    'Notes d\'ingénierie, méthode et leçons de terrain, tirées des systèmes que nous construisons et exploitons.',
+    'act.featured.eyebrow': 'Article à la une',
+    'act.more.label': 'Autres articles',
+
+    /* À PROPOS PAGE */
+    'about.eyebrow':        'À propos de Sycelim',
+    'about.title':          'Une société d\'ingénierie logicielle — pas une agence web.',
+    'about.lead':           'Basée à Abidjan, Sycelim Technologies conçoit et développe les systèmes logiciels sur mesure dont dépendent les organisations exigeantes.',
+    'about.history.title':  'Notre histoire',
+    'about.vision.title':   'Notre vision',
+    'about.pos.title':      'Notre positionnement',
+    'about.pos.no.label':   'Ce que nous ne sommes pas',
+    'about.pos.yes.label':  'Ce que nous sommes',
+    'about.org.title':      'Notre organisation',
+    'about.org.sub':        'Une équipe resserrée, structurée autour de la responsabilité.',
+    'about.culture.title':  'Culture de qualité',
+    'about.culture.sub':    'Ce que nous exigeons de nous-mêmes.',
+    'about.fab.title':      'Lauréat Orange Fab Côte d\'Ivoire — Saison 1',
+    'about.cta.title':      'Construisons quelque chose qui dure.',
+
+    /* ÉQUIPE PAGE */
+    'team.eyebrow':        'L\'équipe',
+    'team.title':          'Les personnes qui répondent de ce que nous construisons.',
+    'team.lead':           'Une équipe d\'ingénieurs complémentaires, organisée par responsabilité. Chaque rôle protège une dimension de votre projet — architecture, sécurité, qualité et livraison.',
+    'team.roles.title':    'Profils par rôle',
+    'team.roles.sub':      'Chaque rôle existe pour protéger une dimension de votre projet.',
+    'team.stats.title':    'Mode de collaboration',
+    'team.stats.sub':      'La bonne équipe pour le problème — jamais surdimensionnée.',
+    'team.cta.title':      'Vous voulez mettre cette équipe sur votre projet ?',
+
+    /* CONTACT PAGE */
+    'contact.eyebrow':     'Demander un devis',
+    'contact.title':       'Parlez-nous de votre projet.',
+    'contact.lead':        'Décrivez ce que vous voulez construire ou corriger. Nous revenons vers vous avec une réponse claire, structurée — et un devis.',
+    'contact.assurance.title': 'Nos engagements',
+    'contact.assurance.1': 'Une réponse structurée, pas un argumentaire commercial.',
+    'contact.assurance.2': 'Vos informations restent confidentielles.',
+    'contact.assurance.3': 'Aucun engagement avant que le périmètre soit clair.',
+    'contact.info.title':  'Contact direct',
+    'form.name':           'Nom complet',
+    'form.org':            'Organisation',
+    'form.email':          'Email professionnel',
+    'form.phone':          'Téléphone',
+    'form.need':           'De quoi avez-vous besoin ?',
+    'form.need.opt0':      'Choisissez un type de projet',
+    'form.need.opt1':      'Solution métier sur mesure',
+    'form.need.opt2':      'Plateforme web complexe',
+    'form.need.opt3':      'Application mobile connectée',
+    'form.need.opt4':      'API & système backend',
+    'form.need.opt5':      'Modernisation / refonte',
+    'form.need.opt6':      'Je ne sais pas encore — échangeons',
+    'form.budget':         'Budget indicatif',
+    'form.budget.opt0':    'Choisissez une fourchette',
+    'form.budget.opt1':    'À définir',
+    'form.budget.opt2':    '< 5M FCFA',
+    'form.budget.opt3':    '5 – 20M FCFA',
+    'form.budget.opt4':    '20 – 50M FCFA',
+    'form.budget.opt5':    '> 50M FCFA',
+    'form.project':        'Décrivez votre projet',
+    'form.project.ph':     'Contexte, objectif, contraintes, échéance souhaitée…',
+    'form.submit':         'Envoyer ma demande',
+    'form.note':           'Réponse sous 48 h ouvrées.',
+    'form.success':        'Demande bien reçue. Merci. Notre équipe étudie votre projet et revient vers vous sous 48 h ouvrées avec une réponse structurée.',
+    'form.error':          'Une erreur s\'est produite. Écrivez-nous directement à contact@sycelim.com.',
+
+    /* FAQ PAGE */
+    'faq.eyebrow': 'Questions fréquentes',
+    'faq.title':   'Des réponses claires, avant même de se parler.',
+    'faq.lead':    'Les questions que les organisations nous posent le plus souvent sur notre façon de travailler, ce que nous construisons et le déroulé d\'un projet.',
+    'faq.cta.title': 'Une question sans réponse ici ?',
+
+    /* LEGAL PAGES */
+    'legal.updated': 'Dernière mise à jour :',
+    'legal.ml.title':  'Mentions légales',
+    'legal.conf.title': 'Politique de confidentialité',
+    'legal.cgu.title':  'Conditions générales d\'utilisation',
   },
 
   en: {
@@ -338,39 +508,83 @@ const T = {
     'footer.privacy':         'Privacy policy',
     'footer.cgu':             'Terms of use',
 
-    /* CONTACT PAGE */
-    'contact.eyebrow':        'Request a quote',
-    'contact.title':          'Tell us about your project.',
-    'contact.lead':           'Describe what you want to build or fix. We come back with a clear, structured response — and a quote.',
-    'form.name':              'Full name',
-    'form.org':               'Organisation',
-    'form.email':             'Professional email',
-    'form.phone':             'Phone',
-    'form.need':              'What do you need?',
-    'form.need.opt0':         'Select a project type',
-    'form.need.opt1':         'Custom business system',
-    'form.need.opt2':         'Complex web platform',
-    'form.need.opt3':         'Connected mobile app',
-    'form.need.opt4':         'API & backend system',
-    'form.need.opt5':         'Modernisation / rebuild',
-    'form.need.opt6':         'Not sure yet — let\'s discuss',
-    'form.budget':            'Indicative budget',
-    'form.budget.opt0':       'Select a range',
-    'form.budget.opt1':       'To define',
-    'form.budget.opt2':       '< 5M FCFA',
-    'form.budget.opt3':       '5 – 20M FCFA',
-    'form.budget.opt4':       '20 – 50M FCFA',
-    'form.budget.opt5':       '> 50M FCFA',
-    'form.project':           'Describe your project',
-    'form.project.ph':        'Context, goal, constraints, target timeline…',
-    'form.submit':            'Send my request',
-    'form.note':              'Response within 48 working hours.',
-    'form.success':           'Request received. Thank you. Our team will study your project and come back to you within 48 working hours.',
-    'form.error':             'Something went wrong. Please email us directly at contact@sycelim.com.',
-    'contact.assurance.title': 'Our commitments',
-    'contact.assurance.1':    'A structured response, not a sales pitch.',
-    'contact.assurance.2':    'Your information stays confidential.',
-    'contact.assurance.3':    'No commitment until the scope is clear.',
+    /* SERVICES PAGE — detailed */
+    'svc.1.long': 'Software built around how your organisation actually works — your rules, your roles, your workflows.',
+    'svc.1.prob': 'Spreadsheets and disconnected tools no longer keep up. Manual steps multiply errors and slow every decision.',
+    'svc.1.sol':  'We model your processes and build a single system that automates them — with the right access for every role.',
+    'svc.1.res':  'Fewer errors, faster operations, and a single source of truth for your teams.',
+    'svc.2.long': 'Multi-actor portals that bring members, providers, managers and partners together on one secure platform.',
+    'svc.2.prob': 'Different actors with different needs, but siloed data that never reconciles.',
+    'svc.2.sol':  'We design a scalable platform with rich roles, real-time flows and a clear, traceable data model.',
+    'svc.2.res':  'Every actor works on the same reliable platform — one that grows with your activity.',
+    'svc.3.long': 'Field applications, synchronised in real time with your back office and your APIs.',
+    'svc.3.prob': 'Your teams and members are mobile, but your tools assume everyone stays at a desk.',
+    'svc.3.sol':  'We build cross-platform apps connected by secure APIs, with offline mode and reliable sync.',
+    'svc.3.res':  'Services that follow your users wherever they are — with data that stays consistent.',
+    'svc.4.long': 'Robust, secure foundations that let your systems exchange data with confidence — internally and with partners.',
+    'svc.4.prob': 'Fragile, undocumented integrations. Every new connection is a risk.',
+    'svc.4.sol':  'We design documented, versioned, secure APIs and the backend services that carry them.',
+    'svc.4.res':  'Integrations that are reliable, extensible and auditable — not dreaded.',
+    'svc.5.long': 'We bring ageing systems up to current standards — without breaking the operations that depend on them.',
+    'svc.5.prob': 'A legacy system still runs the business, but it is slow, risky and impossible to evolve.',
+    'svc.5.sol':  'We audit, secure and rebuild incrementally — migrating value without a brutal cutover.',
+    'svc.5.res':  'A modern, maintainable system — and an operation that never stops.',
+    'svc.prob.label':        'Problem',
+    'svc.sol.label':         'Solution',
+    'svc.res.label':         'Result',
+    'svc.cta':               'Discuss your project',
+    'svc.uncertainty.title': 'Not sure which area of expertise your project falls under?',
+    'svc.uncertainty.desc':  'Tell us about it. We help you scope it — and come back with a clear scope and a quote.',
+    'svc.uncertainty.cta':   'Talk to an expert',
+
+    /* METHOD PAGE */
+    'methode.eyebrow': 'Method',
+    'methode.title':   'We don\'t improvise software. We engineer it.',
+    'methode.lead':    'A structured, industrialised path from need to production — designed to keep complex projects under control, on every front: scope, quality, security and time.',
+    'methode.p1.title': 'Rigour over improvisation',
+    'methode.p1.desc':  'Decisions are documented, traceable and deliberate — not made on the fly.',
+    'methode.p2.title': 'Industrialised delivery',
+    'methode.p2.desc':  'Versioning, code review, automated testing and CI: quality is built into the pipeline.',
+    'methode.p3.title': 'Visible at every step',
+    'methode.p3.desc':  'Short iterations and regular checkpoints keep you in control of scope and budget.',
+    'methode.quote':    'A method made for projects that can\'t afford to fail.',
+    'step.del.label':  'Deliverables',
+    'step.1.short':    'Analysis',
+    'step.2.short':    'Architecture',
+    'step.3.short':    'Development',
+    'step.4.short':    'Quality',
+    'step.5.short':    'Deployment',
+    'step.6.short':    'Maintenance',
+    'step.1.title':    'Needs analysis',
+    'step.1.desc':     'We start by understanding your business, not your software wish-list. We map processes, constraints, actors and risks — and translate them into clear, prioritised requirements.',
+    'step.1.del.1':    'Functional specification & scope',
+    'step.1.del.2':    'Process & data mapping',
+    'step.1.del.3':    'Risk & compliance assessment',
+    'step.2.title':    'Architecture design',
+    'step.2.desc':     'Before a line of production code, we design the system: data model, services, integrations and security. This is where scalability and longevity are decided.',
+    'step.2.del.1':    'Technical architecture & data model',
+    'step.2.del.2':    'Integration & security plan',
+    'step.2.del.3':    'Technology choices, justified',
+    'step.3.title':    'Agile development',
+    'step.3.desc':     'We build in short iterations, with working increments you can see and steer. Code review and versioning are non-negotiable at every commit.',
+    'step.3.del.1':    'Working increments every sprint',
+    'step.3.del.2':    'Systematic code review',
+    'step.3.del.3':    'Regular progress checkpoints',
+    'step.4.title':    'Quality assurance',
+    'step.4.desc':     'Quality is not a phase at the end — it runs throughout. Automated tests, manual QA and security checks validate every release before it ships.',
+    'step.4.del.1':    'Automated & manual test coverage',
+    'step.4.del.2':    'Security & performance review',
+    'step.4.del.3':    'Acceptance with your teams',
+    'step.5.title':    'Deployment',
+    'step.5.desc':     'We put the system into production reliably and reversibly, with monitoring in place from day one — so going live is a controlled event, not a leap.',
+    'step.5.del.1':    'Controlled production rollout',
+    'step.5.del.2':    'Monitoring & alerting',
+    'step.5.del.3':    'Documentation & team handover',
+    'step.6.title':    'Evolutionary maintenance',
+    'step.6.desc':     'A system is alive. We keep it secure, performant and aligned with your business as it changes — with a clear, accountable support relationship.',
+    'step.6.del.1':    'Corrective & evolutionary maintenance',
+    'step.6.del.2':    'Security updates',
+    'step.6.del.3':    'Roadmap for new needs',
 
     /* PAGES */
     'services.page.title':    'Software engineering, organised around your problems.',
@@ -388,6 +602,105 @@ const T = {
     'faq.page.title':         'Straight answers, before we even talk.',
     'faq.page.lead':          'The questions organisations ask us most often.',
     'read.more':              'Read article',
+
+    /* RÉALISATIONS PAGE */
+    'real.eyebrow':      'Case Studies',
+    'real.title':        'Systems in production, where failure is not an option.',
+    'real.lead':         'Experience concentrated in the mutual insurance sector — memberships, contributions, benefits, payments and regulatory compliance.',
+    'real.prob.label':   'Problem',
+    'real.sol.label':    'Solution',
+    'real.imp.label':    'Impact',
+    'real.refs.eyebrow': 'References',
+    'real.refs.title':   'Letters of Satisfactory Completion',
+    'real.refs.desc':    'All issued by Ivorian mutual and health insurance organisations — systems in production.',
+    'real.cta.title':    'Your project deserves the same rigour.',
+
+    /* ACTUALITÉS PAGE */
+    'act.eyebrow':   'News & insights',
+    'act.title':     'What we think about software built to last.',
+    'act.lead':      'A few reflections, from the field, on software engineering and what building really means.',
+    'act.1.title':   'Agency or engineering? The question you should ask first.',
+    'act.1.excerpt': 'Why the distinction between a web agency and a software engineering firm is not merely semantic — and what it changes concretely for your project.',
+    'act.cta.title': 'Do these reflections apply to your project?',
+
+    /* À PROPOS PAGE */
+    'about.eyebrow':        'About Sycelim',
+    'about.title':          'A software engineering firm — not a web agency.',
+    'about.lead':           'Based in Abidjan, Sycelim Technologies designs and develops the bespoke software systems that demanding organisations depend on.',
+    'about.history.title':  'Our history',
+    'about.vision.title':   'Our vision',
+    'about.pos.title':      'Our positioning',
+    'about.pos.no.label':   'What we are not',
+    'about.pos.yes.label':  'What we are',
+    'about.org.title':      'Our organisation',
+    'about.org.sub':        'A tight-knit team, structured around accountability.',
+    'about.culture.title':  'Quality culture',
+    'about.culture.sub':    'What we demand of ourselves.',
+    'about.fab.title':      'Orange Fab Côte d\'Ivoire Laureate — Season 1',
+    'about.fab.desc':       'Sycelim Technologies is a laureate of the 1st season of the Orange Fab Côte d\'Ivoire competition — Orange\'s startup acceleration programme (the first Orange Group accelerator in Africa).',
+    'about.cta.title':      'Let\'s build something that lasts.',
+
+    /* ÉQUIPE PAGE */
+    'team.eyebrow':      'The team',
+    'team.title':        'The people accountable for what we build.',
+    'team.lead':         'A team of complementary engineers, organised by responsibility. Each role protects one dimension of your project — architecture, security, quality and delivery.',
+    'team.roles.title':  'Profiles by role',
+    'team.roles.sub':    'Each role exists to protect one dimension of your project.',
+    'team.stats.title':  'How we work',
+    'team.stats.sub':    'The right team for the problem — never oversized.',
+    'team.cta.title':    'Want to put this team on your project?',
+
+    /* CONTACT / FORM PAGE */
+    'contact.eyebrow':         'Request a quote',
+    'contact.title':           'Tell us about your project.',
+    'contact.lead':            'Describe what you want to build or fix. We\'ll come back with a clear, structured response — and a quote.',
+    'contact.assurance.title': 'Our commitments',
+    'contact.assurance.1':     'A structured response, not a sales pitch.',
+    'contact.assurance.2':     'Your information stays confidential.',
+    'contact.assurance.3':     'No commitment until the scope is clear.',
+    'contact.info.title':      'Direct contact',
+    'form.name':               'Full name',
+    'form.org':                'Organisation',
+    'form.email':              'Professional email',
+    'form.phone':              'Phone',
+    'form.need':               'What do you need?',
+    'form.need.opt0':          'Choose a project type',
+    'form.need.opt1':          'Bespoke business solution',
+    'form.need.opt2':          'Complex web platform',
+    'form.need.opt3':          'Connected mobile application',
+    'form.need.opt4':          'API & backend system',
+    'form.need.opt5':          'Modernisation / rebuild',
+    'form.need.opt6':          'I\'m not sure yet — let\'s talk',
+    'form.budget':             'Indicative budget',
+    'form.budget.opt0':        'Choose a range',
+    'form.budget.opt1':        'To be defined',
+    'form.budget.opt2':        '< 5M FCFA',
+    'form.budget.opt3':        '5 – 20M FCFA',
+    'form.budget.opt4':        '20 – 50M FCFA',
+    'form.budget.opt5':        '> 50M FCFA',
+    'form.project':            'Describe your project',
+    'form.project.ph':         'Context, objective, constraints, desired deadline…',
+    'form.submit':             'Send my request',
+    'form.note':               'Response within 48 business hours.',
+    'form.success':            'Request received. Thank you. Our team is reviewing your project and will get back to you within 48 business hours with a structured response.',
+    'form.error':              'An error occurred. Write to us directly at contact@sycelim.com.',
+
+    /* FAQ PAGE */
+    'faq.eyebrow':   'Frequently asked questions',
+    'faq.title':     'Clear answers, before we even speak.',
+    'faq.lead':      'The questions we hear most often — answered directly.',
+    'faq.cta.title': 'A question not answered here?',
+
+    /* LEGAL PAGES */
+    'legal.ml.eyebrow':   'Legal notice',
+    'legal.ml.title':     'Legal notice',
+    'legal.ml.lead':      'Legal information relating to Sycelim Technologies and this website.',
+    'legal.conf.eyebrow': 'Privacy',
+    'legal.conf.title':   'Privacy policy',
+    'legal.conf.lead':    'How Sycelim Technologies collects, uses and protects your personal data.',
+    'legal.cgu.eyebrow':  'Terms of use',
+    'legal.cgu.title':    'Terms of use',
+    'legal.cgu.lead':     'Rules governing use of the Sycelim Technologies website.',
   }
 };
 
@@ -665,6 +978,94 @@ function initFabSparkles() {
   requestAnimationFrame(draw);
 }
 
+/* ============================================================
+   SERVICES PAGE — Sticky tabs + smooth scroll
+   ============================================================ */
+function initServicesTabs() {
+  const tabsOuter = document.getElementById('svcTabsOuter');
+  if (!tabsOuter) return;
+
+  const tabs     = Array.from(tabsOuter.querySelectorAll('.svc-tab'));
+  const sections = Array.from(document.querySelectorAll('.svc-block[id]'));
+  if (!sections.length) return;
+
+  /* Highlight active tab as sections enter viewport */
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        tabs.forEach(t => t.classList.toggle('active', t.dataset.svc === id));
+      }
+    });
+  }, { rootMargin: '-15% 0px -70% 0px', threshold: 0 });
+  sections.forEach(s => io.observe(s));
+
+  /* Smooth scroll with offset for navbar + tab bar */
+  const scrollToSection = targetId => {
+    const target = document.getElementById(targetId);
+    if (!target) return;
+    const offset = 70 + tabsOuter.offsetHeight + 24;
+    window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - offset, behavior: 'smooth' });
+  };
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', e => {
+      e.preventDefault();
+      scrollToSection(tab.getAttribute('href').slice(1));
+    });
+  });
+
+  /* Hero pills also use smooth scroll */
+  document.querySelectorAll('.svc-hero-pill').forEach(pill => {
+    pill.addEventListener('click', e => {
+      e.preventDefault();
+      scrollToSection(pill.getAttribute('href').slice(1));
+    });
+  });
+}
+
+/* ============================================================
+   MÉTHODE — Step tracker
+   ============================================================ */
+function initMethodeTracker() {
+  const trackerOuter = document.getElementById('mthTrackerOuter');
+  if (!trackerOuter) return;
+  const dots     = Array.from(trackerOuter.querySelectorAll('.mth-tracker-dot'));
+  const sections = Array.from(document.querySelectorAll('.mth-step[id]'));
+  if (!sections.length) return;
+
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        dots.forEach(d => d.classList.toggle('active', d.dataset.step === id));
+      }
+    });
+  }, { rootMargin: '-15% 0px -70% 0px', threshold: 0 });
+  sections.forEach(s => io.observe(s));
+
+  const scrollToStep = targetId => {
+    const target = document.getElementById(targetId);
+    if (!target) return;
+    const offset = 70 + trackerOuter.offsetHeight + 24;
+    window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - offset, behavior: 'smooth' });
+  };
+
+  dots.forEach(dot => {
+    dot.addEventListener('click', e => {
+      e.preventDefault();
+      scrollToStep(dot.getAttribute('href').slice(1));
+    });
+  });
+
+  document.querySelectorAll('.mth-hero-pill').forEach(pill => {
+    pill.addEventListener('click', e => {
+      e.preventDefault();
+      scrollToStep(pill.getAttribute('href').slice(1));
+    });
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   /* Apply persisted settings immediately */
   applyTheme(currentTheme);
@@ -693,4 +1094,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollReveal();
   initHeroSlider();
   initFabSparkles();
+  initServicesTabs();
+  initMethodeTracker();
 });

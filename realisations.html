@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Réalisations — Sycelim Technologies</title>
+  <meta name="description" content="Découvrez les réalisations de Sycelim Technologies : systèmes en production pour mutuelles et organismes d'assurance santé en Côte d'Ivoire et en Afrique de l'Ouest." />
+  <meta name="theme-color" content="#00a0ff" />
+  <meta property="og:title" content="Réalisations — Sycelim Technologies" />
+  <meta property="og:description" content="Une expérience concentrée dans le secteur mutualiste et l'assurance santé — adhésions, cotisations, prestations, paiements et conformité réglementaire." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="logos/logo_all.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="logos/logo_icon.png" />
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<header class="navbar" id="navbar">
+  <div class="container">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo" aria-label="Sycelim Technologies — Accueil">
+        <img src="logos/logo_all.png" alt="Sycelim Technologies" />
+      </a>
+      <nav class="navbar-nav" aria-label="Navigation principale">
+        <a href="index.html"          class="nav-link" data-page="index"        data-i18n="nav.home">Accueil</a>
+        <a href="services.html"       class="nav-link" data-page="services"     data-i18n="nav.services">Services</a>
+        <a href="methode.html"        class="nav-link" data-page="methode"      data-i18n="nav.method">Méthode</a>
+        <a href="realisations.html"   class="nav-link" data-page="realisations" data-i18n="nav.work">Réalisations</a>
+        <a href="actualites.html"     class="nav-link" data-page="actualites"   data-i18n="nav.news">Actualités</a>
+        <a href="a-propos.html"       class="nav-link" data-page="a-propos"     data-i18n="nav.about">À propos</a>
+        <a href="equipe.html"         class="nav-link" data-page="equipe"       data-i18n="nav.team">Équipe</a>
+      </nav>
+      <div class="navbar-actions">
+        <button class="btn-lang" aria-label="Changer de langue" title="Switch language">
+          <span class="lang-fr-label active"><img src="images/flag-fr.svg" alt="Français" class="flag-img" /></span>
+          <span class="sep">/</span>
+          <span class="lang-en-label"><img src="images/flag-gb.svg" alt="English" class="flag-img" /></span>
+        </button>
+        <button class="btn-theme" aria-label="Basculer thème sombre/clair">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="contact.html" class="btn-cta-nav" data-i18n="nav.cta">Demander un devis</a>
+        <button class="btn-hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobile">
+  <a href="index.html"        class="nav-link" data-page="index"        data-i18n="nav.home">Accueil</a>
+  <a href="services.html"     class="nav-link" data-page="services"     data-i18n="nav.services">Services</a>
+  <a href="methode.html"      class="nav-link" data-page="methode"      data-i18n="nav.method">Méthode</a>
+  <a href="realisations.html" class="nav-link" data-page="realisations" data-i18n="nav.work">Réalisations</a>
+  <a href="actualites.html"   class="nav-link" data-page="actualites"   data-i18n="nav.news">Actualités</a>
+  <a href="a-propos.html"     class="nav-link" data-page="a-propos"     data-i18n="nav.about">À propos</a>
+  <a href="equipe.html"       class="nav-link" data-page="equipe"       data-i18n="nav.team">Équipe</a>
+  <div class="mobile-menu-foot">
+    <a href="contact.html" class="btn btn-primary" data-i18n="nav.cta">Demander un devis</a>
+    <button class="btn-lang" aria-label="Changer de langue">
+      <span class="lang-fr-label active"><img src="images/flag-fr.svg" alt="Français" class="flag-img" /></span>
+      <span class="sep">/</span>
+      <span class="lang-en-label"><img src="images/flag-gb.svg" alt="English" class="flag-img" /></span>
+    </button>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ===== HERO ===== -->
+  <section class="inner-hero" aria-labelledby="hero-title">
+    <div class="inner-hero-bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="inner-hero-inner">
+        <span class="eyebrow" data-i18n="real.eyebrow">Réalisations</span>
+        <h1 class="inner-hero-title" id="hero-title" data-i18n="real.title">Des systèmes en production, là où l'erreur n'est pas permise.</h1>
+        <p class="inner-hero-lead" data-i18n="real.lead">Une expérience concentrée dans le secteur mutualiste et l'assurance santé — adhésions, cotisations, prestations, paiements et conformité réglementaire.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CASE 01 — MUGEF-CI ===== -->
+  <section class="real-case" id="mugef" style="--case-color:#00a0ff; --case-rgb:0,160,255;" aria-labelledby="mugef-title">
+    <div class="real-case-inner container">
+
+      <!-- Content column -->
+      <div class="real-case-content">
+        <div class="real-case-eyebrow">
+          <span class="real-case-num">01</span>
+          <span class="real-case-client-tag">
+            <span class="real-case-client">MUGEF-CI</span>
+            <span class="real-case-sector">Mutualité · Plateforme</span>
+          </span>
+        </div>
+        <h2 class="real-case-title" id="mugef-title" data-i18n="real.mugef.title">Plateforme « Carte Unique et Intelligente »</h2>
+
+        <div class="real-psr">
+          <div class="real-psr-box real-psr-box--prob">
+            <span class="real-psr-label" data-i18n="real.label.prob">Problème</span>
+            <p data-i18n="real.mugef.prob">Adhésions, cotisations, prestations et facturation étaient gérées dans des outils déconnectés, sans vue consolidée pour décider.</p>
+          </div>
+          <div class="real-psr-box real-psr-box--sol">
+            <span class="real-psr-label" data-i18n="real.label.sol">Solution</span>
+            <p data-i18n="real.mugef.sol">Une plateforme unique réunissant gestion des adhérents, cotisations, prestations et facturation — avec décisionnel intégré autour d'un modèle de carte intelligente.</p>
+          </div>
+          <div class="real-psr-box real-psr-box--imp">
+            <span class="real-psr-label" data-i18n="real.label.imp">Impact</span>
+            <p data-i18n="real.mugef.imp">Une source de vérité unique, un traitement des prestations accéléré, et un reporting qui éclaire les vraies décisions.</p>
+          </div>
+        </div>
+
+        <div class="tags">
+          <span class="tag" data-i18n="real.mugef.tag1">Adhésions</span>
+          <span class="tag" data-i18n="real.mugef.tag2">Cotisations</span>
+          <span class="tag" data-i18n="real.mugef.tag3">Prestations</span>
+          <span class="tag" data-i18n="real.mugef.tag4">Facturation</span>
+          <span class="tag" data-i18n="real.mugef.tag5">Business Intelligence</span>
+        </div>
+      </div>
+
+      <!-- Visual column -->
+      <div class="real-case-visual">
+        <div class="real-case-card">
+          <div class="real-case-card-header">
+            <div class="real-case-card-logo">
+              <img src="images/logo-mugef-ci.png" alt="MUGEF-CI" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+              <span class="real-case-card-logo-placeholder" style="display:none;">MUGEF</span>
+            </div>
+            <span class="real-case-card-badge" data-i18n="real.mugef.badge">Mutuelle Générale des Fonctionnaires</span>
+          </div>
+          <div class="real-case-card-body">
+            <div class="real-case-card-name" data-i18n="real.mugef.card.name">MUGEF-CI</div>
+            <div class="real-case-card-sub" data-i18n="real.mugef.card.sub">Plateforme Carte Unique</div>
+            <div class="real-case-card-stats">
+              <div class="real-case-stat">
+                <span class="real-case-stat-val" data-i18n="real.mugef.stat1.val">Source unique</span>
+                <span class="real-case-stat-lbl" data-i18n="real.mugef.stat1.lbl">de vérité</span>
+              </div>
+              <div class="real-case-stat">
+                <span class="real-case-stat-val" data-i18n="real.mugef.stat2.val">Prestations</span>
+                <span class="real-case-stat-lbl" data-i18n="real.mugef.stat2.lbl">accélérées</span>
+              </div>
+              <div class="real-case-stat">
+                <span class="real-case-stat-val" data-i18n="real.mugef.stat3.val">Reporting BI</span>
+                <span class="real-case-stat-lbl" data-i18n="real.mugef.stat3.lbl">intégré</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CASE 02 — MUDCI ===== -->
+  <section class="real-case" id="mudci" style="--case-color:#ff7a1a; --case-rgb:255,122,26;" aria-labelledby="mudci-title">
+    <div class="real-case-inner container">
+
+      <!-- Content column -->
+      <div class="real-case-content">
+        <div class="real-case-eyebrow">
+          <span class="real-case-num">02</span>
+          <span class="real-case-client-tag">
+            <span class="real-case-client">MUDCI</span>
+            <span class="real-case-sector">ERP · API sécurisées</span>
+          </span>
+        </div>
+        <h2 class="real-case-title" id="mudci-title" data-i18n="real.mudci.title">Assurance santé sur Odoo, connectée aux prestataires</h2>
+
+        <div class="real-psr">
+          <div class="real-psr-box real-psr-box--prob">
+            <span class="real-psr-label" data-i18n="real.label.prob">Problème</span>
+            <p data-i18n="real.mudci.prob">Les échanges avec les prestataires étaient manuels et lents, sans lien sécurisé et temps réel avec le système de gestion central.</p>
+          </div>
+          <div class="real-psr-box real-psr-box--sol">
+            <span class="real-psr-label" data-i18n="real.label.sol">Solution</span>
+            <p data-i18n="real.mudci.sol">Une solution intégrée sur ERP Odoo, complétée par une application web prestataires dédiée, reliée par API sécurisées.</p>
+          </div>
+          <div class="real-psr-box real-psr-box--imp">
+            <span class="real-psr-label" data-i18n="real.label.imp">Impact</span>
+            <p data-i18n="real.mudci.imp">Prestataires et gestionnaires travaillent sur les mêmes données vivantes — moins de litiges, traitement accéléré, traçabilité complète.</p>
+          </div>
+        </div>
+
+        <div class="tags">
+          <span class="tag" data-i18n="real.mudci.tag1">Odoo</span>
+          <span class="tag" data-i18n="real.mudci.tag2">App web prestataires</span>
+          <span class="tag" data-i18n="real.mudci.tag3">API sécurisées</span>
+          <span class="tag" data-i18n="real.mudci.tag4">Intégration</span>
+        </div>
+      </div>
+
+      <!-- Visual column -->
+      <div class="real-case-visual">
+        <div class="real-case-card">
+          <div class="real-case-card-header">
+            <div class="real-case-card-logo">
+              <img src="images/logo-mudci.jpeg" alt="MUDCI" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+              <span class="real-case-card-logo-placeholder" style="display:none;">MUDCI</span>
+            </div>
+            <span class="real-case-card-badge" data-i18n="real.mudci.badge">Assurance santé intégrée</span>
+          </div>
+          <div class="real-case-card-body">
+            <div class="real-case-card-name" data-i18n="real.mudci.card.name">MUDCI</div>
+            <div class="real-case-card-sub" data-i18n="real.mudci.card.sub">ERP Odoo & API prestataires</div>
+            <div class="real-case-card-stats">
+              <div class="real-case-stat">
+                <span class="real-case-stat-val" data-i18n="real.mudci.stat1.val">Données</span>
+                <span class="real-case-stat-lbl" data-i18n="real.mudci.stat1.lbl">temps réel</span>
+              </div>
+              <div class="real-case-stat">
+                <span class="real-case-stat-val" data-i18n="real.mudci.stat2.val">Litiges</span>
+                <span class="real-case-stat-lbl" data-i18n="real.mudci.stat2.lbl">réduits</span>
+              </div>
+              <div class="real-case-stat">
+                <span class="real-case-stat-val" data-i18n="real.mudci.stat3.val">Traçabilité</span>
+                <span class="real-case-stat-lbl" data-i18n="real.mudci.stat3.lbl">complète</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CASE 03 — CTERIA-CI ===== -->
+  <section class="real-case" id="cteria" style="--case-color:#00a0ff; --case-rgb:0,160,255;" aria-labelledby="cteria-title">
+    <div class="real-case-inner container">
+
+      <!-- Content column -->
+      <div class="real-case-content">
+        <div class="real-case-eyebrow">
+          <span class="real-case-num">03</span>
+          <span class="real-case-client-tag">
+            <span class="real-case-client">CTERIA-CI</span>
+            <span class="real-case-sector">Paiements · Recouvrement</span>
+          </span>
+        </div>
+        <h2 class="real-case-title" id="cteria-title" data-i18n="real.cteria.title">Gestion d'assurance santé &amp; paiement en ligne</h2>
+
+        <div class="real-psr">
+          <div class="real-psr-box real-psr-box--prob">
+            <span class="real-psr-label" data-i18n="real.label.prob">Problème</span>
+            <p data-i18n="real.cteria.prob">Le recouvrement reposait sur des processus en présentiel et en espèces — difficiles à suivre et à réconcilier.</p>
+          </div>
+          <div class="real-psr-box real-psr-box--sol">
+            <span class="real-psr-label" data-i18n="real.label.sol">Solution</span>
+            <p data-i18n="real.cteria.sol">Une gestion d'assurance santé couplée à un recouvrement en ligne, acceptant paiements mobile, carte bancaire et PayPal.</p>
+          </div>
+          <div class="real-psr-box real-psr-box--imp">
+            <span class="real-psr-label" data-i18n="real.label.imp">Impact</span>
+            <p data-i18n="real.cteria.imp">Les adhérents paient comme ils le souhaitent, le recouvrement est suivi en temps réel, et la réconciliation devient automatique.</p>
+          </div>
+        </div>
+
+        <div class="tags">
+          <span class="tag" data-i18n="real.cteria.tag1">Mobile Money</span>
+          <span class="tag" data-i18n="real.cteria.tag2">Carte bancaire</span>
+          <span class="tag" data-i18n="real.cteria.tag3">PayPal</span>
+          <span class="tag" data-i18n="real.cteria.tag4">Recouvrement en ligne</span>
+        </div>
+      </div>
+
+      <!-- Visual column -->
+      <div class="real-case-visual">
+        <div class="real-case-card">
+          <div class="real-case-card-header">
+            <div class="real-case-card-logo">
+              <img src="images/logo-cteriaci.png" alt="CTERIA-CI" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+              <span class="real-case-card-logo-placeholder" style="display:none;">CTERIA</span>
+            </div>
+            <span class="real-case-card-badge" data-i18n="real.cteria.badge">Assurance santé &amp; recouvrement</span>
+          </div>
+          <div class="real-case-card-body">
+            <div class="real-case-card-name" data-i18n="real.cteria.card.name">CTERIA-CI</div>
+            <div class="real-case-card-sub" data-i18n="real.cteria.card.sub">Paiements &amp; recouvrement en ligne</div>
+            <div class="real-case-card-stats">
+              <div class="real-case-stat">
+                <span class="real-case-stat-val" data-i18n="real.cteria.stat1.val">3 modes</span>
+                <span class="real-case-stat-lbl" data-i18n="real.cteria.stat1.lbl">de paiement</span>
+              </div>
+              <div class="real-case-stat">
+                <span class="real-case-stat-val" data-i18n="real.cteria.stat2.val">Recouvrement</span>
+                <span class="real-case-stat-lbl" data-i18n="real.cteria.stat2.lbl">temps réel</span>
+              </div>
+              <div class="real-case-stat">
+                <span class="real-case-stat-val" data-i18n="real.cteria.stat3.val">Réconciliation</span>
+                <span class="real-case-stat-lbl" data-i18n="real.cteria.stat3.lbl">automatique</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CASE 04 — MUSARTI ===== -->
+  <section class="real-case" id="musarti" style="--case-color:#ff7a1a; --case-rgb:255,122,26;" aria-labelledby="musarti-title">
+    <div class="real-case-inner container">
+
+      <!-- Content column -->
+      <div class="real-case-content">
+        <div class="real-case-eyebrow">
+          <span class="real-case-num">04</span>
+          <span class="real-case-client-tag">
+            <span class="real-case-client">MUSARTI</span>
+            <span class="real-case-sector">Conformité · SESAMS</span>
+          </span>
+        </div>
+        <h2 class="real-case-title" id="musarti-title" data-i18n="real.musarti.title">SESAMS, conforme par conception aux règles UEMOA</h2>
+
+        <div class="real-psr">
+          <div class="real-psr-box real-psr-box--prob">
+            <span class="real-psr-label" data-i18n="real.label.prob">Problème</span>
+            <p data-i18n="real.musarti.prob">L'organisme avait besoin d'un logiciel aligné sur ses statuts et le cadre réglementaire UEMOA — pas d'un outil générique.</p>
+          </div>
+          <div class="real-psr-box real-psr-box--sol">
+            <span class="real-psr-label" data-i18n="real.label.sol">Solution</span>
+            <p data-i18n="real.musarti.sol">SESAMS, une application métier d'assurance maladie conçue pour épouser les statuts, le règlement intérieur et les exigences de conformité régionale.</p>
+          </div>
+          <div class="real-psr-box real-psr-box--imp">
+            <span class="real-psr-label" data-i18n="real.label.imp">Impact</span>
+            <p data-i18n="real.musarti.imp">Des opérations conformes par construction — auditables, défendables et prêtes à suivre la réglementation.</p>
+          </div>
+        </div>
+
+        <div class="tags">
+          <span class="tag" data-i18n="real.musarti.tag1">SESAMS</span>
+          <span class="tag" data-i18n="real.musarti.tag2">Conformité UEMOA</span>
+          <span class="tag" data-i18n="real.musarti.tag3">Statuts &amp; règlement</span>
+          <span class="tag" data-i18n="real.musarti.tag4">Logiciel métier</span>
+        </div>
+      </div>
+
+      <!-- Visual column -->
+      <div class="real-case-visual">
+        <div class="real-case-card">
+          <div class="real-case-card-header">
+            <div class="real-case-card-logo">
+              <span class="real-case-card-logo-placeholder">MUSARTI</span>
+            </div>
+            <span class="real-case-card-badge" data-i18n="real.musarti.badge">Logiciel métier assurance maladie</span>
+          </div>
+          <div class="real-case-card-body">
+            <div class="real-case-card-name" data-i18n="real.musarti.card.name">MUSARTI</div>
+            <div class="real-case-card-sub" data-i18n="real.musarti.card.sub">SESAMS — Conformité UEMOA</div>
+            <div class="real-case-card-stats">
+              <div class="real-case-stat">
+                <span class="real-case-stat-val" data-i18n="real.musarti.stat1.val">Conforme</span>
+                <span class="real-case-stat-lbl" data-i18n="real.musarti.stat1.lbl">UEMOA</span>
+              </div>
+              <div class="real-case-stat">
+                <span class="real-case-stat-val" data-i18n="real.musarti.stat2.val">Auditable</span>
+                <span class="real-case-stat-lbl" data-i18n="real.musarti.stat2.lbl">par construction</span>
+              </div>
+              <div class="real-case-stat">
+                <span class="real-case-stat-val" data-i18n="real.musarti.stat3.val">Scalable</span>
+                <span class="real-case-stat-lbl" data-i18n="real.musarti.stat3.lbl">multi-organismes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CASE 05 — SIGEM ===== -->
+  <section class="real-case" id="sigem" style="--case-color:#00a0ff; --case-rgb:0,160,255;" aria-labelledby="sigem-title">
+    <div class="real-case-inner container">
+
+      <!-- Content column -->
+      <div class="real-case-content">
+        <div class="real-case-eyebrow">
+          <span class="real-case-num">05</span>
+          <span class="real-case-client-tag">
+            <span class="real-case-client">SIGEM</span>
+            <span class="real-case-sector">Multi-organismes · Déploiement</span>
+          </span>
+        </div>
+        <h2 class="real-case-title" id="sigem-title" data-i18n="real.sigem.title">Un même moteur, déployé pour plusieurs organismes</h2>
+
+        <div class="real-psr">
+          <div class="real-psr-box real-psr-box--prob">
+            <span class="real-psr-label" data-i18n="real.label.prob">Problème</span>
+            <p data-i18n="real.sigem.prob">Plusieurs organismes mutualistes avaient besoin de la même capacité de gestion robuste — sans la reconstruire cinq fois.</p>
+          </div>
+          <div class="real-psr-box real-psr-box--sol">
+            <span class="real-psr-label" data-i18n="real.label.sol">Solution</span>
+            <p data-i18n="real.sigem.sol">SESAMS déployé comme plateforme partagée et configurable pour MUSARTI, MUSACNRA, MUDCI, MAADO (Burkina Faso) et MA-SUCAF.</p>
+          </div>
+          <div class="real-psr-box real-psr-box--imp">
+            <span class="real-psr-label" data-i18n="real.label.imp">Impact</span>
+            <p data-i18n="real.sigem.imp">Une scalabilité prouvée entre organismes et au-delà des frontières — un seul investissement d'ingénierie, plusieurs déploiements.</p>
+          </div>
+        </div>
+
+        <div class="tags">
+          <span class="tag" data-i18n="real.sigem.tag1">MUSARTI</span>
+          <span class="tag" data-i18n="real.sigem.tag2">MUSACNRA</span>
+          <span class="tag" data-i18n="real.sigem.tag3">MUDCI</span>
+          <span class="tag" data-i18n="real.sigem.tag4">MAADO</span>
+          <span class="tag" data-i18n="real.sigem.tag5">MA-SUCAF</span>
+        </div>
+      </div>
+
+      <!-- Visual column -->
+      <div class="real-case-visual">
+        <div class="real-case-card">
+          <div class="real-case-card-header">
+            <div class="real-case-card-logo">
+              <span class="real-case-card-logo-placeholder">SIGEM</span>
+            </div>
+            <span class="real-case-card-badge" data-i18n="real.sigem.badge">SESAMS déployé multi-mutuelles</span>
+          </div>
+          <div class="real-case-card-body">
+            <div class="real-case-card-name" data-i18n="real.sigem.card.name">SIGEM</div>
+            <div class="real-case-card-sub" data-i18n="real.sigem.card.sub">Plateforme SESAMS partagée</div>
+            <div class="real-case-card-stats">
+              <div class="real-case-stat">
+                <span class="real-case-stat-val" data-i18n="real.sigem.stat1.val">5</span>
+                <span class="real-case-stat-lbl" data-i18n="real.sigem.stat1.lbl">déploiements</span>
+              </div>
+              <div class="real-case-stat">
+                <span class="real-case-stat-val" data-i18n="real.sigem.stat2.val">2</span>
+                <span class="real-case-stat-lbl" data-i18n="real.sigem.stat2.lbl">pays</span>
+              </div>
+              <div class="real-case-stat">
+                <span class="real-case-stat-val" data-i18n="real.sigem.stat3.val">1</span>
+                <span class="real-case-stat-lbl" data-i18n="real.sigem.stat3.lbl">moteur</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== REFERENCES TABLE ===== -->
+  <section class="real-refs section section--alt" aria-labelledby="refs-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow" data-i18n="real.refs.eyebrow">Références</span>
+        <h2 id="refs-title" data-i18n="real.refs.title">Attestations de Bonne Exécution</h2>
+        <p data-i18n="real.refs.desc">Toutes délivrées par des mutuelles et organismes d'assurance santé ivoiriens — solutions en production.</p>
+      </div>
+
+      <div class="real-ref-table-wrap">
+        <table class="real-ref-table" aria-label="Tableau des attestations de bonne exécution">
+          <thead>
+            <tr>
+              <th scope="col" data-i18n="real.refs.col.client">Client</th>
+              <th scope="col" data-i18n="real.refs.col.objet">Objet</th>
+              <th scope="col" data-i18n="real.refs.col.perimetre">Périmètre</th>
+              <th scope="col" data-i18n="real.refs.col.date">Date</th>
+              <th scope="col" data-i18n="real.refs.col.statut">Statut</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>MUDCI</strong></td>
+              <td data-i18n="real.refs.row1.objet">Solution intégrée d'assurance santé sur ERP Odoo + app web prestataires</td>
+              <td>Côte d'Ivoire</td>
+              <td>Déc. 2025</td>
+              <td><span class="real-ref-badge" data-i18n="real.refs.status.prod">En production</span></td>
+            </tr>
+            <tr>
+              <td><strong>MUGEF-CI</strong></td>
+              <td data-i18n="real.refs.row2.objet">Solution métier « Carte Unique et Intelligente »</td>
+              <td>Côte d'Ivoire</td>
+              <td>Fév. 2021</td>
+              <td data-i18n="real.refs.status.sat1">Pleine satisfaction</td>
+            </tr>
+            <tr>
+              <td><strong>SIGEM</strong></td>
+              <td data-i18n="real.refs.row3.objet">Application SESAMS déployée pour 5 mutuelles</td>
+              <td>CI + Burkina Faso</td>
+              <td>Fév. 2021</td>
+              <td><span class="real-ref-badge" data-i18n="real.refs.status.prod">En production</span></td>
+            </tr>
+            <tr>
+              <td><strong>CTERIA-CI</strong></td>
+              <td data-i18n="real.refs.row4.objet">Gestion d'assurance santé &amp; recouvrement + paiements en ligne</td>
+              <td>Côte d'Ivoire</td>
+              <td>Jan. 2020</td>
+              <td><span class="real-ref-badge" data-i18n="real.refs.status.prod">En production</span></td>
+            </tr>
+            <tr>
+              <td><strong>MUSARTI</strong></td>
+              <td data-i18n="real.refs.row5.objet">Logiciel métier SESAMS + mise en conformité UEMOA 07/2009</td>
+              <td>Côte d'Ivoire</td>
+              <td>Nov. 2020</td>
+              <td data-i18n="real.refs.status.sat2">Entière satisfaction</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CTA ===== -->
+  <section class="final-cta" aria-labelledby="cta-title">
+    <div class="container">
+      <h2 id="cta-title" data-i18n="real.cta.title">Votre projet mérite la même rigueur.</h2>
+      <p data-i18n="cta.sub">Dites-nous où vous voulez aller. Nous revenons vers vous avec une réponse claire, structurée — et un devis.</p>
+      <a href="contact.html" class="btn btn-primary" data-i18n="nav.cta">Demander un devis</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer" aria-label="Pied de page">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><img src="logos/logo_all.png" alt="Sycelim Technologies" /></div>
+        <p class="footer-tagline" data-i18n="footer.tagline">Ingénierie logicielle pour systèmes d'entreprise sur mesure. Architecture, qualité, scalabilité et sécurité.</p>
+        <div class="tags"><span class="badge">Abidjan, CI</span></div>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="footer.nav">Navigation</div>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link" data-i18n="nav.home">Accueil</a></li>
+          <li><a href="services.html" class="footer-link" data-i18n="nav.services">Services</a></li>
+          <li><a href="methode.html" class="footer-link" data-i18n="nav.method">Méthode</a></li>
+          <li><a href="realisations.html" class="footer-link" data-i18n="nav.work">Réalisations</a></li>
+          <li><a href="actualites.html" class="footer-link" data-i18n="nav.news">Actualités</a></li>
+          <li><a href="a-propos.html" class="footer-link" data-i18n="nav.about">À propos</a></li>
+          <li><a href="equipe.html" class="footer-link" data-i18n="nav.team">Équipe</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="footer.expertise">Expertise</div>
+        <ul class="footer-links">
+          <li><a href="services.html#solutions-metiers" class="footer-link" data-i18n="footer.exp.1">Solutions métiers</a></li>
+          <li><a href="services.html#plateformes-web" class="footer-link" data-i18n="footer.exp.2">Plateformes web</a></li>
+          <li><a href="services.html#applications-mobiles" class="footer-link" data-i18n="footer.exp.3">Applications mobiles</a></li>
+          <li><a href="services.html#api-backend" class="footer-link" data-i18n="footer.exp.4">API &amp; backend</a></li>
+          <li><a href="services.html#modernisation" class="footer-link" data-i18n="footer.exp.5">Modernisation</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="footer.contact">Contact</div>
+        <div class="footer-contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Cocody Angré 8è Tranche — 09 BP 2170 Abidjan 09, Côte d'Ivoire</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.6 12.41 19.79 19.79 0 0 1 1.5 3.82 2 2 0 0 1 3.48 1.65h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.1a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+225 27 22 50 90 66<br>+225 27 22 50 39 31</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:contact@sycelim.com" class="footer-link" style="color:var(--orange)">contact@sycelim.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy" data-i18n="footer.copy">© Sycelim Technologies — Abidjan, Côte d'Ivoire · Société d'ingénierie logicielle</p>
+      <nav class="footer-legal" aria-label="Liens légaux">
+        <a href="faq.html" class="footer-legal-link" data-i18n="footer.faq">FAQ</a>
+        <a href="mentions-legales.html" class="footer-legal-link" data-i18n="footer.legal">Mentions légales</a>
+        <a href="confidentialite.html" class="footer-legal-link" data-i18n="footer.privacy">Confidentialité</a>
+        <a href="cgu.html" class="footer-legal-link" data-i18n="footer.cgu">CGU</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

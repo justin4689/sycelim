@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — Sycelim Technologies</title>
+  <meta name="description" content="Cinq expertises complémentaires en ingénierie logicielle : solutions métiers, plateformes web, apps mobiles, API & backend, modernisation. Sycelim Technologies, Abidjan." />
+  <meta name="theme-color" content="#00a0ff" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="logos/logo_icon.png" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <div class="container">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo" aria-label="Sycelim Technologies — Accueil">
+        <img src="logos/logo_all.png" alt="Sycelim Technologies" />
+      </a>
+      <nav class="navbar-nav" aria-label="Navigation principale">
+        <a href="index.html"          class="nav-link" data-page="index"        data-i18n="nav.home">Accueil</a>
+        <a href="services.html"       class="nav-link" data-page="services"     data-i18n="nav.services">Services</a>
+        <a href="methode.html"        class="nav-link" data-page="methode"      data-i18n="nav.method">Méthode</a>
+        <a href="realisations.html"   class="nav-link" data-page="realisations" data-i18n="nav.work">Réalisations</a>
+        <a href="actualites.html"     class="nav-link" data-page="actualites"   data-i18n="nav.news">Actualités</a>
+        <a href="a-propos.html"       class="nav-link" data-page="a-propos"     data-i18n="nav.about">À propos</a>
+        <a href="equipe.html"         class="nav-link" data-page="equipe"       data-i18n="nav.team">Équipe</a>
+      </nav>
+      <div class="navbar-actions">
+        <button class="btn-lang" aria-label="Changer de langue" title="Switch language">
+          <span class="lang-fr-label active"><img src="images/flag-fr.svg" alt="Français" class="flag-img" /></span>
+          <span class="sep">/</span>
+          <span class="lang-en-label"><img src="images/flag-gb.svg" alt="English" class="flag-img" /></span>
+        </button>
+        <button class="btn-theme" aria-label="Basculer thème sombre/clair">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/></svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="contact.html" class="btn-cta-nav" data-i18n="nav.cta">Demander un devis</a>
+        <button class="btn-hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobile">
+  <a href="index.html"        class="nav-link" data-page="index"        data-i18n="nav.home">Accueil</a>
+  <a href="services.html"     class="nav-link" data-page="services"     data-i18n="nav.services">Services</a>
+  <a href="methode.html"      class="nav-link" data-page="methode"      data-i18n="nav.method">Méthode</a>
+  <a href="realisations.html" class="nav-link" data-page="realisations" data-i18n="nav.work">Réalisations</a>
+  <a href="actualites.html"   class="nav-link" data-page="actualites"   data-i18n="nav.news">Actualités</a>
+  <a href="a-propos.html"     class="nav-link" data-page="a-propos"     data-i18n="nav.about">À propos</a>
+  <a href="equipe.html"       class="nav-link" data-page="equipe"       data-i18n="nav.team">Équipe</a>
+  <div class="mobile-menu-foot">
+    <a href="contact.html" class="btn btn-primary" data-i18n="nav.cta">Demander un devis</a>
+    <button class="btn-lang" aria-label="Changer de langue">
+      <span class="lang-fr-label active"><img src="images/flag-fr.svg" alt="Français" class="flag-img" /></span>
+      <span class="sep">/</span>
+      <span class="lang-en-label"><img src="images/flag-gb.svg" alt="English" class="flag-img" /></span>
+    </button>
+    <button class="btn-theme" aria-label="Thème">
+      <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/></svg>
+      <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </div>
+</nav>
+
+<main>
+
+<!-- ============================================================
+     PAGE HERO
+     ============================================================ -->
+<section class="svc-page-hero">
+  <div class="svc-page-hero-bg" aria-hidden="true"></div>
+  <div class="svc-page-hero-dots" aria-hidden="true"></div>
+  <div class="container">
+    <div class="svc-page-hero-inner">
+      <div class="eyebrow" data-i18n="services.eyebrow">Expertise</div>
+      <h1 class="svc-page-hero-title anim-fade-up" data-i18n="services.page.title">L'ingénierie logicielle, structurée autour de vos problèmes.</h1>
+      <p class="svc-page-hero-lead anim-fade-up anim-delay-1" data-i18n="services.page.lead">Cinq expertises complémentaires. Chacune part d'un problème métier et se termine par un résultat mesurable — jamais d'une technologie.</p>
+      <div class="svc-hero-pills anim-fade-up anim-delay-2">
+        <a href="#solutions-metiers" class="svc-hero-pill">
+          <span class="svc-hero-pill-num" style="color:#00a0ff">01</span>
+          Solutions métiers
+        </a>
+        <a href="#plateformes-web" class="svc-hero-pill">
+          <span class="svc-hero-pill-num" style="color:#0ea5e9">02</span>
+          Plateformes web
+        </a>
+        <a href="#applications-mobiles" class="svc-hero-pill">
+          <span class="svc-hero-pill-num" style="color:#7c3aed">03</span>
+          Apps mobiles
+        </a>
+        <a href="#api-backend" class="svc-hero-pill">
+          <span class="svc-hero-pill-num" style="color:#059669">04</span>
+          API & backend
+        </a>
+        <a href="#modernisation" class="svc-hero-pill">
+          <span class="svc-hero-pill-num" style="color:#ff7a1a">05</span>
+          Modernisation
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     STICKY TABS
+     ============================================================ -->
+<div class="svc-tabs-outer" id="svcTabsOuter">
+  <div class="container">
+    <nav class="svc-tabs" aria-label="Accès rapide aux services">
+      <a href="#solutions-metiers" class="svc-tab" data-svc="solutions-metiers">
+        <span class="svc-tab-n">01</span>
+        <span class="svc-tab-lbl">Solutions métiers</span>
+      </a>
+      <a href="#plateformes-web" class="svc-tab" data-svc="plateformes-web">
+        <span class="svc-tab-n">02</span>
+        <span class="svc-tab-lbl">Plateformes web</span>
+      </a>
+      <a href="#applications-mobiles" class="svc-tab" data-svc="applications-mobiles">
+        <span class="svc-tab-n">03</span>
+        <span class="svc-tab-lbl">Apps mobiles</span>
+      </a>
+      <a href="#api-backend" class="svc-tab" data-svc="api-backend">
+        <span class="svc-tab-n">04</span>
+        <span class="svc-tab-lbl">API & backend</span>
+      </a>
+      <a href="#modernisation" class="svc-tab" data-svc="modernisation">
+        <span class="svc-tab-n">05</span>
+        <span class="svc-tab-lbl">Modernisation</span>
+      </a>
+    </nav>
+  </div>
+</div>
+
+<!-- ============================================================
+     SERVICE 01 — Solutions métiers sur mesure
+     ============================================================ -->
+<section class="svc-block" id="solutions-metiers" style="--svc-color:#00a0ff;--svc-rgb:0,160,255">
+  <div class="container">
+    <div class="svc-block-inner">
+
+      <!-- CONTENT -->
+      <div class="svc-content anim-fade-up">
+        <div class="svc-block-eyebrow">
+          <div class="svc-block-icon-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          </div>
+          <span class="svc-block-numtag">01</span>
+        </div>
+        <h2 class="svc-block-title" data-i18n="svc.1.title">Solutions métiers sur mesure</h2>
+        <p class="svc-block-long" data-i18n="svc.1.long">Des logiciels conçus autour du fonctionnement réel de votre organisation — vos règles, vos rôles, vos flux de travail.</p>
+        <div class="svc-psr">
+          <div class="svc-psr-box svc-psr-box--prob">
+            <div class="svc-psr-label" data-i18n="svc.prob.label">Problème</div>
+            <p data-i18n="svc.1.prob">Tableurs et outils déconnectés ne suivent plus. Les étapes manuelles multiplient les erreurs et ralentissent chaque décision.</p>
+          </div>
+          <div class="svc-psr-box svc-psr-box--sol">
+            <div class="svc-psr-label" data-i18n="svc.sol.label">Solution</div>
+            <p data-i18n="svc.1.sol">Nous modélisons vos processus et bâtissons un système unique qui les automatise — avec les bons accès pour chaque rôle.</p>
+          </div>
+          <div class="svc-psr-box svc-psr-box--res">
+            <div class="svc-psr-label" data-i18n="svc.res.label">Résultat</div>
+            <p data-i18n="svc.1.res">Moins d'erreurs, des opérations plus rapides, et une source de vérité unique pour vos équipes.</p>
+          </div>
+        </div>
+        <div class="tags">
+          <span class="tag">Gestion des adhésions</span>
+          <span class="tag">Facturation</span>
+          <span class="tag">Règles métier</span>
+          <span class="tag">Reporting & BI</span>
+        </div>
+        <a href="contact.html" class="svc-block-cta" data-i18n="svc.cta">
+          Discuter de votre projet
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+
+      <!-- VISUAL — Dashboard mockup -->
+      <div class="svc-visual-col anim-fade-up anim-delay-2">
+        <div class="svc-mock">
+          <div class="svc-mock-bar">
+            <div class="svc-mock-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+            <span class="svc-mock-bar-title">Plateforme MUGEF-CI</span>
+            <span class="svc-mock-live"><span class="svc-mock-live-dot"></span>En ligne</span>
+          </div>
+          <div class="svc-mock-body">
+            <div class="svc-dash-kpis">
+              <div class="svc-dash-kpi">
+                <span class="svc-dash-kpi-num" style="color:#00a0ff">12 483</span>
+                <span class="svc-dash-kpi-lbl">Adhérents</span>
+              </div>
+              <div class="svc-dash-kpi">
+                <span class="svc-dash-kpi-num" style="color:#22c55e">94.2%</span>
+                <span class="svc-dash-kpi-lbl">Couverture</span>
+              </div>
+              <div class="svc-dash-kpi">
+                <span class="svc-dash-kpi-num" style="color:#f59e0b">3 241</span>
+                <span class="svc-dash-kpi-lbl">Actes / mois</span>
+              </div>
+            </div>
+            <div class="svc-dash-table">
+              <div class="svc-dash-th">
+                <span>Adhérent</span><span>Statut</span><span>Cotisation</span>
+              </div>
+              <div class="svc-dash-row">
+                <span>Diallo S.</span>
+                <span class="svc-status svc-status--active">Actif</span>
+                <span>2 500 F</span>
+              </div>
+              <div class="svc-dash-row">
+                <span>Koné A.</span>
+                <span class="svc-status svc-status--active">Actif</span>
+                <span>1 800 F</span>
+              </div>
+              <div class="svc-dash-row">
+                <span>Bamba R.</span>
+                <span class="svc-status svc-status--pending">En attente</span>
+                <span class="svc-dim">—</span>
+              </div>
+              <div class="svc-dash-row">
+                <span>Touré M.</span>
+                <span class="svc-status svc-status--active">Actif</span>
+                <span>3 100 F</span>
+              </div>
+            </div>
+            <div class="svc-dash-prog">
+              <div class="svc-dash-prog-lbl">
+                <span>Quotas mensuels</span><span>87%</span>
+              </div>
+              <div class="svc-dash-prog-track">
+                <div class="svc-dash-prog-fill" style="width:87%;background:#00a0ff"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICE 02 — Plateformes web complexes
+     ============================================================ -->
+<section class="svc-block svc-block--alt" id="plateformes-web" style="--svc-color:#0ea5e9;--svc-rgb:14,165,233">
+  <div class="container">
+    <div class="svc-block-inner">
+
+      <!-- CONTENT -->
+      <div class="svc-content anim-fade-up">
+        <div class="svc-block-eyebrow">
+          <div class="svc-block-icon-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><circle cx="3" cy="6" r="2"/><circle cx="21" cy="6" r="2"/><circle cx="3" cy="18" r="2"/><circle cx="21" cy="18" r="2"/><line x1="5" y1="6" x2="9" y2="11"/><line x1="19" y1="6" x2="15" y2="11"/><line x1="5" y1="18" x2="9" y2="13"/><line x1="19" y1="18" x2="15" y2="13"/></svg>
+          </div>
+          <span class="svc-block-numtag">02</span>
+        </div>
+        <h2 class="svc-block-title" data-i18n="svc.2.title">Plateformes web complexes</h2>
+        <p class="svc-block-long" data-i18n="svc.2.long">Des portails multi-acteurs qui réunissent adhérents, prestataires, gestionnaires et partenaires sur une plateforme sécurisée.</p>
+        <div class="svc-psr">
+          <div class="svc-psr-box svc-psr-box--prob">
+            <div class="svc-psr-label" data-i18n="svc.prob.label">Problème</div>
+            <p data-i18n="svc.2.prob">Des acteurs aux besoins différents, mais une information cloisonnée qui ne se réconcilie jamais.</p>
+          </div>
+          <div class="svc-psr-box svc-psr-box--sol">
+            <div class="svc-psr-label" data-i18n="svc.sol.label">Solution</div>
+            <p data-i18n="svc.2.sol">Nous concevons une plateforme scalable avec rôles riches, flux temps réel et un modèle de données clair et traçable.</p>
+          </div>
+          <div class="svc-psr-box svc-psr-box--res">
+            <div class="svc-psr-label" data-i18n="svc.res.label">Résultat</div>
+            <p data-i18n="svc.2.res">Chaque acteur travaille sur la même plateforme fiable — qui grandit avec votre activité.</p>
+          </div>
+        </div>
+        <div class="tags">
+          <span class="tag">Portails prestataires</span>
+          <span class="tag">Gestion des rôles</span>
+          <span class="tag">Flux temps réel</span>
+          <span class="tag">Scalabilité</span>
+        </div>
+        <a href="contact.html" class="svc-block-cta" data-i18n="svc.cta">
+          Discuter de votre projet
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+
+      <!-- VISUAL — Role matrix mockup -->
+      <div class="svc-visual-col anim-fade-up anim-delay-2">
+        <div class="svc-mock">
+          <div class="svc-mock-bar">
+            <div class="svc-mock-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+            <span class="svc-mock-bar-title">Contrôle d'accès</span>
+            <span class="svc-mock-live"><span class="svc-mock-live-dot"></span>4 rôles actifs</span>
+          </div>
+          <div class="svc-mock-body">
+            <div class="svc-matrix">
+              <div class="svc-matrix-header">
+                <span>Module</span>
+                <span>Admin</span>
+                <span>Gest.</span>
+                <span>Prest.</span>
+                <span>Adhér.</span>
+              </div>
+              <div class="svc-matrix-row">
+                <span>Dashboard</span>
+                <span class="m-check">✓</span><span class="m-check">✓</span><span class="m-check">✓</span><span class="m-check">✓</span>
+              </div>
+              <div class="svc-matrix-row">
+                <span>Cotisations</span>
+                <span class="m-check">✓</span><span class="m-check">✓</span><span class="m-dash">—</span><span class="m-view">vue</span>
+              </div>
+              <div class="svc-matrix-row">
+                <span>Dossiers</span>
+                <span class="m-check">✓</span><span class="m-check">✓</span><span class="m-check">✓</span><span class="m-view">sien</span>
+              </div>
+              <div class="svc-matrix-row">
+                <span>Rapports</span>
+                <span class="m-check">✓</span><span class="m-view">vue</span><span class="m-dash">—</span><span class="m-dash">—</span>
+              </div>
+              <div class="svc-matrix-row">
+                <span>Admin</span>
+                <span class="m-check">✓</span><span class="m-dash">—</span><span class="m-dash">—</span><span class="m-dash">—</span>
+              </div>
+            </div>
+            <div class="svc-mock-foot">
+              <span class="svc-mock-live"><span class="svc-mock-live-dot" style="background:#0ea5e9"></span>Synchronisé en temps réel</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICE 03 — Applications mobiles connectées
+     ============================================================ -->
+<section class="svc-block" id="applications-mobiles" style="--svc-color:#7c3aed;--svc-rgb:124,58,237">
+  <div class="container">
+    <div class="svc-block-inner">
+
+      <!-- CONTENT -->
+      <div class="svc-content anim-fade-up">
+        <div class="svc-block-eyebrow">
+          <div class="svc-block-icon-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          </div>
+          <span class="svc-block-numtag">03</span>
+        </div>
+        <h2 class="svc-block-title" data-i18n="svc.3.title">Applications mobiles connectées</h2>
+        <p class="svc-block-long" data-i18n="svc.3.long">Des applications pour le terrain, synchronisées en temps réel avec votre back-office et vos API.</p>
+        <div class="svc-psr">
+          <div class="svc-psr-box svc-psr-box--prob">
+            <div class="svc-psr-label" data-i18n="svc.prob.label">Problème</div>
+            <p data-i18n="svc.3.prob">Vos équipes et vos adhérents sont mobiles, mais vos outils supposent que chacun reste à son bureau.</p>
+          </div>
+          <div class="svc-psr-box svc-psr-box--sol">
+            <div class="svc-psr-label" data-i18n="svc.sol.label">Solution</div>
+            <p data-i18n="svc.3.sol">Nous développons des apps multiplateformes reliées par API sécurisées, avec mode hors-ligne et synchronisation fiable.</p>
+          </div>
+          <div class="svc-psr-box svc-psr-box--res">
+            <div class="svc-psr-label" data-i18n="svc.res.label">Résultat</div>
+            <p data-i18n="svc.3.res">Des services qui suivent vos utilisateurs partout — et des données qui restent cohérentes.</p>
+          </div>
+        </div>
+        <div class="tags">
+          <span class="tag">Flutter</span>
+          <span class="tag">Mode hors-ligne</span>
+          <span class="tag">Paiements en ligne</span>
+          <span class="tag">Synchronisation sécurisée</span>
+        </div>
+        <a href="contact.html" class="svc-block-cta" data-i18n="svc.cta">
+          Discuter de votre projet
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+
+      <!-- VISUAL — Phone mockup -->
+      <div class="svc-visual-col anim-fade-up anim-delay-2">
+        <div class="svc-phone-scene">
+          <div class="svc-phone">
+            <div class="svc-phone-inner">
+              <div class="svc-phone-status">
+                <span>9:41</span>
+                <span class="svc-phone-signals">
+                  <svg width="14" height="10" viewBox="0 0 14 10" fill="rgba(255,255,255,.7)"><rect x="0" y="6" width="2" height="4"/><rect x="3" y="4" width="2" height="6"/><rect x="6" y="2" width="2" height="8"/><rect x="9" y="0" width="2" height="10"/><rect x="12" y="3" width="2" height="7" fill="rgba(255,255,255,.3)"/></svg>
+                </span>
+              </div>
+              <div class="svc-phone-appbar">
+                <span style="color:rgba(255,255,255,.5);font-size:.65rem">←</span>
+                <span>Ma Carte MUSARTI</span>
+                <span style="color:rgba(255,255,255,.5);font-size:.65rem">⋯</span>
+              </div>
+              <div class="svc-phone-card-block">
+                <div class="svc-phone-card-gradient">
+                  <div class="svc-phone-card-label">Carte d'adhérent</div>
+                  <div class="svc-phone-card-name">Touré Mamadou</div>
+                  <div class="svc-phone-card-id"># M — 4582</div>
+                  <div class="svc-phone-card-status">
+                    <span class="svc-phone-status-dot"></span>
+                    Cotisations à jour
+                  </div>
+                </div>
+              </div>
+              <div class="svc-phone-actions">
+                <button class="svc-phone-btn svc-phone-btn--primary">Payer une prestation</button>
+                <button class="svc-phone-btn svc-phone-btn--secondary">Mon historique</button>
+              </div>
+              <div class="svc-phone-nav">
+                <span class="svc-phone-nav-item svc-phone-nav-item--active">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                </span>
+                <span class="svc-phone-nav-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
+                </span>
+                <span class="svc-phone-nav-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="svc-phone-chip">
+            <span class="svc-phone-chip-dot"></span>
+            Synchronisé · Orange Money intégré
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICE 04 — API & systèmes backend
+     ============================================================ -->
+<section class="svc-block svc-block--alt" id="api-backend" style="--svc-color:#059669;--svc-rgb:5,150,105">
+  <div class="container">
+    <div class="svc-block-inner">
+
+      <!-- CONTENT -->
+      <div class="svc-content anim-fade-up">
+        <div class="svc-block-eyebrow">
+          <div class="svc-block-icon-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <span class="svc-block-numtag">04</span>
+        </div>
+        <h2 class="svc-block-title" data-i18n="svc.4.title">API & systèmes backend</h2>
+        <p class="svc-block-long" data-i18n="svc.4.long">Les fondations robustes et sécurisées qui permettent à vos systèmes d'échanger des données en confiance — en interne et avec vos partenaires.</p>
+        <div class="svc-psr">
+          <div class="svc-psr-box svc-psr-box--prob">
+            <div class="svc-psr-label" data-i18n="svc.prob.label">Problème</div>
+            <p data-i18n="svc.4.prob">Des intégrations fragiles et non documentées. Chaque nouvelle connexion devient un risque.</p>
+          </div>
+          <div class="svc-psr-box svc-psr-box--sol">
+            <div class="svc-psr-label" data-i18n="svc.sol.label">Solution</div>
+            <p data-i18n="svc.4.sol">Nous concevons des API documentées, versionnées et sécurisées, et les services backend qui les portent.</p>
+          </div>
+          <div class="svc-psr-box svc-psr-box--res">
+            <div class="svc-psr-label" data-i18n="svc.res.label">Résultat</div>
+            <p data-i18n="svc.4.res">Des intégrations fiables, extensibles et auditables — au lieu de redoutées.</p>
+          </div>
+        </div>
+        <div class="tags">
+          <span class="tag">Node.js</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">API sécurisées</span>
+          <span class="tag">Odoo</span>
+          <span class="tag">Intégration</span>
+        </div>
+        <a href="contact.html" class="svc-block-cta" data-i18n="svc.cta">
+          Discuter de votre projet
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+
+      <!-- VISUAL — API mockup -->
+      <div class="svc-visual-col anim-fade-up anim-delay-2">
+        <div class="svc-mock">
+          <div class="svc-mock-bar">
+            <div class="svc-mock-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+            <span class="svc-mock-bar-title">API Reference — v2.4.1</span>
+            <span class="svc-mock-live"><span class="svc-mock-live-dot" style="background:#059669"></span>Live</span>
+          </div>
+          <div class="svc-mock-body">
+            <div class="svc-api-list">
+              <div class="svc-api-ep">
+                <span class="svc-api-method svc-api-method--post">POST</span>
+                <span class="svc-api-path">/api/v2/cotisations/payer</span>
+              </div>
+              <div class="svc-api-ep svc-api-ep--active">
+                <span class="svc-api-method svc-api-method--get">GET</span>
+                <span class="svc-api-path">/api/v2/adherents/{id}</span>
+              </div>
+              <div class="svc-api-ep">
+                <span class="svc-api-method svc-api-method--get">GET</span>
+                <span class="svc-api-path">/api/v2/prestations</span>
+              </div>
+              <div class="svc-api-ep">
+                <span class="svc-api-method svc-api-method--put">PUT</span>
+                <span class="svc-api-path">/api/v2/paiements/{id}</span>
+              </div>
+            </div>
+            <div class="svc-api-response">
+              <div class="svc-api-resp-hd">
+                <span>Response</span>
+                <span class="svc-api-201">201 Created</span>
+              </div>
+              <div class="svc-api-code">
+                <div class="svc-api-ln"><span class="t-pn">{</span></div>
+                <div class="svc-api-ln">&nbsp;&nbsp;<span class="t-st">"id"</span><span class="t-pn">: </span><span class="t-st">"cot_7k2Ax9..."</span><span class="t-pn">,</span></div>
+                <div class="svc-api-ln">&nbsp;&nbsp;<span class="t-st">"statut"</span><span class="t-pn">: </span><span class="t-st">"validé"</span><span class="t-pn">,</span></div>
+                <div class="svc-api-ln">&nbsp;&nbsp;<span class="t-st">"montant"</span><span class="t-pn">: </span><span class="t-kw">2500</span></div>
+                <div class="svc-api-ln"><span class="t-pn">}</span></div>
+              </div>
+            </div>
+            <div class="svc-api-badges">
+              <span class="svc-api-badge">JWT Auth</span>
+              <span class="svc-api-badge">TLS 1.3</span>
+              <span class="svc-api-badge">Rate-limited</span>
+              <span class="svc-api-badge">Versioned</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICE 05 — Modernisation & refonte
+     ============================================================ -->
+<section class="svc-block" id="modernisation" style="--svc-color:#ff7a1a;--svc-rgb:255,122,26">
+  <div class="container">
+    <div class="svc-block-inner">
+
+      <!-- CONTENT -->
+      <div class="svc-content anim-fade-up">
+        <div class="svc-block-eyebrow">
+          <div class="svc-block-icon-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+          </div>
+          <span class="svc-block-numtag">05</span>
+        </div>
+        <h2 class="svc-block-title" data-i18n="svc.5.title">Modernisation & refonte</h2>
+        <p class="svc-block-long" data-i18n="svc.5.long">Nous remettons les systèmes vieillissants au niveau des standards actuels — sans rompre les opérations qui en dépendent.</p>
+        <div class="svc-psr">
+          <div class="svc-psr-box svc-psr-box--prob">
+            <div class="svc-psr-label" data-i18n="svc.prob.label">Problème</div>
+            <p data-i18n="svc.5.prob">Un système hérité fait encore tourner l'activité, mais il est risqué, lent et impossible à faire évoluer.</p>
+          </div>
+          <div class="svc-psr-box svc-psr-box--sol">
+            <div class="svc-psr-label" data-i18n="svc.sol.label">Solution</div>
+            <p data-i18n="svc.5.sol">Nous auditons, sécurisons et reconstruisons progressivement — en migrant la valeur sans rupture brutale.</p>
+          </div>
+          <div class="svc-psr-box svc-psr-box--res">
+            <div class="svc-psr-label" data-i18n="svc.res.label">Résultat</div>
+            <p data-i18n="svc.5.res">Un système moderne et maintenable — et une activité qui ne s'arrête jamais.</p>
+          </div>
+        </div>
+        <div class="tags">
+          <span class="tag">Audit technique</span>
+          <span class="tag">Migration progressive</span>
+          <span class="tag">Durcissement sécurité</span>
+        </div>
+        <a href="contact.html" class="svc-block-cta" data-i18n="svc.cta">
+          Discuter de votre projet
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+
+      <!-- VISUAL — Migration mockup -->
+      <div class="svc-visual-col anim-fade-up anim-delay-2">
+        <div class="svc-mock">
+          <div class="svc-mock-bar">
+            <div class="svc-mock-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+            <span class="svc-mock-bar-title">Plan de migration</span>
+            <span class="svc-mock-pct">76% complet</span>
+          </div>
+          <div class="svc-mock-body">
+            <div class="svc-mig-steps">
+              <div class="svc-mig-step">
+                <span class="svc-mig-name">Audit système</span>
+                <div class="svc-mig-track"><div class="svc-mig-fill" style="width:100%;background:#22c55e"></div></div>
+                <span class="svc-mig-pct">100%</span>
+              </div>
+              <div class="svc-mig-step">
+                <span class="svc-mig-name">Tests & couverture</span>
+                <div class="svc-mig-track"><div class="svc-mig-fill" style="width:82%;background:#22c55e"></div></div>
+                <span class="svc-mig-pct">82%</span>
+              </div>
+              <div class="svc-mig-step">
+                <span class="svc-mig-name">Migration des données</span>
+                <div class="svc-mig-track"><div class="svc-mig-fill" style="width:61%;background:#ff7a1a"></div></div>
+                <span class="svc-mig-pct">61%</span>
+              </div>
+              <div class="svc-mig-step">
+                <span class="svc-mig-name">Interface refaite</span>
+                <div class="svc-mig-track"><div class="svc-mig-fill" style="width:31%;background:#ff7a1a"></div></div>
+                <span class="svc-mig-pct">31%</span>
+              </div>
+              <div class="svc-mig-step">
+                <span class="svc-mig-name">Mise en production</span>
+                <div class="svc-mig-track"><div class="svc-mig-fill" style="width:0%"></div></div>
+                <span class="svc-mig-pct svc-dim">—</span>
+              </div>
+            </div>
+            <div class="svc-mig-compare">
+              <div class="svc-mig-col">
+                <div class="svc-mig-col-hd">Legacy</div>
+                <div class="svc-mig-tag svc-mig-tag--red">PHP 5.6</div>
+                <div class="svc-mig-tag svc-mig-tag--red">MySQL 5.5</div>
+                <div class="svc-mig-tag svc-mig-tag--red">Monolithe</div>
+              </div>
+              <div class="svc-mig-arrow">→</div>
+              <div class="svc-mig-col">
+                <div class="svc-mig-col-hd">Nouveau</div>
+                <div class="svc-mig-tag svc-mig-tag--green">Node.js 20</div>
+                <div class="svc-mig-tag svc-mig-tag--green">PostgreSQL 15</div>
+                <div class="svc-mig-tag svc-mig-tag--green">Microservices</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     UNCERTAINTY CTA
+     ============================================================ -->
+<section class="svc-uncertainty">
+  <div class="container">
+    <div class="svc-uncertainty-inner anim-fade-up">
+      <div class="svc-uncertainty-icon" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      </div>
+      <div class="svc-uncertainty-text">
+        <h2 class="svc-uncertainty-title" data-i18n="svc.uncertainty.title">Vous ne savez pas de quelle expertise relève votre projet ?</h2>
+        <p class="svc-uncertainty-desc" data-i18n="svc.uncertainty.desc">Décrivez-le nous. Nous vous aidons à le cadrer — et revenons avec un périmètre clair et un devis.</p>
+      </div>
+      <a href="contact.html" class="btn btn-primary" data-i18n="svc.uncertainty.cta">Parler à un expert</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FINAL CTA
+     ============================================================ -->
+<section class="final-cta" aria-labelledby="svc-final-cta-title">
+  <div class="container">
+    <h2 class="final-cta-title anim-fade-up" id="svc-final-cta-title" data-i18n="cta.title">
+      Vous avez un projet complexe. Nous avons l'ingénierie pour le livrer.
+    </h2>
+    <p class="final-cta-sub anim-fade-up anim-delay-1" data-i18n="cta.sub">
+      Dites-nous où vous voulez aller. Nous revenons vers vous avec une réponse claire, structurée — et un devis.
+    </p>
+    <div class="final-cta-actions anim-fade-up anim-delay-2">
+      <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="cta.btn">Demander un devis</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer" aria-label="Pied de page">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><img src="logos/logo_all.png" alt="Sycelim Technologies" /></div>
+        <p class="footer-tagline" data-i18n="footer.tagline">Ingénierie logicielle pour systèmes d'entreprise sur mesure. Architecture, qualité, scalabilité et sécurité.</p>
+        <div class="tags"><span class="badge">Abidjan, CI</span></div>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="footer.nav">Navigation</div>
+        <ul class="footer-links">
+          <li><a href="index.html"          class="footer-link" data-i18n="nav.home">Accueil</a></li>
+          <li><a href="services.html"       class="footer-link" data-i18n="nav.services">Services</a></li>
+          <li><a href="methode.html"        class="footer-link" data-i18n="nav.method">Méthode</a></li>
+          <li><a href="realisations.html"   class="footer-link" data-i18n="nav.work">Réalisations</a></li>
+          <li><a href="actualites.html"     class="footer-link" data-i18n="nav.news">Actualités</a></li>
+          <li><a href="a-propos.html"       class="footer-link" data-i18n="nav.about">À propos</a></li>
+          <li><a href="equipe.html"         class="footer-link" data-i18n="nav.team">Équipe</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="footer.expertise">Expertise</div>
+        <ul class="footer-links">
+          <li><a href="#solutions-metiers"   class="footer-link" data-i18n="footer.exp.1">Solutions métiers</a></li>
+          <li><a href="#plateformes-web"     class="footer-link" data-i18n="footer.exp.2">Plateformes web</a></li>
+          <li><a href="#applications-mobiles" class="footer-link" data-i18n="footer.exp.3">Applications mobiles</a></li>
+          <li><a href="#api-backend"         class="footer-link" data-i18n="footer.exp.4">API & backend</a></li>
+          <li><a href="#modernisation"       class="footer-link" data-i18n="footer.exp.5">Modernisation</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="footer.contact">Contact</div>
+        <div class="footer-contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Cocody Angré 8è Tranche — 09 BP 2170 Abidjan 09, Côte d'Ivoire</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.6 12.41 19.79 19.79 0 0 1 1.5 3.82 2 2 0 0 1 3.48 1.65h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.1a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+225 27 22 50 90 66<br>+225 27 22 50 39 31</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:contact@sycelim.com" class="footer-link" style="color:var(--orange)">contact@sycelim.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy" data-i18n="footer.copy">© Sycelim Technologies — Abidjan, Côte d'Ivoire · Société d'ingénierie logicielle</p>
+      <nav class="footer-legal" aria-label="Liens légaux">
+        <a href="faq.html"              class="footer-legal-link" data-i18n="footer.faq">FAQ</a>
+        <a href="mentions-legales.html" class="footer-legal-link" data-i18n="footer.legal">Mentions légales</a>
+        <a href="confidentialite.html"  class="footer-legal-link" data-i18n="footer.privacy">Confidentialité</a>
+        <a href="cgu.html"              class="footer-legal-link" data-i18n="footer.cgu">CGU</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

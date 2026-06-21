@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ — Sycelim Technologies</title>
+  <meta name="description" content="Questions fréquentes sur Sycelim Technologies, notre méthode de travail et nos projets logiciels." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <div class="navbar-inner">
+        <a href="index.html" class="navbar-logo" aria-label="Sycelim Technologies — Accueil">
+          <img src="logos/logo_all.png" alt="Sycelim Technologies" />
+        </a>
+        <nav class="navbar-nav" aria-label="Navigation principale">
+          <a href="index.html"          class="nav-link" data-page="index"        data-i18n="nav.home">Accueil</a>
+          <a href="services.html"       class="nav-link" data-page="services"     data-i18n="nav.services">Services</a>
+          <a href="methode.html"        class="nav-link" data-page="methode"      data-i18n="nav.method">Méthode</a>
+          <a href="realisations.html"   class="nav-link" data-page="realisations" data-i18n="nav.work">Réalisations</a>
+          <a href="actualites.html"     class="nav-link" data-page="actualites"   data-i18n="nav.news">Actualités</a>
+          <a href="a-propos.html"       class="nav-link" data-page="a-propos"     data-i18n="nav.about">À propos</a>
+          <a href="equipe.html"         class="nav-link" data-page="equipe"       data-i18n="nav.team">Équipe</a>
+        </nav>
+        <div class="navbar-actions">
+          <button class="btn-lang" aria-label="Changer de langue" title="Switch language">
+            <span class="lang-fr-label active"><img src="images/flag-fr.svg" alt="Français" class="flag-img" /></span>
+            <span class="sep">/</span>
+            <span class="lang-en-label"><img src="images/flag-gb.svg" alt="English" class="flag-img" /></span>
+          </button>
+          <button class="btn-theme" aria-label="Basculer thème sombre/clair">
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+          <a href="contact.html" class="btn-cta-nav" data-i18n="nav.cta">Demander un devis</a>
+          <button class="btn-hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobile">
+    <a href="index.html"        class="nav-link" data-page="index"        data-i18n="nav.home">Accueil</a>
+    <a href="services.html"     class="nav-link" data-page="services"     data-i18n="nav.services">Services</a>
+    <a href="methode.html"      class="nav-link" data-page="methode"      data-i18n="nav.method">Méthode</a>
+    <a href="realisations.html" class="nav-link" data-page="realisations" data-i18n="nav.work">Réalisations</a>
+    <a href="actualites.html"   class="nav-link" data-page="actualites"   data-i18n="nav.news">Actualités</a>
+    <a href="a-propos.html"     class="nav-link" data-page="a-propos"     data-i18n="nav.about">À propos</a>
+    <a href="equipe.html"       class="nav-link" data-page="equipe"       data-i18n="nav.team">Équipe</a>
+    <div class="mobile-menu-foot">
+      <a href="contact.html" class="btn btn-primary" data-i18n="nav.cta">Demander un devis</a>
+      <button class="btn-lang" aria-label="Changer de langue">
+        <span class="lang-fr-label active"><img src="images/flag-fr.svg" alt="Français" class="flag-img" /></span>
+        <span class="sep">/</span>
+        <span class="lang-en-label"><img src="images/flag-gb.svg" alt="English" class="flag-img" /></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Inner hero -->
+    <section class="inner-hero">
+      <div class="inner-hero-bg"></div>
+      <div class="container">
+        <div class="inner-hero-inner">
+          <div class="eyebrow" data-i18n="faq.eyebrow">Questions fréquentes</div>
+          <h1 class="inner-hero-title anim-fade-up" data-i18n="faq.title">Ce qu'on nous demande le plus souvent.</h1>
+          <p class="inner-hero-lead anim-fade-up anim-delay-1" data-i18n="faq.lead">Des réponses directes sur qui nous sommes, comment nous travaillons, et ce que nous construisons.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ section -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="faq-layout">
+
+          <!-- Aside nav -->
+          <aside class="faq-aside" aria-label="Navigation des questions">
+            <div class="faq-aside-label" data-i18n="faq.nav.label">Questions</div>
+            <nav class="faq-nav" aria-label="Liste des questions">
+              <a href="#faq-1"  class="faq-nav-link" data-i18n="faq.nav.1">Êtes-vous une agence web ?</a>
+              <a href="#faq-2"  class="faq-nav-link" data-i18n="faq.nav.2">Quels types de projets réalisez-vous ?</a>
+              <a href="#faq-3"  class="faq-nav-link" data-i18n="faq.nav.3">Travaillez-vous uniquement en Côte d'Ivoire ?</a>
+              <a href="#faq-4"  class="faq-nav-link" data-i18n="faq.nav.4">Combien coûte un projet ?</a>
+              <a href="#faq-5"  class="faq-nav-link" data-i18n="faq.nav.5">Combien de temps prend un projet ?</a>
+              <a href="#faq-6"  class="faq-nav-link" data-i18n="faq.nav.6">Reprenez-vous un système existant ?</a>
+              <a href="#faq-7"  class="faq-nav-link" data-i18n="faq.nav.7">Comment gérez-vous la sécurité ?</a>
+              <a href="#faq-8"  class="faq-nav-link" data-i18n="faq.nav.8">Assurez-vous la maintenance ?</a>
+              <a href="#faq-9"  class="faq-nav-link" data-i18n="faq.nav.9">Quelles technologies utilisez-vous ?</a>
+              <a href="#faq-10" class="faq-nav-link" data-i18n="faq.nav.10">Comment démarrer avec vous ?</a>
+            </nav>
+          </aside>
+
+          <!-- FAQ list -->
+          <div class="faq-list">
+
+            <details class="faq-item" id="faq-1">
+              <summary class="faq-q">
+                <span data-i18n="faq.q1">Êtes-vous une agence web ?</span>
+                <span class="faq-q-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </summary>
+              <div class="faq-a" data-i18n="faq.a1">Non. Nous sommes une société d'ingénierie logicielle. Une agence web part d'un template ou d'un framework ; nous partons d'un problème, d'une architecture et d'un modèle de données. Nous construisons des systèmes d'entreprise sur mesure, conçus pour l'échelle, la sécurité et la durée — pas seulement des sites web.</div>
+            </details>
+
+            <details class="faq-item" id="faq-2">
+              <summary class="faq-q">
+                <span data-i18n="faq.q2">Quels types de projets réalisez-vous ?</span>
+                <span class="faq-q-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </summary>
+              <div class="faq-a" data-i18n="faq.a2">Des solutions métiers sur mesure (adhésions, cotisations, prestations, facturation), des plateformes web, des applications mobiles, des API et intégrations sécurisées, ainsi que la modernisation de systèmes existants. Nous travaillons notamment avec des organismes mutualistes et d'assurance santé, où la sensibilité des données et la conformité réglementaire sont centrales.</div>
+            </details>
+
+            <details class="faq-item" id="faq-3">
+              <summary class="faq-q">
+                <span data-i18n="faq.q3">Travaillez-vous uniquement en Côte d'Ivoire ?</span>
+                <span class="faq-q-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </summary>
+              <div class="faq-a" data-i18n="faq.a3">Nous sommes basés à Abidjan, mais nos systèmes sont déployés au-delà des frontières — y compris pour des organisations de la sous-région ouest-africaine. La même discipline d'ingénierie s'applique partout où le système fonctionne.</div>
+            </details>
+
+            <details class="faq-item" id="faq-4">
+              <summary class="faq-q">
+                <span data-i18n="faq.q4">Combien coûte un projet ?</span>
+                <span class="faq-q-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </summary>
+              <div class="faq-a" data-i18n="faq.a4">Cela dépend du périmètre, de la complexité et des contraintes d'intégration — il n'existe pas de tarif fixe pour de l'ingénierie sur mesure. Nous démarrons chaque mission par une phase d'analyse, puis remettons un devis clair et cadré. Le plus simple pour obtenir une estimation est de nous parler de votre projet.</div>
+            </details>
+
+            <details class="faq-item" id="faq-5">
+              <summary class="faq-q">
+                <span data-i18n="faq.q5">Combien de temps prend un projet ?</span>
+                <span class="faq-q-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </summary>
+              <div class="faq-a" data-i18n="faq.a5">Là encore, cela dépend du périmètre. Plutôt que de promettre un délai irréaliste, nous travaillons par phases claires — analyse et architecture d'abord, puis livraison itérative — afin que vous voyiez un logiciel fonctionnel tôt et que l'avancement reste prévisible.</div>
+            </details>
+
+            <details class="faq-item" id="faq-6">
+              <summary class="faq-q">
+                <span data-i18n="faq.q6">Reprenez-vous un système déjà existant ?</span>
+                <span class="faq-q-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </summary>
+              <div class="faq-a" data-i18n="faq.a6">Oui. Moderniser un système existant ne signifie presque jamais tout réécrire d'un coup. Nous cartographions l'existant, isolons les zones à risque, les sécurisons par des tests, puis modernisons de façon incrémentale — en gardant le système en service à chaque étape.</div>
+            </details>
+
+            <details class="faq-item" id="faq-7">
+              <summary class="faq-q">
+                <span data-i18n="faq.q7">Comment gérez-vous la sécurité et la conformité ?</span>
+                <span class="faq-q-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </summary>
+              <div class="faq-a" data-i18n="faq.a7">La sécurité est une décision d'architecture, pas un audit de dernière minute. Contrôle d'accès, chiffrement des données sensibles, API sécurisées et conformité réglementaire sont conçus dès les premières décisions — un ingénieur cybersécurité intervient dès le départ, pas à la fin.</div>
+            </details>
+
+            <details class="faq-item" id="faq-8">
+              <summary class="faq-q">
+                <span data-i18n="faq.q8">Assurez-vous la maintenance après la livraison ?</span>
+                <span class="faq-q-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </summary>
+              <div class="faq-a" data-i18n="faq.a8">Oui. Nous nous concevons comme un partenaire de long terme, responsable des systèmes que nous livrons — pas un prestataire qui disparaît une fois le système en ligne. Maintenance, évolution et support font partie de notre façon de travailler.</div>
+            </details>
+
+            <details class="faq-item" id="faq-9">
+              <summary class="faq-q">
+                <span data-i18n="faq.q9">Quelles technologies utilisez-vous ?</span>
+                <span class="faq-q-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </summary>
+              <div class="faq-a" data-i18n="faq.a9">Nous choisissons la technologie selon le problème, et non l'inverse. Selon les projets, cela inclut Node.js, FastAPI et PHP côté backend, React côté frontend, Flutter pour le mobile, et des solutions ERP comme Odoo lorsqu'elles sont pertinentes — toujours reliées par des API sécurisées.</div>
+            </details>
+
+            <details class="faq-item" id="faq-10">
+              <summary class="faq-q">
+                <span data-i18n="faq.q10">Comment démarrer avec vous ?</span>
+                <span class="faq-q-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </summary>
+              <div class="faq-a" data-i18n="faq.a10">Parlez-nous de votre projet via le formulaire de contact, ou contactez-nous directement. Nous commençons par un échange pour comprendre le problème, puis proposons une phase d'analyse — la véritable première étape de tout système solide.</div>
+            </details>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+      <div class="container">
+        <h2 class="final-cta-title anim-fade-up" data-i18n="faq.cta.title">Une question sans réponse ici ?</h2>
+        <p class="final-cta-sub anim-fade-up anim-delay-1" data-i18n="cta.sub">Dites-nous où vous voulez aller. Nous revenons vers vous avec une réponse claire, structurée — et un devis.</p>
+        <div class="final-cta-actions anim-fade-up anim-delay-2">
+          <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="svc.uncertainty.cta">Parler à un expert</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" aria-label="Pied de page">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo"><img src="logos/logo_all.png" alt="Sycelim Technologies" /></div>
+          <p class="footer-tagline" data-i18n="footer.tagline">Ingénierie logicielle pour systèmes d'entreprise sur mesure. Architecture, qualité, scalabilité et sécurité.</p>
+          <div class="tags"><span class="badge">Abidjan, CI</span></div>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer.nav">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link" data-i18n="nav.home">Accueil</a></li>
+            <li><a href="services.html" class="footer-link" data-i18n="nav.services">Services</a></li>
+            <li><a href="methode.html" class="footer-link" data-i18n="nav.method">Méthode</a></li>
+            <li><a href="realisations.html" class="footer-link" data-i18n="nav.work">Réalisations</a></li>
+            <li><a href="actualites.html" class="footer-link" data-i18n="nav.news">Actualités</a></li>
+            <li><a href="a-propos.html" class="footer-link" data-i18n="nav.about">À propos</a></li>
+            <li><a href="equipe.html" class="footer-link" data-i18n="nav.team">Équipe</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer.expertise">Expertise</div>
+          <ul class="footer-links">
+            <li><a href="services.html#solutions-metiers" class="footer-link" data-i18n="footer.exp.1">Solutions métiers</a></li>
+            <li><a href="services.html#plateformes-web" class="footer-link" data-i18n="footer.exp.2">Plateformes web</a></li>
+            <li><a href="services.html#applications-mobiles" class="footer-link" data-i18n="footer.exp.3">Applications mobiles</a></li>
+            <li><a href="services.html#api-backend" class="footer-link" data-i18n="footer.exp.4">API &amp; backend</a></li>
+            <li><a href="services.html#modernisation" class="footer-link" data-i18n="footer.exp.5">Modernisation</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer.contact">Contact</div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Cocody Angré 8è Tranche — 09 BP 2170 Abidjan 09, Côte d'Ivoire</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.6 12.41 19.79 19.79 0 0 1 1.5 3.82 2 2 0 0 1 3.48 1.65h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.1a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+225 27 22 50 90 66<br>+225 27 22 50 39 31</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:contact@sycelim.com" class="footer-link" style="color:var(--orange)">contact@sycelim.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy" data-i18n="footer.copy">© Sycelim Technologies — Abidjan, Côte d'Ivoire · Société d'ingénierie logicielle</p>
+        <nav class="footer-legal" aria-label="Liens légaux">
+          <a href="faq.html" class="footer-legal-link" data-i18n="footer.faq">FAQ</a>
+          <a href="mentions-legales.html" class="footer-legal-link" data-i18n="footer.legal">Mentions légales</a>
+          <a href="confidentialite.html" class="footer-legal-link" data-i18n="footer.privacy">Confidentialité</a>
+          <a href="cgu.html" class="footer-legal-link" data-i18n="footer.cgu">CGU</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

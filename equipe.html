@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notre Équipe — Sycelim Technologies</title>
+  <meta name="description" content="L'équipe d'ingénieurs Sycelim Technologies — architecte, sécurité, backend, frontend, mobile." />
+  <meta name="theme-color" content="#00a0ff" />
+  <meta property="og:title" content="Notre Équipe — Sycelim Technologies" />
+  <meta property="og:description" content="L'équipe d'ingénieurs Sycelim Technologies — architecte, sécurité, backend, frontend, mobile." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="logos/logo_all.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="logos/logo_icon.png" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <div class="container">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo" aria-label="Sycelim Technologies — Accueil">
+        <img src="logos/logo_all.png" alt="Sycelim Technologies" />
+      </a>
+      <nav class="navbar-nav" aria-label="Navigation principale">
+        <a href="index.html"          class="nav-link" data-page="index"        data-i18n="nav.home">Accueil</a>
+        <a href="services.html"       class="nav-link" data-page="services"     data-i18n="nav.services">Services</a>
+        <a href="methode.html"        class="nav-link" data-page="methode"      data-i18n="nav.method">Méthode</a>
+        <a href="realisations.html"   class="nav-link" data-page="realisations" data-i18n="nav.work">Réalisations</a>
+        <a href="actualites.html"     class="nav-link" data-page="actualites"   data-i18n="nav.news">Actualités</a>
+        <a href="a-propos.html"       class="nav-link" data-page="a-propos"     data-i18n="nav.about">À propos</a>
+        <a href="equipe.html"         class="nav-link active" data-page="equipe" data-i18n="nav.team">Équipe</a>
+      </nav>
+      <div class="navbar-actions">
+        <button class="btn-lang" aria-label="Changer de langue" title="Switch language">
+          <span class="lang-fr-label active"><img src="images/flag-fr.svg" alt="Français" class="flag-img" /></span>
+          <span class="sep">/</span>
+          <span class="lang-en-label"><img src="images/flag-gb.svg" alt="English" class="flag-img" /></span>
+        </button>
+        <button class="btn-theme" aria-label="Basculer thème sombre/clair">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="contact.html" class="btn-cta-nav" data-i18n="nav.cta">Demander un devis</a>
+        <button class="btn-hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobile">
+  <a href="index.html"        class="nav-link" data-page="index"        data-i18n="nav.home">Accueil</a>
+  <a href="services.html"     class="nav-link" data-page="services"     data-i18n="nav.services">Services</a>
+  <a href="methode.html"      class="nav-link" data-page="methode"      data-i18n="nav.method">Méthode</a>
+  <a href="realisations.html" class="nav-link" data-page="realisations" data-i18n="nav.work">Réalisations</a>
+  <a href="actualites.html"   class="nav-link" data-page="actualites"   data-i18n="nav.news">Actualités</a>
+  <a href="a-propos.html"     class="nav-link" data-page="a-propos"     data-i18n="nav.about">À propos</a>
+  <a href="equipe.html"       class="nav-link" data-page="equipe"       data-i18n="nav.team">Équipe</a>
+  <div class="mobile-menu-foot">
+    <a href="contact.html" class="btn btn-primary" data-i18n="nav.cta">Demander un devis</a>
+    <button class="btn-lang" aria-label="Changer de langue">
+      <span class="lang-fr-label active"><img src="images/flag-fr.svg" alt="Français" class="flag-img" /></span>
+      <span class="sep">/</span>
+      <span class="lang-en-label"><img src="images/flag-gb.svg" alt="English" class="flag-img" /></span>
+    </button>
+  </div>
+</nav>
+
+<main>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="inner-hero" aria-labelledby="team-hero-title">
+  <div class="inner-hero-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="inner-hero-inner">
+      <span class="eyebrow" data-i18n="team.eyebrow">L'équipe</span>
+      <h1 class="inner-hero-title" id="team-hero-title" data-i18n="team.title">Les personnes qui répondent de ce que nous construisons.</h1>
+      <p class="inner-hero-lead" data-i18n="team.lead">Une équipe d'ingénieurs complémentaires, organisée par responsabilité. Chaque rôle protège une dimension de votre projet — architecture, sécurité, qualité et livraison.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION RÔLES
+     ============================================================ -->
+<section class="team-roles-section" aria-labelledby="team-roles-title">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="about-section-title" id="team-roles-title" data-i18n="team.roles.title">Profils par rôle</h2>
+      <p class="about-section-lead" data-i18n="team.roles.sub">Chaque rôle existe pour protéger une dimension de votre projet.</p>
+    </div>
+    <div class="team-roles-grid">
+
+      <!-- Card 1 — Architecte logiciel -->
+      <div class="team-role-card" style="--role-color:#00a0ff;--role-rgb:0,160,255">
+        <div class="team-role-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+        </div>
+        <div class="team-role-count">1 profil</div>
+        <div class="team-role-subtitle">Rôle pivot</div>
+        <h3 class="team-role-title">Architecte logiciel</h3>
+        <p class="team-role-desc">Définit la structure de chaque système — modèles de données, services, arbitrages — et garde l'ensemble cohérent à mesure qu'il grandit.</p>
+        <div class="team-role-skills">
+          <span class="team-role-skill">Conception système</span>
+          <span class="team-role-skill">Scalabilité</span>
+        </div>
+      </div>
+
+      <!-- Card 2 — Ingénieur cybersécurité -->
+      <div class="team-role-card" style="--role-color:#ff7a1a;--role-rgb:255,122,26">
+        <div class="team-role-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="team-role-count">1 profil</div>
+        <div class="team-role-subtitle">Confiance & protection</div>
+        <h3 class="team-role-title">Ingénieur cybersécurité</h3>
+        <p class="team-role-desc">Intègre protection et conformité dans l'ingénierie — sécurise données, API et accès dès la première décision de conception.</p>
+        <div class="team-role-skills">
+          <span class="team-role-skill">Sécurité</span>
+          <span class="team-role-skill">Conformité</span>
+        </div>
+      </div>
+
+      <!-- Card 3 — Développeurs backend -->
+      <div class="team-role-card" style="--role-color:#00a0ff;--role-rgb:0,160,255">
+        <div class="team-role-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <div class="team-role-count">2 profils</div>
+        <div class="team-role-subtitle">Cœur de système</div>
+        <h3 class="team-role-title">Développeurs backend</h3>
+        <p class="team-role-desc">Construisent les services et API robustes qui portent la logique métier — fiables, documentés et sécurisés.</p>
+        <div class="team-role-skills">
+          <span class="team-role-skill">Node.js</span>
+          <span class="team-role-skill">FastAPI</span>
+          <span class="team-role-skill">PHP</span>
+        </div>
+      </div>
+
+      <!-- Card 4 — Développeur frontend -->
+      <div class="team-role-card" style="--role-color:#ff7a1a;--role-rgb:255,122,26">
+        <div class="team-role-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <div class="team-role-count">1 profil</div>
+        <div class="team-role-subtitle">Expérience</div>
+        <h3 class="team-role-title">Développeur frontend</h3>
+        <p class="team-role-desc">Transforme des flux complexes en interfaces claires et utilisables, au service de vrais utilisateurs au quotidien.</p>
+        <div class="team-role-skills">
+          <span class="team-role-skill">React</span>
+          <span class="team-role-skill">Expérience utilisateur</span>
+        </div>
+      </div>
+
+      <!-- Card 5 — Développeurs mobile -->
+      <div class="team-role-card" style="--role-color:#00a0ff;--role-rgb:0,160,255">
+        <div class="team-role-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        </div>
+        <div class="team-role-count">2 profils</div>
+        <div class="team-role-subtitle">Sur le terrain</div>
+        <h3 class="team-role-title">Développeurs mobile</h3>
+        <p class="team-role-desc">Portent les services sur le terrain avec des applications mobiles connectées, synchronisées en sécurité avec le back-office.</p>
+        <div class="team-role-skills">
+          <span class="team-role-skill">Flutter</span>
+          <span class="team-role-skill">Apps connectées</span>
+        </div>
+      </div>
+
+      <!-- Card 6 — QA & Scrum Masters -->
+      <div class="team-role-card" style="--role-color:#ff7a1a;--role-rgb:255,122,26">
+        <div class="team-role-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <div class="team-role-count">Selon le projet</div>
+        <div class="team-role-subtitle">Selon le projet</div>
+        <h3 class="team-role-title">QA & Scrum Masters</h3>
+        <p class="team-role-desc">Garantissent la qualité et rendent la livraison prévisible — tests rigoureux et animation du rythme agile.</p>
+        <div class="team-role-skills">
+          <span class="team-role-skill">Tests</span>
+          <span class="team-role-skill">Scrum</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION STATS
+     ============================================================ -->
+<section class="team-stats-section" aria-labelledby="team-stats-title">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="about-section-title" id="team-stats-title" data-i18n="team.stats.title">Mode de collaboration</h2>
+      <p class="about-section-lead" data-i18n="team.stats.sub">La bonne équipe pour le problème — jamais surdimensionnée.</p>
+    </div>
+    <div class="team-stats-grid">
+      <div class="team-stat-card">
+        <div class="team-stat-num">04</div>
+        <div class="team-stat-lbl">Disciplines socle sur chaque projet</div>
+      </div>
+      <div class="team-stat-card">
+        <div class="team-stat-num">Agile</div>
+        <div class="team-stat-lbl">Cadence itérative, progrès visible</div>
+      </div>
+      <div class="team-stat-card">
+        <div class="team-stat-num">100 %</div>
+        <div class="team-stat-lbl">Code revu avant livraison</div>
+      </div>
+      <div class="team-stat-card">
+        <div class="team-stat-num">Long terme</div>
+        <div class="team-stat-lbl">Responsables au-delà de la mise en ligne</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION MODE COLLAB
+     ============================================================ -->
+<section class="team-collab-section" aria-labelledby="team-collab-title">
+  <div class="container">
+    <div class="team-collab-inner">
+      <div class="team-collab-text">
+        <h2 class="about-section-title" id="team-collab-title">Une équipe configurée pour votre projet</h2>
+        <p class="about-section-body">Nous composons chaque équipe selon la complexité réelle de votre projet. Architecture et sécurité sont constantes ; QA, facilitation agile et développeurs supplémentaires s'ajustent au besoin.</p>
+      </div>
+      <ul class="team-collab-list" aria-label="Principes de collaboration">
+        <li class="team-collab-item">
+          <span class="team-collab-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </span>
+          <div class="team-collab-text">
+            <strong>Architecture toujours présente</strong>
+            <p>L'architecture et la sécurité interviennent dès le premier jour, sur chaque projet.</p>
+          </div>
+        </li>
+        <li class="team-collab-item">
+          <span class="team-collab-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </span>
+          <div class="team-collab-text">
+            <strong>Équipe ajustable</strong>
+            <p>Backend, frontend, mobile et QA s'ajustent à la complexité réelle du problème.</p>
+          </div>
+        </li>
+        <li class="team-collab-item">
+          <span class="team-collab-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </span>
+          <div class="team-collab-text">
+            <strong>Revue systématique</strong>
+            <p>Chaque livraison passe par une revue de code — non négociable.</p>
+          </div>
+        </li>
+        <li class="team-collab-item">
+          <span class="team-collab-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </span>
+          <div class="team-collab-text">
+            <strong>Long terme</strong>
+            <p>Nous maintenons et faisons évoluer les systèmes que nous livrons.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FINAL CTA
+     ============================================================ -->
+<section class="final-cta" aria-labelledby="team-cta-title">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="about-section-title" id="team-cta-title" data-i18n="team.cta.title">Vous voulez mettre cette équipe sur votre projet ?</h2>
+      <p class="about-section-lead" data-i18n="cta.sub">Dites-nous où vous voulez aller. Nous revenons vers vous avec une réponse claire, structurée — et un devis.</p>
+      <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="nav.cta">Demander un devis</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer" aria-label="Pied de page">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><img src="logos/logo_all.png" alt="Sycelim Technologies" /></div>
+        <p class="footer-tagline" data-i18n="footer.tagline">Ingénierie logicielle pour systèmes d'entreprise sur mesure. Architecture, qualité, scalabilité et sécurité.</p>
+        <div class="tags"><span class="badge">Abidjan, CI</span></div>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="footer.nav">Navigation</div>
+        <ul class="footer-links">
+          <li><a href="index.html"        class="footer-link" data-i18n="nav.home">Accueil</a></li>
+          <li><a href="services.html"     class="footer-link" data-i18n="nav.services">Services</a></li>
+          <li><a href="methode.html"      class="footer-link" data-i18n="nav.method">Méthode</a></li>
+          <li><a href="realisations.html" class="footer-link" data-i18n="nav.work">Réalisations</a></li>
+          <li><a href="actualites.html"   class="footer-link" data-i18n="nav.news">Actualités</a></li>
+          <li><a href="a-propos.html"     class="footer-link" data-i18n="nav.about">À propos</a></li>
+          <li><a href="equipe.html"       class="footer-link" data-i18n="nav.team">Équipe</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="footer.expertise">Expertise</div>
+        <ul class="footer-links">
+          <li><a href="services.html#solutions-metiers"    class="footer-link" data-i18n="footer.exp.1">Solutions métiers</a></li>
+          <li><a href="services.html#plateformes-web"      class="footer-link" data-i18n="footer.exp.2">Plateformes web</a></li>
+          <li><a href="services.html#applications-mobiles" class="footer-link" data-i18n="footer.exp.3">Applications mobiles</a></li>
+          <li><a href="services.html#api-backend"          class="footer-link" data-i18n="footer.exp.4">API & backend</a></li>
+          <li><a href="services.html#modernisation"        class="footer-link" data-i18n="footer.exp.5">Modernisation</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="footer.contact">Contact</div>
+        <div class="footer-contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Cocody Angré 8è Tranche — 09 BP 2170 Abidjan 09, Côte d'Ivoire</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.6 12.41 19.79 19.79 0 0 1 1.5 3.82 2 2 0 0 1 3.48 1.65h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.1a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+225 27 22 50 90 66<br>+225 27 22 50 39 31</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:contact@sycelim.com" class="footer-link" style="color:var(--orange)">contact@sycelim.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy" data-i18n="footer.copy">© Sycelim Technologies — Abidjan, Côte d'Ivoire · Société d'ingénierie logicielle</p>
+      <nav class="footer-legal" aria-label="Liens légaux">
+        <a href="faq.html"              class="footer-legal-link" data-i18n="footer.faq">FAQ</a>
+        <a href="mentions-legales.html" class="footer-legal-link" data-i18n="footer.legal">Mentions légales</a>
+        <a href="confidentialite.html"  class="footer-legal-link" data-i18n="footer.privacy">Confidentialité</a>
+        <a href="cgu.html"              class="footer-legal-link" data-i18n="footer.cgu">CGU</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

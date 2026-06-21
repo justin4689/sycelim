@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notre Méthode — Sycelim Technologies</title>
+  <meta name="description" content="Découvrez la méthode d'ingénierie Sycelim : 6 étapes structurées pour livrer des systèmes logiciels robustes, sécurisés et maintenables." />
+  <meta name="theme-color" content="#00a0ff" />
+  <meta property="og:title" content="Notre Méthode — Sycelim Technologies" />
+  <meta property="og:description" content="Un chemin industrialisé, du besoin à la production." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="logos/logo_all.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="logos/logo_icon.png" />
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<header class="navbar" id="navbar">
+  <div class="container">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo" aria-label="Sycelim Technologies — Accueil">
+        <img src="logos/logo_all.png" alt="Sycelim Technologies" />
+      </a>
+      <nav class="navbar-nav" aria-label="Navigation principale">
+        <a href="index.html"          class="nav-link" data-page="index"        data-i18n="nav.home">Accueil</a>
+        <a href="services.html"       class="nav-link" data-page="services"     data-i18n="nav.services">Services</a>
+        <a href="methode.html"        class="nav-link" data-page="methode"      data-i18n="nav.method">Méthode</a>
+        <a href="realisations.html"   class="nav-link" data-page="realisations" data-i18n="nav.work">Réalisations</a>
+        <a href="actualites.html"     class="nav-link" data-page="actualites"   data-i18n="nav.news">Actualités</a>
+        <a href="a-propos.html"       class="nav-link" data-page="a-propos"     data-i18n="nav.about">À propos</a>
+        <a href="equipe.html"         class="nav-link" data-page="equipe"       data-i18n="nav.team">Équipe</a>
+      </nav>
+      <div class="navbar-actions">
+        <button class="btn-lang" aria-label="Changer de langue" title="Switch language">
+          <span class="lang-fr-label active"><img src="images/flag-fr.svg" alt="Français" class="flag-img" /></span>
+          <span class="sep">/</span>
+          <span class="lang-en-label"><img src="images/flag-gb.svg" alt="English" class="flag-img" /></span>
+        </button>
+        <button class="btn-theme" aria-label="Basculer thème sombre/clair">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="contact.html" class="btn-cta-nav" data-i18n="nav.cta">Demander un devis</a>
+        <button class="btn-hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobile">
+  <a href="index.html"        class="nav-link" data-page="index"        data-i18n="nav.home">Accueil</a>
+  <a href="services.html"     class="nav-link" data-page="services"     data-i18n="nav.services">Services</a>
+  <a href="methode.html"      class="nav-link" data-page="methode"      data-i18n="nav.method">Méthode</a>
+  <a href="realisations.html" class="nav-link" data-page="realisations" data-i18n="nav.work">Réalisations</a>
+  <a href="actualites.html"   class="nav-link" data-page="actualites"   data-i18n="nav.news">Actualités</a>
+  <a href="a-propos.html"     class="nav-link" data-page="a-propos"     data-i18n="nav.about">À propos</a>
+  <a href="equipe.html"       class="nav-link" data-page="equipe"       data-i18n="nav.team">Équipe</a>
+  <div class="mobile-menu-foot">
+    <a href="contact.html" class="btn btn-primary" data-i18n="nav.cta">Demander un devis</a>
+    <button class="btn-lang" aria-label="Changer de langue">
+      <span class="lang-fr-label active"><img src="images/flag-fr.svg" alt="Français" class="flag-img" /></span>
+      <span class="sep">/</span>
+      <span class="lang-en-label"><img src="images/flag-gb.svg" alt="English" class="flag-img" /></span>
+    </button>
+  </div>
+</nav>
+
+<main>
+
+<!-- ============================================================
+     PAGE HERO
+     ============================================================ -->
+<section class="mth-hero">
+  <div class="mth-hero-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="mth-hero-inner">
+      <div class="eyebrow" data-i18n="methode.eyebrow">Méthode</div>
+      <h1 class="mth-hero-title anim-fade-up" data-i18n="methode.title">Nous n'improvisons pas le logiciel. Nous l'ingénions.</h1>
+      <p class="mth-hero-lead anim-fade-up anim-delay-1" data-i18n="methode.lead">Un chemin structuré et industrialisé, du besoin à la production — conçu pour garder le contrôle des projets complexes, sur tous les fronts : périmètre, qualité, sécurité et délais.</p>
+      <div class="mth-hero-pills anim-fade-up anim-delay-2">
+        <a href="#step-01" class="mth-hero-pill">
+          <span class="mth-hero-pill-n" style="color:#00a0ff">01</span>
+          <span data-i18n="step.1.short">Analyse</span>
+        </a>
+        <span class="mth-hero-pill-arrow" aria-hidden="true">→</span>
+        <a href="#step-02" class="mth-hero-pill">
+          <span class="mth-hero-pill-n" style="color:#7c3aed">02</span>
+          <span data-i18n="step.2.short">Architecture</span>
+        </a>
+        <span class="mth-hero-pill-arrow" aria-hidden="true">→</span>
+        <a href="#step-03" class="mth-hero-pill">
+          <span class="mth-hero-pill-n" style="color:#059669">03</span>
+          <span data-i18n="step.3.short">Développement</span>
+        </a>
+        <span class="mth-hero-pill-arrow" aria-hidden="true">→</span>
+        <a href="#step-04" class="mth-hero-pill">
+          <span class="mth-hero-pill-n" style="color:#f59e0b">04</span>
+          <span data-i18n="step.4.short">Qualité</span>
+        </a>
+        <span class="mth-hero-pill-arrow" aria-hidden="true">→</span>
+        <a href="#step-05" class="mth-hero-pill">
+          <span class="mth-hero-pill-n" style="color:#0ea5e9">05</span>
+          <span data-i18n="step.5.short">Déploiement</span>
+        </a>
+        <span class="mth-hero-pill-arrow" aria-hidden="true">→</span>
+        <a href="#step-06" class="mth-hero-pill">
+          <span class="mth-hero-pill-n" style="color:#ff7a1a">06</span>
+          <span data-i18n="step.6.short">Maintenance</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PRINCIPES
+     ============================================================ -->
+<section class="mth-principles">
+  <div class="container">
+    <div class="mth-principles-grid anim-fade-up">
+
+      <div class="mth-principle-card">
+        <div class="mth-principle-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        </div>
+        <h3 class="mth-principle-title" data-i18n="methode.p1.title">La rigueur, pas l'improvisation</h3>
+        <p class="mth-principle-desc" data-i18n="methode.p1.desc">Les décisions sont documentées, traçables et délibérées — jamais prises à la volée.</p>
+      </div>
+
+      <div class="mth-principle-card">
+        <div class="mth-principle-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3 class="mth-principle-title" data-i18n="methode.p2.title">Un développement industrialisé</h3>
+        <p class="mth-principle-desc" data-i18n="methode.p2.desc">Versionnage, revue de code, tests automatisés et intégration continue : la qualité est dans la chaîne.</p>
+      </div>
+
+      <div class="mth-principle-card">
+        <div class="mth-principle-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <h3 class="mth-principle-title" data-i18n="methode.p3.title">Visible à chaque étape</h3>
+        <p class="mth-principle-desc" data-i18n="methode.p3.desc">Itérations courtes et points réguliers vous gardent maîtres du périmètre et du budget.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     STICKY STEP TRACKER
+     ============================================================ -->
+<div class="mth-tracker-outer" id="mthTrackerOuter">
+  <div class="container">
+    <nav class="mth-tracker" aria-label="Étapes de la méthode">
+      <a href="#step-01" class="mth-tracker-dot" data-step="step-01" style="--dot-color:#00a0ff">
+        <span class="mth-tracker-n">01</span>
+        <span class="mth-tracker-lbl" data-i18n="step.1.short">Analyse</span>
+      </a>
+      <div class="mth-tracker-line" aria-hidden="true"></div>
+      <a href="#step-02" class="mth-tracker-dot" data-step="step-02" style="--dot-color:#ff7a1a">
+        <span class="mth-tracker-n">02</span>
+        <span class="mth-tracker-lbl" data-i18n="step.2.short">Architecture</span>
+      </a>
+      <div class="mth-tracker-line" aria-hidden="true"></div>
+      <a href="#step-03" class="mth-tracker-dot" data-step="step-03" style="--dot-color:#00a0ff">
+        <span class="mth-tracker-n">03</span>
+        <span class="mth-tracker-lbl" data-i18n="step.3.short">Développement</span>
+      </a>
+      <div class="mth-tracker-line" aria-hidden="true"></div>
+      <a href="#step-04" class="mth-tracker-dot" data-step="step-04" style="--dot-color:#ff7a1a">
+        <span class="mth-tracker-n">04</span>
+        <span class="mth-tracker-lbl" data-i18n="step.4.short">Qualité</span>
+      </a>
+      <div class="mth-tracker-line" aria-hidden="true"></div>
+      <a href="#step-05" class="mth-tracker-dot" data-step="step-05" style="--dot-color:#00a0ff">
+        <span class="mth-tracker-n">05</span>
+        <span class="mth-tracker-lbl" data-i18n="step.5.short">Déploiement</span>
+      </a>
+      <div class="mth-tracker-line" aria-hidden="true"></div>
+      <a href="#step-06" class="mth-tracker-dot" data-step="step-06" style="--dot-color:#ff7a1a">
+        <span class="mth-tracker-n">06</span>
+        <span class="mth-tracker-lbl" data-i18n="step.6.short">Maintenance</span>
+      </a>
+    </nav>
+  </div>
+</div>
+
+<!-- ============================================================
+     ÉTAPE 01 — ANALYSE
+     ============================================================ -->
+<section class="mth-step" id="step-01" style="--step-color:#00a0ff;--step-rgb:0,160,255">
+  <div class="container">
+    <div class="mth-step-inner">
+      <div class="mth-step-content anim-fade-up">
+        <div class="mth-step-eyebrow">
+          <span class="mth-step-tag">01</span>
+        </div>
+        <h2 class="mth-step-title" data-i18n="step.1.title">Analyse des besoins</h2>
+        <p class="mth-step-desc" data-i18n="step.1.desc">Nous commençons par comprendre votre métier, pas une liste de fonctionnalités. Nous cartographions processus, contraintes, acteurs et risques — et les traduisons en exigences claires et priorisées.</p>
+        <div class="mth-step-deliverables">
+          <div class="mth-step-del-label" data-i18n="step.del.label">Livrables</div>
+          <ul class="mth-step-del-list">
+            <li><span class="mth-del-dot"></span><span data-i18n="step.1.del.1">Cahier des charges fonctionnel & périmètre</span></li>
+            <li><span class="mth-del-dot"></span><span data-i18n="step.1.del.2">Cartographie des processus & des données</span></li>
+            <li><span class="mth-del-dot"></span><span data-i18n="step.1.del.3">Évaluation des risques & conformité</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mth-step-visual anim-fade-up anim-delay-2" aria-hidden="true">
+        <div class="mth-step-num-bg">01</div>
+        <div class="mth-mock">
+          <div class="mth-mock-bar">
+            <span class="mth-mock-dot r"></span><span class="mth-mock-dot y"></span><span class="mth-mock-dot g"></span>
+            <span class="mth-mock-title">Cadrage — Analyse initiale</span>
+          </div>
+          <div class="mth-mock-body">
+            <div class="mth-m1-header">
+              <span class="mth-m1-col col-a">Acteur</span>
+              <span class="mth-m1-col col-p">Processus</span>
+              <span class="mth-m1-col col-pr">Priorité</span>
+            </div>
+            <div class="mth-m1-row">
+              <span class="mth-m1-col col-a">Adhérent</span>
+              <span class="mth-m1-col col-p">Inscription</span>
+              <span class="mth-m1-col col-pr"><span class="mth-prio prio-crit">Critique</span></span>
+            </div>
+            <div class="mth-m1-row">
+              <span class="mth-m1-col col-a">Gestionnaire</span>
+              <span class="mth-m1-col col-p">Cotisations</span>
+              <span class="mth-m1-col col-pr"><span class="mth-prio prio-imp">Important</span></span>
+            </div>
+            <div class="mth-m1-row">
+              <span class="mth-m1-col col-a">Prestataire</span>
+              <span class="mth-m1-col col-p">Prestations</span>
+              <span class="mth-m1-col col-pr"><span class="mth-prio prio-imp">Important</span></span>
+            </div>
+            <div class="mth-m1-row">
+              <span class="mth-m1-col col-a">Admin</span>
+              <span class="mth-m1-col col-p">Reporting</span>
+              <span class="mth-m1-col col-pr"><span class="mth-prio prio-norm">Normal</span></span>
+            </div>
+            <div class="mth-m1-risk">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              3 risques · Conformité UEMOA à documenter
+            </div>
+            <div class="mth-m1-coverage">
+              <span>Couverture processus</span>
+              <div class="mth-prog-track"><div class="mth-prog-bar" style="width:82%;background:#00a0ff"></div></div>
+              <span class="mth-prog-val">82 %</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ÉTAPE 02 — ARCHITECTURE
+     ============================================================ -->
+<section class="mth-step mth-step--alt" id="step-02" style="--step-color:#ff7a1a;--step-rgb:255,122,26">
+  <div class="container">
+    <div class="mth-step-inner">
+      <div class="mth-step-content anim-fade-up">
+        <div class="mth-step-eyebrow">
+          <span class="mth-step-tag">02</span>
+        </div>
+        <h2 class="mth-step-title" data-i18n="step.2.title">Conception de l'architecture</h2>
+        <p class="mth-step-desc" data-i18n="step.2.desc">Avant la moindre ligne de code de production, nous concevons le système : modèle de données, services, intégrations et sécurité. C'est ici que se décident la scalabilité et la durée de vie.</p>
+        <div class="mth-step-deliverables">
+          <div class="mth-step-del-label" data-i18n="step.del.label">Livrables</div>
+          <ul class="mth-step-del-list">
+            <li><span class="mth-del-dot"></span><span data-i18n="step.2.del.1">Architecture technique & modèle de données</span></li>
+            <li><span class="mth-del-dot"></span><span data-i18n="step.2.del.2">Plan d'intégration & de sécurité</span></li>
+            <li><span class="mth-del-dot"></span><span data-i18n="step.2.del.3">Choix technologiques, justifiés</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mth-step-visual anim-fade-up anim-delay-2" aria-hidden="true">
+        <div class="mth-step-num-bg">02</div>
+        <div class="mth-mock">
+          <div class="mth-mock-bar">
+            <span class="mth-mock-dot r"></span><span class="mth-mock-dot y"></span><span class="mth-mock-dot g"></span>
+            <span class="mth-mock-title">Architecture système</span>
+          </div>
+          <div class="mth-mock-body mth-arch-body">
+            <div class="mth-arch-row">
+              <div class="mth-arch-box client">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                Web
+              </div>
+              <div class="mth-arch-box client">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                Mobile
+              </div>
+            </div>
+            <div class="mth-arch-arrow">↓</div>
+            <div class="mth-arch-row">
+              <div class="mth-arch-box gateway">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                API Gateway
+              </div>
+            </div>
+            <div class="mth-arch-arrow">↓</div>
+            <div class="mth-arch-row mth-arch-row--svcs">
+              <div class="mth-arch-box svc">Auth</div>
+              <div class="mth-arch-box svc">Adhésions</div>
+              <div class="mth-arch-box svc">Facturation</div>
+              <div class="mth-arch-box svc">BI</div>
+            </div>
+            <div class="mth-arch-arrow">↓</div>
+            <div class="mth-arch-row">
+              <div class="mth-arch-box db">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                PostgreSQL
+              </div>
+            </div>
+            <div class="mth-arch-badges">
+              <span class="mth-arch-badge">TLS</span>
+              <span class="mth-arch-badge">JWT</span>
+              <span class="mth-arch-badge">RBAC</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ÉTAPE 03 — DÉVELOPPEMENT
+     ============================================================ -->
+<section class="mth-step" id="step-03" style="--step-color:#00a0ff;--step-rgb:0,160,255">
+  <div class="container">
+    <div class="mth-step-inner">
+      <div class="mth-step-content anim-fade-up">
+        <div class="mth-step-eyebrow">
+          <span class="mth-step-tag">03</span>
+        </div>
+        <h2 class="mth-step-title" data-i18n="step.3.title">Développement agile</h2>
+        <p class="mth-step-desc" data-i18n="step.3.desc">Nous développons en itérations courtes, avec des incréments fonctionnels que vous voyez et pilotez. Revue de code et versionnage sont non négociables à chaque livraison.</p>
+        <div class="mth-step-deliverables">
+          <div class="mth-step-del-label" data-i18n="step.del.label">Livrables</div>
+          <ul class="mth-step-del-list">
+            <li><span class="mth-del-dot"></span><span data-i18n="step.3.del.1">Incréments fonctionnels à chaque sprint</span></li>
+            <li><span class="mth-del-dot"></span><span data-i18n="step.3.del.2">Revue de code systématique</span></li>
+            <li><span class="mth-del-dot"></span><span data-i18n="step.3.del.3">Points d'avancement réguliers</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mth-step-visual anim-fade-up anim-delay-2" aria-hidden="true">
+        <div class="mth-step-num-bg">03</div>
+        <div class="mth-mock">
+          <div class="mth-mock-bar">
+            <span class="mth-mock-dot r"></span><span class="mth-mock-dot y"></span><span class="mth-mock-dot g"></span>
+            <span class="mth-mock-title">Sprint 03 · 14 tâches</span>
+          </div>
+          <div class="mth-mock-body">
+            <div class="mth-sprint-board">
+              <div class="mth-sprint-col">
+                <div class="mth-sprint-head">À faire <span class="mth-sprint-n">3</span></div>
+                <div class="mth-sprint-card">Notifications</div>
+                <div class="mth-sprint-card">Export CSV</div>
+                <div class="mth-sprint-card sm">Logs audit</div>
+              </div>
+              <div class="mth-sprint-col">
+                <div class="mth-sprint-head">En cours <span class="mth-sprint-n act">2</span></div>
+                <div class="mth-sprint-card active">
+                  <span style="color:#059669;font-size:9px">▲</span> Module auth
+                </div>
+                <div class="mth-sprint-card active">API endpoints</div>
+              </div>
+              <div class="mth-sprint-col">
+                <div class="mth-sprint-head">Terminé <span class="mth-sprint-n done">9</span></div>
+                <div class="mth-sprint-card done">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  Modèle données
+                </div>
+                <div class="mth-sprint-card done">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  CRUD adhérents
+                </div>
+              </div>
+            </div>
+            <div class="mth-sprint-footer">
+              <span class="mth-sprint-rev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                100 % code revu
+              </span>
+              <div class="mth-sprint-cov">
+                <span>Couverture</span>
+                <div class="mth-prog-track sm"><div class="mth-prog-bar" style="width:87%;background:#059669"></div></div>
+                <span>87 %</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ÉTAPE 04 — QUALITÉ
+     ============================================================ -->
+<section class="mth-step mth-step--alt" id="step-04" style="--step-color:#ff7a1a;--step-rgb:255,122,26">
+  <div class="container">
+    <div class="mth-step-inner">
+      <div class="mth-step-content anim-fade-up">
+        <div class="mth-step-eyebrow">
+          <span class="mth-step-tag">04</span>
+        </div>
+        <h2 class="mth-step-title" data-i18n="step.4.title">Tests & assurance qualité</h2>
+        <p class="mth-step-desc" data-i18n="step.4.desc">La qualité n'est pas une phase finale — elle court tout du long. Tests automatisés, QA manuelle et contrôles de sécurité valident chaque livraison avant publication.</p>
+        <div class="mth-step-deliverables">
+          <div class="mth-step-del-label" data-i18n="step.del.label">Livrables</div>
+          <ul class="mth-step-del-list">
+            <li><span class="mth-del-dot"></span><span data-i18n="step.4.del.1">Couverture de tests automatisés & manuels</span></li>
+            <li><span class="mth-del-dot"></span><span data-i18n="step.4.del.2">Revue de sécurité & de performance</span></li>
+            <li><span class="mth-del-dot"></span><span data-i18n="step.4.del.3">Recette avec vos équipes</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mth-step-visual anim-fade-up anim-delay-2" aria-hidden="true">
+        <div class="mth-step-num-bg">04</div>
+        <div class="mth-mock">
+          <div class="mth-mock-bar">
+            <span class="mth-mock-dot r"></span><span class="mth-mock-dot y"></span><span class="mth-mock-dot g"></span>
+            <span class="mth-mock-title">Rapport qualité · Sprint 03</span>
+          </div>
+          <div class="mth-mock-body">
+            <div class="mth-qa-list">
+              <div class="mth-qa-row pass">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span class="mth-qa-name">Tests unitaires</span>
+                <span class="mth-qa-score green">124 / 124</span>
+              </div>
+              <div class="mth-qa-row pass">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span class="mth-qa-name">Tests intégration</span>
+                <span class="mth-qa-score green">88 / 88</span>
+              </div>
+              <div class="mth-qa-row pass">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span class="mth-qa-name">Tests E2E</span>
+                <span class="mth-qa-score green">35 / 35</span>
+              </div>
+              <div class="mth-qa-row sec">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span class="mth-qa-name">Revue sécurité</span>
+                <span class="mth-qa-score amber">Validé</span>
+              </div>
+            </div>
+            <div class="mth-qa-coverage">
+              <div class="mth-qa-cov-head">
+                <span>Couverture de code</span>
+                <span class="mth-qa-cov-val">91 %</span>
+              </div>
+              <div class="mth-prog-track"><div class="mth-prog-bar" style="width:91%;background:#f59e0b"></div></div>
+            </div>
+            <div class="mth-qa-perf">
+              Performance &nbsp;<span class="mth-qa-badge">&lt; 180ms</span>&nbsp;<span class="mth-qa-badge green">Score 98</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ÉTAPE 05 — DÉPLOIEMENT
+     ============================================================ -->
+<section class="mth-step" id="step-05" style="--step-color:#00a0ff;--step-rgb:0,160,255">
+  <div class="container">
+    <div class="mth-step-inner">
+      <div class="mth-step-content anim-fade-up">
+        <div class="mth-step-eyebrow">
+          <span class="mth-step-tag">05</span>
+        </div>
+        <h2 class="mth-step-title" data-i18n="step.5.title">Déploiement</h2>
+        <p class="mth-step-desc" data-i18n="step.5.desc">Nous mettons le système en production de façon fiable et réversible, avec supervision dès le premier jour — pour que la mise en ligne soit un événement maîtrisé, pas un saut dans le vide.</p>
+        <div class="mth-step-deliverables">
+          <div class="mth-step-del-label" data-i18n="step.del.label">Livrables</div>
+          <ul class="mth-step-del-list">
+            <li><span class="mth-del-dot"></span><span data-i18n="step.5.del.1">Mise en production contrôlée</span></li>
+            <li><span class="mth-del-dot"></span><span data-i18n="step.5.del.2">Supervision & alertes</span></li>
+            <li><span class="mth-del-dot"></span><span data-i18n="step.5.del.3">Documentation & transfert d'équipe</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mth-step-visual anim-fade-up anim-delay-2" aria-hidden="true">
+        <div class="mth-step-num-bg">05</div>
+        <div class="mth-mock">
+          <div class="mth-mock-bar">
+            <span class="mth-mock-dot r"></span><span class="mth-mock-dot y"></span><span class="mth-mock-dot g"></span>
+            <span class="mth-mock-title">Pipeline de déploiement</span>
+          </div>
+          <div class="mth-mock-body">
+            <div class="mth-pipe">
+              <div class="mth-pipe-step done">
+                <div class="mth-pipe-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <span class="mth-pipe-name">Build</span>
+                <span class="mth-pipe-meta">1m 23s</span>
+                <span class="mth-pipe-ok">OK</span>
+              </div>
+              <div class="mth-pipe-step done">
+                <div class="mth-pipe-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <span class="mth-pipe-name">Tests</span>
+                <span class="mth-pipe-meta">4m 12s</span>
+                <span class="mth-pipe-ok">OK</span>
+              </div>
+              <div class="mth-pipe-step done">
+                <div class="mth-pipe-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <span class="mth-pipe-name">Sécurité</span>
+                <span class="mth-pipe-meta">2m 05s</span>
+                <span class="mth-pipe-ok">OK</span>
+              </div>
+              <div class="mth-pipe-step done">
+                <div class="mth-pipe-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <span class="mth-pipe-name">Staging</span>
+                <span class="mth-pipe-meta">Validé</span>
+                <span class="mth-pipe-ok">OK</span>
+              </div>
+              <div class="mth-pipe-step prod">
+                <div class="mth-pipe-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <span class="mth-pipe-name prod">Production</span>
+                <span class="mth-pipe-meta">09:14</span>
+                <span class="mth-pipe-ok live">Live</span>
+              </div>
+            </div>
+            <div class="mth-pipe-uptime">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              Uptime · 99.9 % · Alertes actives
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ÉTAPE 06 — MAINTENANCE
+     ============================================================ -->
+<section class="mth-step mth-step--alt" id="step-06" style="--step-color:#ff7a1a;--step-rgb:255,122,26">
+  <div class="container">
+    <div class="mth-step-inner">
+      <div class="mth-step-content anim-fade-up">
+        <div class="mth-step-eyebrow">
+          <span class="mth-step-tag">06</span>
+        </div>
+        <h2 class="mth-step-title" data-i18n="step.6.title">Maintenance évolutive</h2>
+        <p class="mth-step-desc" data-i18n="step.6.desc">Un système est vivant. Nous le maintenons sûr, performant et aligné sur votre métier qui évolue — avec une relation de support claire et responsable.</p>
+        <div class="mth-step-deliverables">
+          <div class="mth-step-del-label" data-i18n="step.del.label">Livrables</div>
+          <ul class="mth-step-del-list">
+            <li><span class="mth-del-dot"></span><span data-i18n="step.6.del.1">Maintenance corrective & évolutive</span></li>
+            <li><span class="mth-del-dot"></span><span data-i18n="step.6.del.2">Mises à jour de sécurité</span></li>
+            <li><span class="mth-del-dot"></span><span data-i18n="step.6.del.3">Feuille de route des nouveaux besoins</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mth-step-visual anim-fade-up anim-delay-2" aria-hidden="true">
+        <div class="mth-step-num-bg">06</div>
+        <div class="mth-mock">
+          <div class="mth-mock-bar">
+            <span class="mth-mock-dot r"></span><span class="mth-mock-dot y"></span><span class="mth-mock-dot g"></span>
+            <span class="mth-mock-title">Support & évolutions</span>
+          </div>
+          <div class="mth-mock-body">
+            <div class="mth-maint-list">
+              <div class="mth-maint-row">
+                <span class="mth-maint-dot sec"></span>
+                <div class="mth-maint-info">
+                  <span class="mth-maint-name">MàJ sécurité SSL</span>
+                  <span class="mth-maint-type sec">Sécurité</span>
+                </div>
+                <span class="mth-maint-eta">2j</span>
+              </div>
+              <div class="mth-maint-row">
+                <span class="mth-maint-dot evo"></span>
+                <div class="mth-maint-info">
+                  <span class="mth-maint-name">Nouveau module BI</span>
+                  <span class="mth-maint-type evo">Évolution</span>
+                </div>
+                <span class="mth-maint-eta">3 sem.</span>
+              </div>
+              <div class="mth-maint-row">
+                <span class="mth-maint-dot act"></span>
+                <div class="mth-maint-info">
+                  <span class="mth-maint-name">Perf. API prestations</span>
+                  <span class="mth-maint-type act">En cours</span>
+                </div>
+                <span class="mth-maint-eta">—</span>
+              </div>
+            </div>
+            <div class="mth-maint-sla">
+              <div class="mth-maint-sla-item">
+                <span class="mth-maint-sla-val">&lt; 4h</span>
+                <span class="mth-maint-sla-lbl">Réponse</span>
+              </div>
+              <div class="mth-maint-sla-sep"></div>
+              <div class="mth-maint-sla-item">
+                <span class="mth-maint-sla-val">&lt; 24h</span>
+                <span class="mth-maint-sla-lbl">Résolution</span>
+              </div>
+            </div>
+            <div class="mth-maint-uptime">
+              <span>Uptime 12 mois</span>
+              <div class="mth-prog-track"><div class="mth-prog-bar" style="width:99.8%;background:#ff7a1a"></div></div>
+              <span class="mth-maint-upt-val">99.8 %</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA FINAL
+     ============================================================ -->
+<section class="mth-final-cta">
+  <div class="container">
+    <div class="mth-final-inner anim-fade-up">
+      <blockquote class="mth-quote" data-i18n="methode.quote">Une méthode faite pour les projets qui ne peuvent pas échouer.</blockquote>
+      <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="nav.cta">Demander un devis</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer" aria-label="Pied de page">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <img src="logos/logo_all.png" alt="Sycelim Technologies" />
+        </div>
+        <p class="footer-tagline" data-i18n="footer.tagline">Ingénierie logicielle pour systèmes d'entreprise sur mesure. Architecture, qualité, scalabilité et sécurité.</p>
+        <div class="tags"><span class="badge">Abidjan, CI</span></div>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="footer.nav">Navigation</div>
+        <ul class="footer-links">
+          <li><a href="index.html"          class="footer-link" data-i18n="nav.home">Accueil</a></li>
+          <li><a href="services.html"       class="footer-link" data-i18n="nav.services">Services</a></li>
+          <li><a href="methode.html"        class="footer-link" data-i18n="nav.method">Méthode</a></li>
+          <li><a href="realisations.html"   class="footer-link" data-i18n="nav.work">Réalisations</a></li>
+          <li><a href="actualites.html"     class="footer-link" data-i18n="nav.news">Actualités</a></li>
+          <li><a href="a-propos.html"       class="footer-link" data-i18n="nav.about">À propos</a></li>
+          <li><a href="equipe.html"         class="footer-link" data-i18n="nav.team">Équipe</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="footer.expertise">Expertise</div>
+        <ul class="footer-links">
+          <li><a href="services.html#solutions-metiers"    class="footer-link" data-i18n="footer.exp.1">Solutions métiers</a></li>
+          <li><a href="services.html#plateformes-web"      class="footer-link" data-i18n="footer.exp.2">Plateformes web</a></li>
+          <li><a href="services.html#applications-mobiles" class="footer-link" data-i18n="footer.exp.3">Applications mobiles</a></li>
+          <li><a href="services.html#api-backend"          class="footer-link" data-i18n="footer.exp.4">API & backend</a></li>
+          <li><a href="services.html#modernisation"        class="footer-link" data-i18n="footer.exp.5">Modernisation</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="footer.contact">Contact</div>
+        <div class="footer-contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Cocody Angré 8è Tranche — 09 BP 2170 Abidjan 09, Côte d'Ivoire</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.6 12.41 19.79 19.79 0 0 1 1.5 3.82 2 2 0 0 1 3.48 1.65h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.1a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+225 27 22 50 90 66<br>+225 27 22 50 39 31</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:contact@sycelim.com" class="footer-link" style="color:var(--orange)">contact@sycelim.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy" data-i18n="footer.copy">© Sycelim Technologies — Abidjan, Côte d'Ivoire · Société d'ingénierie logicielle</p>
+      <nav class="footer-legal" aria-label="Liens légaux">
+        <a href="faq.html"              class="footer-legal-link" data-i18n="footer.faq">FAQ</a>
+        <a href="mentions-legales.html" class="footer-legal-link" data-i18n="footer.legal">Mentions légales</a>
+        <a href="confidentialite.html"  class="footer-legal-link" data-i18n="footer.privacy">Confidentialité</a>
+        <a href="cgu.html"              class="footer-legal-link" data-i18n="footer.cgu">CGU</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

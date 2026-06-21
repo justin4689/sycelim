@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Actualités &amp; points de vue — Sycelim Technologies</title>
+  <meta name="description" content="Points de vue Sycelim Technologies sur l'ingénierie logicielle, la sécurité et la dette technique." />
+  <link rel="icon" href="logos/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════ NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <div class="navbar-inner">
+        <a href="index.html" class="navbar-logo" aria-label="Sycelim Technologies — Accueil">
+          <img src="logos/logo_all.png" alt="Sycelim Technologies" />
+        </a>
+        <nav class="navbar-nav" aria-label="Navigation principale">
+          <a href="index.html"          class="nav-link" data-page="index"        data-i18n="nav.home">Accueil</a>
+          <a href="services.html"       class="nav-link" data-page="services"     data-i18n="nav.services">Services</a>
+          <a href="methode.html"        class="nav-link" data-page="methode"      data-i18n="nav.method">Méthode</a>
+          <a href="realisations.html"   class="nav-link" data-page="realisations" data-i18n="nav.work">Réalisations</a>
+          <a href="actualites.html"     class="nav-link" data-page="actualites"   data-i18n="nav.news">Actualités</a>
+          <a href="a-propos.html"       class="nav-link" data-page="a-propos"     data-i18n="nav.about">À propos</a>
+          <a href="equipe.html"         class="nav-link" data-page="equipe"       data-i18n="nav.team">Équipe</a>
+        </nav>
+        <div class="navbar-actions">
+          <button class="btn-lang" aria-label="Changer de langue" title="Switch language">
+            <span class="lang-fr-label active"><img src="images/flag-fr.svg" alt="Français" class="flag-img" /></span>
+            <span class="sep">/</span>
+            <span class="lang-en-label"><img src="images/flag-gb.svg" alt="English" class="flag-img" /></span>
+          </button>
+          <button class="btn-theme" aria-label="Basculer thème sombre/clair">
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+          <a href="contact.html" class="btn-cta-nav" data-i18n="nav.cta">Demander un devis</a>
+          <button class="btn-hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobile">
+    <a href="index.html"        class="nav-link" data-page="index"        data-i18n="nav.home">Accueil</a>
+    <a href="services.html"     class="nav-link" data-page="services"     data-i18n="nav.services">Services</a>
+    <a href="methode.html"      class="nav-link" data-page="methode"      data-i18n="nav.method">Méthode</a>
+    <a href="realisations.html" class="nav-link" data-page="realisations" data-i18n="nav.work">Réalisations</a>
+    <a href="actualites.html"   class="nav-link" data-page="actualites"   data-i18n="nav.news">Actualités</a>
+    <a href="a-propos.html"     class="nav-link" data-page="a-propos"     data-i18n="nav.about">À propos</a>
+    <a href="equipe.html"       class="nav-link" data-page="equipe"       data-i18n="nav.team">Équipe</a>
+    <div class="mobile-menu-foot">
+      <a href="contact.html" class="btn btn-primary" data-i18n="nav.cta">Demander un devis</a>
+      <button class="btn-lang" aria-label="Changer de langue">
+        <span class="lang-fr-label active"><img src="images/flag-fr.svg" alt="Français" class="flag-img" /></span>
+        <span class="sep">/</span>
+        <span class="lang-en-label"><img src="images/flag-gb.svg" alt="English" class="flag-img" /></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════════════════ HERO -->
+    <section class="inner-hero">
+      <div class="inner-hero-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="inner-hero-inner">
+          <p class="eyebrow" data-i18n="act.eyebrow">Actualités &amp; points de vue</p>
+          <h1 class="inner-hero-title anim-fade-up" data-i18n="act.title">Ce que nous pensons d'un logiciel fait pour durer.</h1>
+          <p class="inner-hero-lead anim-fade-up anim-delay-1" data-i18n="act.lead">Quelques réflexions, issues du terrain, sur l'ingénierie logicielle et ce que construire vraiment signifie.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════ FEATURED ARTICLE -->
+    <section class="act-featured">
+      <div class="container">
+        <div class="act-featured-inner anim-fade-up">
+          <div class="act-featured-meta">
+            <span class="tag">Point de vue</span>
+            <span class="act-featured-date">Juin 2025</span>
+          </div>
+          <h2 class="act-featured-title" data-i18n="act.1.title">Agence ou ingénierie ? La question que vous devriez poser avant tout autre.</h2>
+          <p class="act-featured-lead" data-i18n="act.1.excerpt">Pourquoi la distinction entre agence web et société d'ingénierie logicielle n'est pas seulement sémantique — et ce qu'elle change concrètement pour votre projet.</p>
+          <div class="act-quote-block">
+            <blockquote class="act-quote-text">"Une agence part d'un template. Un ingénieur part d'un problème."</blockquote>
+            <cite class="act-quote-author">— Sycelim Technologies</cite>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════ ARTICLES GRID -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="act-grid">
+
+          <!-- Card 1 -->
+          <article class="act-card anim-fade-up">
+            <div class="act-card-meta">
+              <span class="act-card-tag">Point de vue</span>
+              <span>Juin 2025</span>
+            </div>
+            <h3 class="act-card-title" data-i18n="act.1.title">Agence ou ingénierie ? La question que vous devriez poser avant tout autre.</h3>
+            <p class="act-card-excerpt" data-i18n="act.1.excerpt">Pourquoi la distinction entre agence web et société d'ingénierie logicielle n'est pas seulement sémantique — et ce qu'elle change concrètement pour votre projet.</p>
+            <a href="#article-1" class="act-card-link">
+              Lire l'article
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="act-card anim-fade-up anim-delay-1">
+            <div class="act-card-meta">
+              <span class="act-card-tag">Sécurité</span>
+              <span>Juin 2025</span>
+            </div>
+            <h3 class="act-card-title" data-i18n="act.2.title">La sécurité dès le premier jour — ou jamais vraiment.</h3>
+            <p class="act-card-excerpt" data-i18n="act.2.excerpt">Pourquoi la cybersécurité ne peut pas être un audit de fin de projet — et comment nous l'intégrons dès la conception.</p>
+            <a href="#article-2" class="act-card-link">
+              Lire l'article
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="act-card anim-fade-up anim-delay-2">
+            <div class="act-card-meta">
+              <span class="act-card-tag">Architecture</span>
+              <span>Juin 2025</span>
+            </div>
+            <h3 class="act-card-title" data-i18n="act.3.title">Dette technique : le coût de ce qu'on ne répare pas.</h3>
+            <p class="act-card-excerpt" data-i18n="act.3.excerpt">Comprendre la dette technique pour mieux décider quand la rembourser — et comment un projet robuste est conçu pour limiter son accumulation.</p>
+            <a href="#article-3" class="act-card-link">
+              Lire l'article
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════ ARTICLE 1 -->
+    <section class="act-article-section" id="article-1">
+      <div class="container">
+        <div class="act-article-inner">
+          <header class="act-article-header">
+            <div class="act-article-meta">
+              <span class="tag">Point de vue</span>
+              <span>Juin 2025</span>
+            </div>
+            <h2 class="act-article-title" data-i18n="act.1.title">Agence ou ingénierie ? La question que vous devriez poser avant tout autre.</h2>
+            <p class="act-article-lead" data-i18n="act.1.excerpt">Pourquoi la distinction entre agence web et société d'ingénierie logicielle n'est pas seulement sémantique — et ce qu'elle change concrètement pour votre projet.</p>
+          </header>
+          <figure style="margin:0 0 2.5rem;border-radius:14px;overflow:hidden;box-shadow:0 16px 48px rgba(0,0,0,.15);">
+            <img src="images/photo-hero.jpg" alt="Réunion de travail en équipe" style="width:100%;height:340px;object-fit:cover;display:block;" loading="lazy" />
+          </figure>
+          <div class="act-prose">
+            <p>Quand une organisation cherche à faire développer un système, elle pose souvent la mauvaise première question. Elle demande : « combien ça coûte ? » ou « en combien de temps ? » — alors que la question qui devrait venir avant toutes les autres est : à qui est-ce que je fais appel ?</p>
+
+            <h3>Ce que fait une agence web</h3>
+            <p>Une agence web part d'un template, d'un CMS, ou d'un framework. Son modèle économique repose sur la réplication rapide de solutions existantes avec un habillage personnalisé. Pour un site vitrine, un blog, ou une application simple, c'est pertinent — et souvent suffisant.</p>
+            <blockquote>Une agence fabrique vite. Un ingénieur fabrique juste.</blockquote>
+
+            <h3>Ce que fait une société d'ingénierie logicielle</h3>
+            <p>Une société d'ingénierie part d'un problème. Elle modélise les données, définit une architecture, conçoit des API, choisit les technologies selon les contraintes — pas selon ses habitudes. Le résultat n'est pas un produit générique personnalisé : c'est un système pensé pour votre métier.</p>
+
+            <h3>Pourquoi ça change tout</h3>
+            <p>Un système de gestion d'adhérents pour une mutuelle, une plateforme de paiement, un ERP métier sur mesure : ce sont des systèmes où la logique métier est complexe, les données sont sensibles, et la tolérance à l'erreur est faible. Ces projets ne souffrent pas de mediocrité — ils la paient, plus tard, avec intérêts.</p>
+            <p>La distinction n'est pas une question de prestige. C'est une question de risque et de durée.</p>
+
+            <h3>La bonne question</h3>
+            <p>Avant de comparer les devis, demandez à votre prestataire : « Montrez-moi votre démarche pour un système similaire au mien. » La réponse vous dira tout.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════ ARTICLE 2 -->
+    <section class="act-article-section section--alt" id="article-2">
+      <div class="container">
+        <div class="act-article-inner">
+          <header class="act-article-header">
+            <div class="act-article-meta">
+              <span class="tag">Sécurité</span>
+              <span>Juin 2025</span>
+            </div>
+            <h2 class="act-article-title" data-i18n="act.2.title">La sécurité dès le premier jour — ou jamais vraiment.</h2>
+            <p class="act-article-lead" data-i18n="act.2.excerpt">Pourquoi la cybersécurité ne peut pas être un audit de fin de projet — et comment nous l'intégrons dès la conception.</p>
+          </header>
+          <figure style="margin:0 0 2.5rem;border-radius:14px;overflow:hidden;box-shadow:0 16px 48px rgba(0,0,0,.15);">
+            <img src="images/photo-code.jpg" alt="Ingénieurs travaillant sur du code" style="width:100%;height:340px;object-fit:cover;display:block;" loading="lazy" />
+          </figure>
+          <div class="act-prose">
+            <p>Il y a une erreur que nous voyons régulièrement dans des projets logiciels qui ont mal tourné : la sécurité traitée comme une étape finale. Un audit à la fin. Un pentest une fois le système en ligne. Une liste de cases à cocher avant la mise en production.</p>
+            <blockquote>La sécurité n'est pas un audit de fin de projet. C'est une décision d'architecture.</blockquote>
+
+            <h3>Pourquoi l'audit final ne suffit pas</h3>
+            <p>Lorsque la sécurité n'est pas intégrée dès la conception, les correctifs finaux sont coûteux — parfois impossibles sans refactoring profond. Un schéma de données mal pensé, des API sans contrôle d'accès granulaire, des sessions mal gérées : ces problèmes ne se corrigent pas en surface.</p>
+
+            <h3>Ce que ça signifie concrètement</h3>
+            <p>Chez Sycelim, un ingénieur cybersécurité intervient dès la première session d'architecture — pas à la validation. Ce n'est pas une posture : c'est une contrainte que nous nous imposons, parce que nous travaillons avec des données sensibles (santé, finances, identités) et que nos systèmes doivent être défendables devant n'importe quel auditeur.</p>
+
+            <h3>Ce que vous devriez demander à tout prestataire</h3>
+            <p>Avant de signer, posez une question simple : « Comment gérez-vous la sécurité dans votre processus de développement ? » Si la réponse commence par « on fait un audit à la fin », c'est un signal d'alarme.</p>
+            <p>La sécurité conçue dès le départ coûte moins cher — et protège vraiment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════ ARTICLE 3 -->
+    <section class="act-article-section" id="article-3">
+      <div class="container">
+        <div class="act-article-inner">
+          <header class="act-article-header">
+            <div class="act-article-meta">
+              <span class="tag">Architecture</span>
+              <span>Juin 2025</span>
+            </div>
+            <h2 class="act-article-title" data-i18n="act.3.title">Dette technique : le coût de ce qu'on ne répare pas.</h2>
+            <p class="act-article-lead" data-i18n="act.3.excerpt">Comprendre la dette technique pour mieux décider quand la rembourser — et comment un projet robuste est conçu pour limiter son accumulation.</p>
+          </header>
+          <figure style="margin:0 0 2.5rem;border-radius:14px;overflow:hidden;box-shadow:0 16px 48px rgba(0,0,0,.15);">
+            <img src="images/photo-team.jpg" alt="Équipe en session d'architecture logicielle" style="width:100%;height:340px;object-fit:cover;display:block;" loading="lazy" />
+          </figure>
+          <div class="act-prose">
+            <p>La dette technique est souvent mal comprise — soit minimisée (« ce n'est pas urgent »), soit dramatisée (« il faut tout réécrire »). La réalité est plus nuancée, et comprendre sa nature permet de prendre de meilleures décisions.</p>
+
+            <h3>Qu'est-ce que la dette technique ?</h3>
+            <p>La dette technique, c'est l'écart entre la façon dont un système est construit et la façon dont il devrait l'être. Elle s'accumule pour deux raisons : des décisions délibérées prises sous contrainte de temps, ou de mauvaises décisions prises par manque d'expertise.</p>
+            <blockquote>La dette technique délibérée peut être gérée. La dette technique accidentelle, elle, s'accumule en silence.</blockquote>
+
+            <h3>Quand rembourser ?</h3>
+            <p>Toute la dette ne se rembourse pas de la même façon. Une dette délibérée bien documentée peut rester acceptable longtemps. Une dette accidentelle dans une zone critique du système doit être traitée rapidement — avant qu'elle ne bloque l'évolution ou génère des incidents.</p>
+
+            <h3>Comment nous l'abordons</h3>
+            <p>Sur les projets de modernisation, nous commençons par cartographier l'existant et identifier les zones à risque — avant de toucher quoi que ce soit. Sur les nouveaux projets, nous concevons pour limiter l'accumulation de dette : architecture claire, tests dès le départ, documentation embarquée dans le code.</p>
+            <p>Un système bien conçu vieillira mieux. Ce n'est pas un luxe — c'est de l'économie sur le long terme.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════ FINAL CTA -->
+    <section class="final-cta">
+      <div class="container">
+        <h2 class="final-cta-title" data-i18n="act.cta.title">Ces réflexions s'appliquent-elles à votre projet ?</h2>
+        <p class="final-cta-sub" data-i18n="cta.sub">Dites-nous où vous voulez aller. Nous revenons vers vous avec une réponse claire, structurée — et un devis.</p>
+        <a href="contact.html" class="btn btn-primary btn-lg">Parler à un expert</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════ FOOTER -->
+  <footer class="footer" aria-label="Pied de page">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo"><img src="logos/logo_all.png" alt="Sycelim Technologies" /></div>
+          <p class="footer-tagline" data-i18n="footer.tagline">Ingénierie logicielle pour systèmes d'entreprise sur mesure. Architecture, qualité, scalabilité et sécurité.</p>
+          <div class="tags"><span class="badge">Abidjan, CI</span></div>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer.nav">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link" data-i18n="nav.home">Accueil</a></li>
+            <li><a href="services.html" class="footer-link" data-i18n="nav.services">Services</a></li>
+            <li><a href="methode.html" class="footer-link" data-i18n="nav.method">Méthode</a></li>
+            <li><a href="realisations.html" class="footer-link" data-i18n="nav.work">Réalisations</a></li>
+            <li><a href="actualites.html" class="footer-link" data-i18n="nav.news">Actualités</a></li>
+            <li><a href="a-propos.html" class="footer-link" data-i18n="nav.about">À propos</a></li>
+            <li><a href="equipe.html" class="footer-link" data-i18n="nav.team">Équipe</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer.expertise">Expertise</div>
+          <ul class="footer-links">
+            <li><a href="services.html#solutions-metiers" class="footer-link" data-i18n="footer.exp.1">Solutions métiers</a></li>
+            <li><a href="services.html#plateformes-web" class="footer-link" data-i18n="footer.exp.2">Plateformes web</a></li>
+            <li><a href="services.html#applications-mobiles" class="footer-link" data-i18n="footer.exp.3">Applications mobiles</a></li>
+            <li><a href="services.html#api-backend" class="footer-link" data-i18n="footer.exp.4">API &amp; backend</a></li>
+            <li><a href="services.html#modernisation" class="footer-link" data-i18n="footer.exp.5">Modernisation</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer.contact">Contact</div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Cocody Angré 8è Tranche — 09 BP 2170 Abidjan 09, Côte d'Ivoire</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.6 12.41 19.79 19.79 0 0 1 1.5 3.82 2 2 0 0 1 3.48 1.65h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.1a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+225 27 22 50 90 66<br>+225 27 22 50 39 31</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:contact@sycelim.com" class="footer-link" style="color:var(--orange)">contact@sycelim.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy" data-i18n="footer.copy">© Sycelim Technologies — Abidjan, Côte d'Ivoire · Société d'ingénierie logicielle</p>
+        <nav class="footer-legal" aria-label="Liens légaux">
+          <a href="faq.html" class="footer-legal-link" data-i18n="footer.faq">FAQ</a>
+          <a href="mentions-legales.html" class="footer-legal-link" data-i18n="footer.legal">Mentions légales</a>
+          <a href="confidentialite.html" class="footer-legal-link" data-i18n="footer.privacy">Confidentialité</a>
+          <a href="cgu.html" class="footer-legal-link" data-i18n="footer.cgu">CGU</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

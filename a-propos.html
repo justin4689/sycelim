@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>À propos — Sycelim Technologies</title>
+  <meta name="description" content="Sycelim Technologies, SSII basée à Abidjan — ingénierie logicielle sur mesure depuis 2009." />
+  <meta name="theme-color" content="#00a0ff" />
+  <meta property="og:title" content="À propos — Sycelim Technologies" />
+  <meta property="og:description" content="Sycelim Technologies, SSII basée à Abidjan — ingénierie logicielle sur mesure depuis 2009." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="logos/logo_all.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="logos/logo_icon.png" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <div class="container">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo" aria-label="Sycelim Technologies — Accueil">
+        <img src="logos/logo_all.png" alt="Sycelim Technologies" />
+      </a>
+      <nav class="navbar-nav" aria-label="Navigation principale">
+        <a href="index.html"          class="nav-link" data-page="index"        data-i18n="nav.home">Accueil</a>
+        <a href="services.html"       class="nav-link" data-page="services"     data-i18n="nav.services">Services</a>
+        <a href="methode.html"        class="nav-link" data-page="methode"      data-i18n="nav.method">Méthode</a>
+        <a href="realisations.html"   class="nav-link" data-page="realisations" data-i18n="nav.work">Réalisations</a>
+        <a href="actualites.html"     class="nav-link" data-page="actualites"   data-i18n="nav.news">Actualités</a>
+        <a href="a-propos.html"       class="nav-link active" data-page="a-propos" data-i18n="nav.about">À propos</a>
+        <a href="equipe.html"         class="nav-link" data-page="equipe"       data-i18n="nav.team">Équipe</a>
+      </nav>
+      <div class="navbar-actions">
+        <button class="btn-lang" aria-label="Changer de langue" title="Switch language">
+          <span class="lang-fr-label active"><img src="images/flag-fr.svg" alt="Français" class="flag-img" /></span>
+          <span class="sep">/</span>
+          <span class="lang-en-label"><img src="images/flag-gb.svg" alt="English" class="flag-img" /></span>
+        </button>
+        <button class="btn-theme" aria-label="Basculer thème sombre/clair">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="contact.html" class="btn-cta-nav" data-i18n="nav.cta">Demander un devis</a>
+        <button class="btn-hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobile">
+  <a href="index.html"        class="nav-link" data-page="index"        data-i18n="nav.home">Accueil</a>
+  <a href="services.html"     class="nav-link" data-page="services"     data-i18n="nav.services">Services</a>
+  <a href="methode.html"      class="nav-link" data-page="methode"      data-i18n="nav.method">Méthode</a>
+  <a href="realisations.html" class="nav-link" data-page="realisations" data-i18n="nav.work">Réalisations</a>
+  <a href="actualites.html"   class="nav-link" data-page="actualites"   data-i18n="nav.news">Actualités</a>
+  <a href="a-propos.html"     class="nav-link" data-page="a-propos"     data-i18n="nav.about">À propos</a>
+  <a href="equipe.html"       class="nav-link" data-page="equipe"       data-i18n="nav.team">Équipe</a>
+  <div class="mobile-menu-foot">
+    <a href="contact.html" class="btn btn-primary" data-i18n="nav.cta">Demander un devis</a>
+    <button class="btn-lang" aria-label="Changer de langue">
+      <span class="lang-fr-label active"><img src="images/flag-fr.svg" alt="Français" class="flag-img" /></span>
+      <span class="sep">/</span>
+      <span class="lang-en-label"><img src="images/flag-gb.svg" alt="English" class="flag-img" /></span>
+    </button>
+  </div>
+</nav>
+
+<main>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="inner-hero" aria-labelledby="about-hero-title">
+  <div class="inner-hero-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="inner-hero-inner">
+      <span class="eyebrow" data-i18n="about.eyebrow">À propos de Sycelim</span>
+      <h1 class="inner-hero-title" id="about-hero-title" data-i18n="about.title">Une société d'ingénierie logicielle — pas une agence web.</h1>
+      <p class="inner-hero-lead" data-i18n="about.lead">Basée à Abidjan, Sycelim Technologies conçoit et développe les systèmes logiciels sur mesure dont dépendent les organisations exigeantes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION HISTOIRE
+     ============================================================ -->
+<section class="about-section" aria-labelledby="about-history-title">
+  <div class="container">
+    <div class="about-2col">
+      <div class="about-2col-text">
+        <span class="about-section-eyebrow eyebrow" data-i18n="about.history.title">Notre histoire</span>
+        <h2 class="about-section-title" id="about-history-title" data-i18n="about.history.title">Notre histoire</h2>
+        <p class="about-section-body">Fondée en 2009 et reconstituée sous sa forme actuelle en 2015, Sycelim Technologies s'est construite sur l'ingénierie de solutions logicielles complètes (backend, frontend web et mobile) au service d'organisations exigeantes, notamment du secteur mutualiste et de l'assurance santé.</p>
+      </div>
+      <div class="about-2col-visual">
+        <figure style="margin:0 0 1.75rem;border-radius:14px;overflow:hidden;box-shadow:0 20px 56px rgba(0,0,0,.18);">
+          <img src="images/photo-collab.jpg" alt="Collaboration équipe Sycelim Technologies" style="width:100%;height:260px;object-fit:cover;display:block;" loading="lazy" />
+        </figure>
+        <div style="display:flex;flex-direction:column;gap:1.25rem;">
+          <div style="display:flex;align-items:center;gap:1rem;">
+            <span class="badge">2009</span>
+            <span style="font-size:.9rem;color:var(--text-2)">Origine de l'activité</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:1rem;">
+            <span class="badge">2015</span>
+            <span style="font-size:.9rem;color:var(--text-2)">Forme actuelle</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:1rem;">
+            <span class="badge" style="background:linear-gradient(135deg,#ff7a1a,#ff9a00);color:#fff;border:none;">Lauréat</span>
+            <span style="font-size:.9rem;color:var(--text-2)">Orange Fab Côte d'Ivoire — Saison 1</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION VISION
+     ============================================================ -->
+<section class="about-section" aria-labelledby="about-vision-title">
+  <div class="container">
+    <h2 class="about-section-title" id="about-vision-title" data-i18n="about.vision.title">Notre vision</h2>
+    <div class="about-vision-card">
+      <p class="about-vision-quote">Nous pensons que le logiciel doit être conçu comme une infrastructure : <em>fait pour durer, fait pour l'échelle, fait pour la confiance.</em></p>
+      <p class="about-vision-sub">Trop de systèmes sont assemblés vite et abandonnés lentement. Nous prenons le parti inverse : une conception délibérée, une exécution disciplinée, et une vision long terme de chaque système que nous construisons. Notre rôle est de transformer des problèmes métiers complexes en logiciels fiables — et d'en rester responsables dans la durée.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION POSITIONNEMENT
+     ============================================================ -->
+<section class="about-section about-section--alt" aria-labelledby="about-pos-title">
+  <div class="container">
+    <h2 class="about-section-title" id="about-pos-title" data-i18n="about.pos.title">Notre positionnement</h2>
+    <p class="about-section-lead">La discipline de l'ingénierie, pas l'improvisation digitale.</p>
+    <div class="about-pos-grid">
+      <div class="about-pos-col about-pos-col--no">
+        <div class="about-pos-col-head">Ce que nous ne sommes pas</div>
+        <ul class="about-pos-list">
+          <li class="about-pos-item">
+            <span class="about-pos-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </span>
+            <span>Une agence généraliste qui fait « un peu de tout le digital ».</span>
+          </li>
+          <li class="about-pos-item">
+            <span class="about-pos-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </span>
+            <span>Une équipe qui part d'un framework au lieu d'un problème.</span>
+          </li>
+          <li class="about-pos-item">
+            <span class="about-pos-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </span>
+            <span>Un prestataire qui disparaît une fois le site en ligne.</span>
+          </li>
+        </ul>
+      </div>
+      <div class="about-pos-col about-pos-col--yes">
+        <div class="about-pos-col-head">Ce que nous sommes</div>
+        <ul class="about-pos-list">
+          <li class="about-pos-item">
+            <span class="about-pos-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00a0ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            <span>Une société d'ingénierie spécialisée dans les systèmes d'entreprise sur mesure.</span>
+          </li>
+          <li class="about-pos-item">
+            <span class="about-pos-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00a0ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            <span>Des architectes qui conçoivent pour l'échelle, la qualité et la sécurité dès le départ.</span>
+          </li>
+          <li class="about-pos-item">
+            <span class="about-pos-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00a0ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            <span>Un partenaire de long terme, responsable des systèmes que nous livrons.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION ORGANISATION
+     ============================================================ -->
+<section class="about-section" aria-labelledby="about-org-title">
+  <div class="container">
+    <h2 class="about-section-title" id="about-org-title" data-i18n="about.org.title">Notre organisation</h2>
+    <p class="about-section-lead" data-i18n="about.org.sub">Une équipe resserrée, structurée autour de la responsabilité.</p>
+    <div class="about-org-grid">
+      <div class="about-org-card">
+        <div class="about-org-num">01</div>
+        <div class="about-org-title">Architecture</div>
+        <p class="about-org-desc">Fixe la direction technique et garantit la cohérence du système.</p>
+      </div>
+      <div class="about-org-card">
+        <div class="about-org-num">02</div>
+        <div class="about-org-title">Sécurité</div>
+        <p class="about-org-desc">Intègre protection et conformité dans l'ingénierie, pas après.</p>
+      </div>
+      <div class="about-org-card">
+        <div class="about-org-num">03</div>
+        <div class="about-org-title">Développement</div>
+        <p class="about-org-desc">Construit backend, frontend et mobile avec un soin discipliné.</p>
+      </div>
+      <div class="about-org-card">
+        <div class="about-org-num">04</div>
+        <div class="about-org-title">Qualité & pilotage</div>
+        <p class="about-org-desc">Tests et facilitation agile rendent la livraison prévisible.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION CULTURE
+     ============================================================ -->
+<section class="about-section about-section--alt" aria-labelledby="about-culture-title">
+  <div class="container">
+    <h2 class="about-section-title" id="about-culture-title" data-i18n="about.culture.title">Culture de qualité</h2>
+    <p class="about-section-lead" data-i18n="about.culture.sub">Ce que nous exigeons de nous-mêmes.</p>
+    <div class="about-culture-grid">
+      <div class="about-culture-item">
+        <div class="about-culture-letter" aria-hidden="true">A</div>
+        <div class="about-culture-content">
+          <div class="about-section-title" style="font-size:1.1rem;margin-bottom:.5rem;">Penser avant de construire</div>
+          <p>Chaque système commence par l'analyse et l'architecture. La vitesse naît de la clarté, pas des raccourcis.</p>
+        </div>
+      </div>
+      <div class="about-culture-item">
+        <div class="about-culture-letter" aria-hidden="true">B</div>
+        <div class="about-culture-content">
+          <div class="about-section-title" style="font-size:1.1rem;margin-bottom:.5rem;">La qualité n'est pas négociable</div>
+          <p>Tests, revue et sécurité font partie du travail — pas des options qu'on sacrifie quand le temps manque.</p>
+        </div>
+      </div>
+      <div class="about-culture-item">
+        <div class="about-culture-letter" aria-hidden="true">C</div>
+        <div class="about-culture-content">
+          <div class="about-section-title" style="font-size:1.1rem;margin-bottom:.5rem;">Assumer le long terme</div>
+          <p>Nous construisons des systèmes que nous pouvons assumer pendant des années — maintenables, documentés, prêts à évoluer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION ORANGE FAB
+     ============================================================ -->
+<section class="about-section" aria-labelledby="about-fab-title">
+  <div class="container">
+    <div class="about-fab">
+      <div class="about-fab-inner">
+        <div class="about-fab-badge" aria-hidden="true">
+          <span class="about-fab-badge-num">1<sup>er</sup></span>
+        </div>
+        <div class="about-fab-content">
+          <h2 class="about-fab-title" id="about-fab-title" data-i18n="about.fab.title">Lauréat Orange Fab Côte d'Ivoire — Saison 1</h2>
+          <p class="about-fab-desc" data-i18n="about.fab.desc">Sycelim Technologies est lauréat de la 1re saison du concours Orange Fab Côte d'Ivoire — le programme d'accélération de startups d'Orange (premier accélérateur du groupe Orange en Afrique).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FINAL CTA
+     ============================================================ -->
+<section class="final-cta" aria-labelledby="about-cta-title">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="about-section-title" id="about-cta-title" data-i18n="about.cta.title">Construisons quelque chose qui dure.</h2>
+      <p class="about-section-lead" data-i18n="cta.sub">Dites-nous où vous voulez aller. Nous revenons vers vous avec une réponse claire, structurée — et un devis.</p>
+      <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="nav.cta">Demander un devis</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer" aria-label="Pied de page">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><img src="logos/logo_all.png" alt="Sycelim Technologies" /></div>
+        <p class="footer-tagline" data-i18n="footer.tagline">Ingénierie logicielle pour systèmes d'entreprise sur mesure. Architecture, qualité, scalabilité et sécurité.</p>
+        <div class="tags"><span class="badge">Abidjan, CI</span></div>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="footer.nav">Navigation</div>
+        <ul class="footer-links">
+          <li><a href="index.html"        class="footer-link" data-i18n="nav.home">Accueil</a></li>
+          <li><a href="services.html"     class="footer-link" data-i18n="nav.services">Services</a></li>
+          <li><a href="methode.html"      class="footer-link" data-i18n="nav.method">Méthode</a></li>
+          <li><a href="realisations.html" class="footer-link" data-i18n="nav.work">Réalisations</a></li>
+          <li><a href="actualites.html"   class="footer-link" data-i18n="nav.news">Actualités</a></li>
+          <li><a href="a-propos.html"     class="footer-link" data-i18n="nav.about">À propos</a></li>
+          <li><a href="equipe.html"       class="footer-link" data-i18n="nav.team">Équipe</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="footer.expertise">Expertise</div>
+        <ul class="footer-links">
+          <li><a href="services.html#solutions-metiers"    class="footer-link" data-i18n="footer.exp.1">Solutions métiers</a></li>
+          <li><a href="services.html#plateformes-web"      class="footer-link" data-i18n="footer.exp.2">Plateformes web</a></li>
+          <li><a href="services.html#applications-mobiles" class="footer-link" data-i18n="footer.exp.3">Applications mobiles</a></li>
+          <li><a href="services.html#api-backend"          class="footer-link" data-i18n="footer.exp.4">API & backend</a></li>
+          <li><a href="services.html#modernisation"        class="footer-link" data-i18n="footer.exp.5">Modernisation</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="footer.contact">Contact</div>
+        <div class="footer-contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Cocody Angré 8è Tranche — 09 BP 2170 Abidjan 09, Côte d'Ivoire</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.6 12.41 19.79 19.79 0 0 1 1.5 3.82 2 2 0 0 1 3.48 1.65h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.1a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+225 27 22 50 90 66<br>+225 27 22 50 39 31</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:contact@sycelim.com" class="footer-link" style="color:var(--orange)">contact@sycelim.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy" data-i18n="footer.copy">© Sycelim Technologies — Abidjan, Côte d'Ivoire · Société d'ingénierie logicielle</p>
+      <nav class="footer-legal" aria-label="Liens légaux">
+        <a href="faq.html"              class="footer-legal-link" data-i18n="footer.faq">FAQ</a>
+        <a href="mentions-legales.html" class="footer-legal-link" data-i18n="footer.legal">Mentions légales</a>
+        <a href="confidentialite.html"  class="footer-legal-link" data-i18n="footer.privacy">Confidentialité</a>
+        <a href="cgu.html"              class="footer-legal-link" data-i18n="footer.cgu">CGU</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

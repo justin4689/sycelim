@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demander un devis — Sycelim Technologies</title>
+  <meta name="description" content="Décrivez votre projet à Sycelim Technologies. Réponse sous 48 h ouvrées." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <div class="navbar-inner">
+        <a href="index.html" class="navbar-logo" aria-label="Sycelim Technologies — Accueil">
+          <img src="logos/logo_all.png" alt="Sycelim Technologies" />
+        </a>
+        <nav class="navbar-nav" aria-label="Navigation principale">
+          <a href="index.html"          class="nav-link" data-page="index"        data-i18n="nav.home">Accueil</a>
+          <a href="services.html"       class="nav-link" data-page="services"     data-i18n="nav.services">Services</a>
+          <a href="methode.html"        class="nav-link" data-page="methode"      data-i18n="nav.method">Méthode</a>
+          <a href="realisations.html"   class="nav-link" data-page="realisations" data-i18n="nav.work">Réalisations</a>
+          <a href="actualites.html"     class="nav-link" data-page="actualites"   data-i18n="nav.news">Actualités</a>
+          <a href="a-propos.html"       class="nav-link" data-page="a-propos"     data-i18n="nav.about">À propos</a>
+          <a href="equipe.html"         class="nav-link" data-page="equipe"       data-i18n="nav.team">Équipe</a>
+        </nav>
+        <div class="navbar-actions">
+          <button class="btn-lang" aria-label="Changer de langue" title="Switch language">
+            <span class="lang-fr-label active"><img src="images/flag-fr.svg" alt="Français" class="flag-img" /></span>
+            <span class="sep">/</span>
+            <span class="lang-en-label"><img src="images/flag-gb.svg" alt="English" class="flag-img" /></span>
+          </button>
+          <button class="btn-theme" aria-label="Basculer thème sombre/clair">
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+          <a href="contact.html" class="btn-cta-nav" data-i18n="nav.cta">Demander un devis</a>
+          <button class="btn-hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobile">
+    <a href="index.html"        class="nav-link" data-page="index"        data-i18n="nav.home">Accueil</a>
+    <a href="services.html"     class="nav-link" data-page="services"     data-i18n="nav.services">Services</a>
+    <a href="methode.html"      class="nav-link" data-page="methode"      data-i18n="nav.method">Méthode</a>
+    <a href="realisations.html" class="nav-link" data-page="realisations" data-i18n="nav.work">Réalisations</a>
+    <a href="actualites.html"   class="nav-link" data-page="actualites"   data-i18n="nav.news">Actualités</a>
+    <a href="a-propos.html"     class="nav-link" data-page="a-propos"     data-i18n="nav.about">À propos</a>
+    <a href="equipe.html"       class="nav-link" data-page="equipe"       data-i18n="nav.team">Équipe</a>
+    <div class="mobile-menu-foot">
+      <a href="contact.html" class="btn btn-primary" data-i18n="nav.cta">Demander un devis</a>
+      <button class="btn-lang" aria-label="Changer de langue">
+        <span class="lang-fr-label active"><img src="images/flag-fr.svg" alt="Français" class="flag-img" /></span>
+        <span class="sep">/</span>
+        <span class="lang-en-label"><img src="images/flag-gb.svg" alt="English" class="flag-img" /></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Inner hero -->
+    <section class="inner-hero">
+      <div class="inner-hero-bg"></div>
+      <div class="container">
+        <div class="inner-hero-inner">
+          <div class="eyebrow" data-i18n="contact.eyebrow">Demander un devis</div>
+          <h1 class="inner-hero-title anim-fade-up" data-i18n="contact.title">Parlez-nous de votre projet.</h1>
+          <p class="inner-hero-lead anim-fade-up anim-delay-1" data-i18n="contact.lead">Décrivez ce que vous voulez construire ou corriger. Nous revenons vers vous avec une réponse claire, structurée — et un devis.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact layout -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- Form -->
+          <div class="contact-form-card anim-fade-up">
+            <form class="contact-form" id="contactForm" novalidate>
+
+              <!-- Row 1: name + org -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="name" data-i18n="form.name">Nom complet <span class="req">*</span></label>
+                  <input class="form-input" type="text" id="name" name="name" required data-i18n-ph="form.name" placeholder="Nom complet" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="org" data-i18n="form.org">Organisation</label>
+                  <input class="form-input" type="text" id="org" name="org" data-i18n-ph="form.org" placeholder="Organisation" />
+                </div>
+              </div>
+
+              <!-- Row 2: email + phone -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="email" data-i18n="form.email">Email professionnel <span class="req">*</span></label>
+                  <input class="form-input" type="email" id="email" name="email" required placeholder="email@organisation.com" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="phone" data-i18n="form.phone">Téléphone</label>
+                  <input class="form-input" type="tel" id="phone" name="phone" placeholder="+225 XX XX XX XX XX" />
+                </div>
+              </div>
+
+              <!-- Need select -->
+              <div class="form-group">
+                <label class="form-label" for="need" data-i18n="form.need">De quoi avez-vous besoin ?</label>
+                <select class="form-select" id="need" name="need">
+                  <option value="" data-i18n="form.need.opt0">Choisissez un type de projet</option>
+                  <option value="metier" data-i18n="form.need.opt1">Solution métier sur mesure</option>
+                  <option value="web" data-i18n="form.need.opt2">Plateforme web complexe</option>
+                  <option value="mobile" data-i18n="form.need.opt3">Application mobile connectée</option>
+                  <option value="api" data-i18n="form.need.opt4">API &amp; système backend</option>
+                  <option value="moderni" data-i18n="form.need.opt5">Modernisation / refonte</option>
+                  <option value="other" data-i18n="form.need.opt6">Je ne sais pas encore — échangeons</option>
+                </select>
+              </div>
+
+              <!-- Budget select -->
+              <div class="form-group">
+                <label class="form-label" for="budget" data-i18n="form.budget">Budget indicatif</label>
+                <select class="form-select" id="budget" name="budget">
+                  <option value="" data-i18n="form.budget.opt0">Choisissez une fourchette</option>
+                  <option value="tbd" data-i18n="form.budget.opt1">À définir</option>
+                  <option value="5m" data-i18n="form.budget.opt2">&lt; 5M FCFA</option>
+                  <option value="5-20m" data-i18n="form.budget.opt3">5 – 20M FCFA</option>
+                  <option value="20-50m" data-i18n="form.budget.opt4">20 – 50M FCFA</option>
+                  <option value="50m+" data-i18n="form.budget.opt5">&gt; 50M FCFA</option>
+                </select>
+              </div>
+
+              <!-- Project description -->
+              <div class="form-group">
+                <label class="form-label" for="project" data-i18n="form.project">Décrivez votre projet <span class="req">*</span></label>
+                <textarea class="form-textarea" id="project" name="project" required placeholder="Contexte, objectif, contraintes, échéance souhaitée…" data-i18n-ph="form.project.ph"></textarea>
+              </div>
+
+              <!-- Submit area -->
+              <div class="form-submit-area">
+                <button type="submit" class="btn btn-primary" data-i18n="form.submit">Envoyer ma demande</button>
+                <span class="form-submit-note" data-i18n="form.note">Réponse sous 48 h ouvrées.</span>
+              </div>
+
+              <!-- Messages -->
+              <div class="form-success-msg" id="formSuccess" role="alert" data-i18n="form.success">Demande bien reçue. Merci. Notre équipe étudie votre projet et revient vers vous sous 48 h ouvrées avec une réponse structurée.</div>
+              <div class="form-error-msg"   id="formError"   role="alert" data-i18n="form.error">Une erreur s'est produite. Écrivez-nous directement à contact@sycelim.com.</div>
+
+            </form>
+          </div>
+
+          <!-- Aside -->
+          <div class="contact-aside anim-fade-up anim-delay-2">
+
+            <!-- Reassurances -->
+            <div class="contact-assurance-card">
+              <div class="contact-assurance-title" data-i18n="contact.assurance.title">Nos engagements</div>
+              <div class="contact-assurance-list">
+                <div class="contact-assurance-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="contact.assurance.1">Une réponse structurée, pas un argumentaire commercial.</span>
+                </div>
+                <div class="contact-assurance-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="contact.assurance.2">Vos informations restent confidentielles.</span>
+                </div>
+                <div class="contact-assurance-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="contact.assurance.3">Aucun engagement avant que le périmètre soit clair.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact info -->
+            <div class="contact-info-card">
+              <div class="contact-info-title" data-i18n="contact.info.title">Contact direct</div>
+              <div class="contact-info-list">
+                <div class="contact-info-row">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  <a href="mailto:contact@sycelim.com">contact@sycelim.com</a>
+                </div>
+                <div class="contact-info-row">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.6 12.41 19.79 19.79 0 0 1 1.5 3.82 2 2 0 0 1 3.48 1.65h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.1a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <span>+225 27 22 50 90 66<br />+225 27 22 50 39 31</span>
+                </div>
+                <div class="contact-info-row">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <span>Cocody Angré 8è Tranche<br />09 BP 2170 Abidjan 09<br />Côte d'Ivoire</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" aria-label="Pied de page">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo"><img src="logos/logo_all.png" alt="Sycelim Technologies" /></div>
+          <p class="footer-tagline" data-i18n="footer.tagline">Ingénierie logicielle pour systèmes d'entreprise sur mesure. Architecture, qualité, scalabilité et sécurité.</p>
+          <div class="tags"><span class="badge">Abidjan, CI</span></div>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer.nav">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link" data-i18n="nav.home">Accueil</a></li>
+            <li><a href="services.html" class="footer-link" data-i18n="nav.services">Services</a></li>
+            <li><a href="methode.html" class="footer-link" data-i18n="nav.method">Méthode</a></li>
+            <li><a href="realisations.html" class="footer-link" data-i18n="nav.work">Réalisations</a></li>
+            <li><a href="actualites.html" class="footer-link" data-i18n="nav.news">Actualités</a></li>
+            <li><a href="a-propos.html" class="footer-link" data-i18n="nav.about">À propos</a></li>
+            <li><a href="equipe.html" class="footer-link" data-i18n="nav.team">Équipe</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer.expertise">Expertise</div>
+          <ul class="footer-links">
+            <li><a href="services.html#solutions-metiers" class="footer-link" data-i18n="footer.exp.1">Solutions métiers</a></li>
+            <li><a href="services.html#plateformes-web" class="footer-link" data-i18n="footer.exp.2">Plateformes web</a></li>
+            <li><a href="services.html#applications-mobiles" class="footer-link" data-i18n="footer.exp.3">Applications mobiles</a></li>
+            <li><a href="services.html#api-backend" class="footer-link" data-i18n="footer.exp.4">API &amp; backend</a></li>
+            <li><a href="services.html#modernisation" class="footer-link" data-i18n="footer.exp.5">Modernisation</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer.contact">Contact</div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Cocody Angré 8è Tranche — 09 BP 2170 Abidjan 09, Côte d'Ivoire</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.6 12.41 19.79 19.79 0 0 1 1.5 3.82 2 2 0 0 1 3.48 1.65h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.1a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+225 27 22 50 90 66<br>+225 27 22 50 39 31</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:contact@sycelim.com" class="footer-link" style="color:var(--orange)">contact@sycelim.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy" data-i18n="footer.copy">© Sycelim Technologies — Abidjan, Côte d'Ivoire · Société d'ingénierie logicielle</p>
+        <nav class="footer-legal" aria-label="Liens légaux">
+          <a href="faq.html" class="footer-legal-link" data-i18n="footer.faq">FAQ</a>
+          <a href="mentions-legales.html" class="footer-legal-link" data-i18n="footer.legal">Mentions légales</a>
+          <a href="confidentialite.html" class="footer-legal-link" data-i18n="footer.privacy">Confidentialité</a>
+          <a href="cgu.html" class="footer-legal-link" data-i18n="footer.cgu">CGU</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
