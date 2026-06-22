@@ -297,7 +297,7 @@ function _animateCounter(el) {
   const suffix = text.slice(match[0].length);
   const sup = el.querySelector('sup');
   const supHTML = sup ? sup.outerHTML : null;
-  const duration = 900;
+  const duration = 480;
   const t0 = performance.now();
   el.classList.add('is-counting');
   (function tick(now) {
