@@ -6029,16 +6029,19 @@ h6 {
   background: linear-gradient(135deg, #ff7a1a, #ff9a3c);
   border-radius: var(--r16);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 4px;
   flex-shrink: 0;
   box-shadow: 0 8px 24px rgba(255, 122, 26, 0.3);
 }
 .about-fab-badge-num {
   font-family: var(--font-head);
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: 800;
   color: #fff;
+  line-height: 1;
 }
 .about-fab-content {
   flex: 1;
