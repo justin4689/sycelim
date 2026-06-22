@@ -172,23 +172,153 @@ function initContactForm() {
 }
 
 /* ============================================================
-   SCROLL REVEAL (lightweight)
+   SCROLL REVEAL v2 — auto-tag + stagger + IntersectionObserver
    ============================================================ */
 function initScrollReveal() {
   if (!('IntersectionObserver' in window)) return;
+
+  const STAGGER_PARENTS = [
+    '.figures-grid', '.pillars-grid', '.services-grid-preview',
+    '.cases-grid', '.tech-grid', '.integ-grid', '.act-grid',
+    '.team-roles-grid', '.team-stats-grid', '.about-org-grid',
+    '.about-culture-grid', '.method-cards',
+  ];
+
+  const AUTO_REVEAL = [
+    ['.section-header .eyebrow, .section-header .section-eyebrow, .inner-hero .eyebrow', 'up'],
+    ['.section-title, .inner-hero-title', 'up'],
+    ['.section-lead, .inner-hero-lead', 'up'],
+    ['.figure-box', 'scale'],
+    ['.ps-col', 'up'],
+    ['.pillar-card', 'up'],
+    ['.service-card', 'up'],
+    ['.method-card', 'up'],
+    ['.real-case', 'up'],
+    ['.act-card', 'up'],
+    ['.team-role-card', 'up'],
+    ['.team-stat-card', 'up'],
+    ['.team-collab-item', 'up'],
+    ['.about-org-card', 'up'],
+    ['.about-culture-item', 'up'],
+    ['.about-2col-text, .about-2col-visual', 'up'],
+    ['.mth-step-text, .mth-step-visual', 'up'],
+    ['.legal-article', 'up'],
+    ['.faq-item', 'up'],
+    ['.svc-block', 'up'],
+    ['.final-cta-title, .final-cta-sub, .final-cta-actions', 'up'],
+    ['.contact-form-card, .contact-info-list', 'up'],
+  ];
+
+  /* Mark stagger grids */
+  STAGGER_PARENTS.forEach(sel => {
+    document.querySelectorAll(sel).forEach(el => {
+      if (!el.hasAttribute('data-stagger')) el.setAttribute('data-stagger', '');
+    });
+  });
+
+  /* IntersectionObserver — shared for all animated elements */
   const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.style.opacity = '1';
-        e.target.style.transform = 'translateY(0)';
-        io.unobserve(e.target);
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      if (el.hasAttribute('data-reveal')) el.classList.add('is-visible');
+      if (el.classList.contains('anim-fade-up')) {
+        el.style.opacity = '1';
+        el.style.transform = 'translateY(0)';
       }
+      io.unobserve(el);
     });
   }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
+  /* Helper: tag element with data-reveal and observe it (or reveal immediately) */
+  function tag(el, dir) {
+    if (el.hasAttribute('data-reveal')) return;
+    if (el.closest('[data-reveal]')) return;
+    el.setAttribute('data-reveal', dir);
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      el.classList.add('is-visible'); /* already visible — no animation */
+    } else {
+      io.observe(el);
+    }
+  }
+
+  AUTO_REVEAL.forEach(([sel, dir]) => {
+    document.querySelectorAll(sel).forEach(el => tag(el, dir));
+  });
+
+  /* Handle legacy .anim-fade-up elements */
   document.querySelectorAll('.anim-fade-up').forEach(el => {
-    el.style.transition = 'opacity .6s ease, transform .6s ease';
-    io.observe(el);
+    el.style.animation = 'none';
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(24px)';
+    el.style.transition = 'opacity 0.65s cubic-bezier(0.16,1,0.3,1), transform 0.65s cubic-bezier(0.16,1,0.3,1)';
+    const delay = el.classList.contains('anim-delay-4') ? '400ms'
+                : el.classList.contains('anim-delay-3') ? '300ms'
+                : el.classList.contains('anim-delay-2') ? '200ms'
+                : el.classList.contains('anim-delay-1') ? '100ms' : '0ms';
+    el.style.transitionDelay = delay;
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      el.style.opacity = '1';
+      el.style.transform = 'translateY(0)';
+    } else {
+      io.observe(el);
+    }
+  });
+}
+
+/* ============================================================
+   COUNTER ANIMATION — numbers count up on scroll entry
+   ============================================================ */
+function initCounters() {
+  if (!('IntersectionObserver' in window)) return;
+  const els = document.querySelectorAll('.figure-num, .team-stat-num');
+  if (!els.length) return;
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      io.unobserve(entry.target);
+      _animateCounter(entry.target);
+    });
+  }, { threshold: 0.6 });
+
+  els.forEach(el => io.observe(el));
+}
+
+function _animateCounter(el) {
+  const original = el.innerHTML;
+  const text = el.textContent.trim();
+  const match = text.match(/^(\d+)/);
+  if (!match) return;
+  const target = parseInt(match[1], 10);
+  if (target > 999 || target < 2) return; /* skip years & binary values */
+  const suffix = text.slice(match[0].length);
+  const sup = el.querySelector('sup');
+  const supHTML = sup ? sup.outerHTML : null;
+  const duration = 900;
+  const t0 = performance.now();
+  el.classList.add('is-counting');
+  (function tick(now) {
+    const p = Math.min((now - t0) / duration, 1);
+    const eased = 1 - Math.pow(1 - p, 3);
+    const val = Math.round(target * eased);
+    el.innerHTML = supHTML ? val + supHTML : val + suffix;
+    if (p < 1) requestAnimationFrame(tick);
+    else { el.innerHTML = original; el.classList.remove('is-counting'); }
+  })(performance.now());
+}
+
+/* ============================================================
+   HERO SCAN LINE — subtle vertical light sweep
+   ============================================================ */
+function initHeroScan() {
+  document.querySelectorAll('.inner-hero').forEach(hero => {
+    const line = document.createElement('div');
+    line.className = 'hero-scan';
+    line.setAttribute('aria-hidden', 'true');
+    hero.insertBefore(line, hero.firstChild);
   });
 }
 
@@ -478,6 +608,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   initFaq();
   initContactForm();
   initScrollReveal();
+  initCounters();
+  initHeroScan();
   initHeroSlider();
   initFabSparkles();
   initServicesTabs();
