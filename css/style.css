@@ -1943,6 +1943,13 @@ h6 {
   white-space: nowrap;
   min-width: 140px;
 }
+.orangefab-trophy {
+  width: 36px;
+  height: 36px;
+  display: block;
+  margin: 0 auto 8px;
+  opacity: 0.9;
+}
 .orangefab-num {
   font-size: 3rem;
   font-weight: 800;
@@ -3438,6 +3445,17 @@ h6 {
 }
 .svc-block--alt .svc-visual-col {
   order: -1;
+}
+.svc-img-frame {
+  margin: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.15);
+}
+.svc-img-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* ── Content side ── */
