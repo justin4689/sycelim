@@ -287,11 +287,16 @@ const T = {
     'real.cta.title': 'Votre projet mérite la même rigueur.',
 
     /* ACTUALITÉS PAGE */
-    'act.eyebrow': 'Actualités & points de vue',
-    'act.title':   'Ce que nous pensons d\'un logiciel fait pour durer.',
-    'act.lead':    'Notes d\'ingénierie, méthode et leçons de terrain, tirées des systèmes que nous construisons et exploitons.',
-    'act.featured.eyebrow': 'Article à la une',
-    'act.more.label': 'Autres articles',
+    'act.eyebrow':   'Actualités & points de vue',
+    'act.title':     'Ce que nous pensons d\'un logiciel fait pour durer.',
+    'act.lead':      'Notes d\'ingénierie, méthode et leçons de terrain, tirées des systèmes que nous construisons et exploitons.',
+    'act.1.title':   'Pourquoi nous nous disons « société d\'ingénierie », pas « agence web »',
+    'act.1.excerpt': 'La différence n\'est pas qu\'une question de mots : elle change la façon dont un logiciel est pensé, construit et tenu dans la durée.',
+    'act.2.title':   'La sécurité ne se rajoute pas à la fin : elle se conçoit dès le premier jour',
+    'act.2.excerpt': 'Traiter la sécurité comme une étape finale, c\'est déjà avoir perdu. Dans un système qui gère des données sensibles, la protection est une décision d\'architecture.',
+    'act.3.title':   'La dette technique : le coût caché qui finit par tout ralentir',
+    'act.3.excerpt': 'Un logiciel qui devient de plus en plus lent à faire évoluer n\'a pas un problème de vitesse : il a un problème de dette. Voici comment nous l\'évitons — et comment la résorber.',
+    'act.cta.title': 'Ces réflexions s\'appliquent-elles à votre projet ?',
 
     /* À PROPOS PAGE */
     'about.eyebrow':        'À propos de Sycelim',
@@ -616,11 +621,15 @@ const T = {
     'real.cta.title':    'Your project deserves the same rigour.',
 
     /* ACTUALITÉS PAGE */
-    'act.eyebrow':   'News & insights',
-    'act.title':     'What we think about software built to last.',
-    'act.lead':      'A few reflections, from the field, on software engineering and what building really means.',
-    'act.1.title':   'Agency or engineering? The question you should ask first.',
-    'act.1.excerpt': 'Why the distinction between a web agency and a software engineering firm is not merely semantic — and what it changes concretely for your project.',
+    'act.eyebrow':   'News & perspectives',
+    'act.title':     'What we think about building software that lasts.',
+    'act.lead':      'Engineering notes, methodology and field lessons from the systems we build and run.',
+    'act.1.title':   'Why we call ourselves an engineering company, not a web agency',
+    'act.1.excerpt': 'The difference is not just wording: it changes how software is designed, built and maintained over time.',
+    'act.2.title':   'Security is not bolted on at the end: it is designed from day one',
+    'act.2.excerpt': 'Treating security as a final step means you have already lost. In a system that handles sensitive data, protection is an architectural decision.',
+    'act.3.title':   'Technical debt: the hidden cost that eventually slows everything down',
+    'act.3.excerpt': 'Software that becomes slower and slower to evolve does not have a speed problem: it has a debt problem. Here is how we avoid it — and how to pay it down.',
     'act.cta.title': 'Do these reflections apply to your project?',
 
     /* À PROPOS PAGE */

@@ -5551,21 +5551,15 @@ h6 {
   gap: 12px;
 }
 .act-featured-visual {
-  background: var(--bg-2);
-  border: 1px solid var(--border);
   border-radius: var(--r16);
-  padding: var(--s32);
-  position: relative;
   overflow: hidden;
+  aspect-ratio: 4 / 3;
 }
-.act-featured-visual::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: var(--blue);
+.act-featured-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 .act-quote-block {
   font-family: var(--font-head);
@@ -5598,11 +5592,28 @@ h6 {
   flex-direction: column;
   gap: 6px;
 }
+/* Card image */
+.act-card-img {
+  margin: calc(-1 * var(--s32)) calc(-1 * var(--s32)) var(--s24);
+  height: 200px;
+  overflow: hidden;
+  border-radius: var(--r16) var(--r16) 0 0;
+}
+.act-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.act-card:hover .act-card-img img {
+  transform: scale(1.05);
+}
 /* Article grid */
 .act-grid {
   padding: var(--s64) 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--s32);
 }
 .act-card {
@@ -5679,11 +5690,15 @@ h6 {
 }
 /* Article full content sections */
 .act-article-section {
-  padding: var(--s64) 0;
+  padding: var(--s80) 0;
   border-top: 1px solid var(--border);
+}
+.act-article-inner {
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 180px 1fr;
   gap: var(--s64);
+  max-width: 960px;
+  margin: 0 auto;
 }
 .act-article-aside {
   padding-top: 4px;
@@ -5737,6 +5752,13 @@ h6 {
   flex-direction: column;
   gap: 6px;
 }
+.act-prose h3 {
+  font-family: var(--font-head);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin: var(--s32) 0 var(--s12);
+}
 .act-prose blockquote {
   border-left: 3px solid var(--blue);
   padding: var(--s16) var(--s20);
@@ -5747,16 +5769,37 @@ h6 {
   color: var(--ink);
   font-size: 1rem;
 }
+.act-article-fig {
+  margin: 0 0 var(--s40);
+  border-radius: var(--r16);
+  overflow: hidden;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
+}
+.act-article-fig img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  display: block;
+}
 @media (max-width: 1023px) {
   .act-featured-inner {
     grid-template-columns: 1fr;
   }
-  .act-grid {
-    grid-template-columns: 1fr;
+  .act-featured-visual {
+    aspect-ratio: 16 / 9;
+    order: -1;
   }
-  .act-article-section {
+  .act-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .act-article-inner {
     grid-template-columns: 1fr;
     gap: var(--s24);
+  }
+}
+@media (max-width: 639px) {
+  .act-grid {
+    grid-template-columns: 1fr;
   }
 }
 
