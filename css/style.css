@@ -3292,6 +3292,8 @@ h6 {
   position: relative;
   z-index: 1;
   max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
 }
 .svc-page-hero-title {
   font-size: clamp(2rem, 4.5vw, 3.25rem);
@@ -3306,13 +3308,14 @@ h6 {
   color: var(--text-muted);
   line-height: 1.75;
   max-width: 580px;
-  margin-bottom: 0;
+  margin: 0 auto;
 }
 
 /* ── Hero pills ── */
 .svc-hero-pills {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
   margin-top: 36px;
 }
@@ -4204,21 +4207,49 @@ h6 {
   position: relative;
   padding: var(--s96) 0 var(--s80);
   overflow: hidden;
+  background: var(--bg-2);
 }
 .mth-hero-bg {
   position: absolute;
   inset: 0;
-  background: radial-gradient(
-    ellipse 70% 60% at 50% 0%,
-    rgba(0, 160, 255, 0.07) 0%,
-    transparent 65%
-  );
   pointer-events: none;
+  background:
+    radial-gradient(
+      ellipse 60% 70% at 90% 30%,
+      rgba(0, 160, 255, 0.07) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 40% 40% at 5% 80%,
+      rgba(255, 122, 26, 0.05) 0%,
+      transparent 55%
+    );
+}
+.mth-hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(
+    circle,
+    rgba(15, 23, 42, 0.07) 1px,
+    transparent 1px
+  );
+  background-size: 28px 28px;
+}
+[data-theme="dark"] .mth-hero-bg::after {
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.05) 1px,
+    transparent 1px
+  );
 }
 .mth-hero-inner {
   max-width: 820px;
   margin: 0 auto;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 .mth-hero-title {
   font-family: var(--font-head);
@@ -4244,24 +4275,23 @@ h6 {
   gap: 8px;
 }
 .mth-hero-pill {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 7px 14px;
-  background: var(--bg-2);
+  gap: 8px;
+  padding: 9px 18px;
+  background: var(--card-bg);
   border: 1px solid var(--border);
-  border-radius: 9999px;
+  border-radius: var(--r999);
   font-size: 0.875rem;
-  font-weight: 500;
-  color: var(--ink);
+  font-weight: 600;
+  color: var(--text);
   text-decoration: none;
-  transition:
-    border-color 0.2s,
-    transform 0.2s;
+  transition: all var(--t);
 }
 .mth-hero-pill:hover {
-  border-color: var(--blue);
+  border-color: var(--border-2);
   transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
 }
 .mth-hero-pill-n {
   font-family: var(--font-head);
@@ -4292,12 +4322,12 @@ h6 {
 .mth-principle-icon {
   width: 44px;
   height: 44px;
-  background: rgba(0, 160, 255, 0.1);
+  background: var(--blue);
   border-radius: var(--r12);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--blue);
+  color: #fff;
   margin-bottom: var(--s16);
 }
 .mth-principle-title {
@@ -4814,7 +4844,7 @@ h6 {
   font-size: 0.6875rem;
 }
 .mth-qa-score.green {
-  color: #34d399;
+  color: #00a0ff;
 }
 .mth-qa-score.amber {
   color: #fbbf24;
@@ -4851,9 +4881,9 @@ h6 {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .mth-qa-badge.green {
-  background: rgba(5, 150, 105, 0.12);
-  color: #34d399;
-  border-color: rgba(5, 150, 105, 0.2);
+  background: rgba(0, 160, 255, 0.12);
+  color: #00a0ff;
+  border-color: rgba(0, 160, 255, 0.2);
 }
 
 /* --- MOCKUP 05 — Pipeline --- */
@@ -5110,20 +5140,50 @@ h6 {
   padding: var(--s80) 0 var(--s64);
   position: relative;
   overflow: hidden;
+  background: var(--bg-2);
   border-bottom: 1px solid var(--border);
 }
 .inner-hero-bg {
   position: absolute;
   inset: 0;
-  background: radial-gradient(
-    ellipse 65% 55% at 50% 0%,
-    rgba(0, 160, 255, 0.065) 0%,
-    transparent 60%
-  );
   pointer-events: none;
+  background:
+    radial-gradient(
+      ellipse 60% 70% at 90% 30%,
+      rgba(0, 160, 255, 0.07) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 40% 40% at 5% 80%,
+      rgba(255, 122, 26, 0.05) 0%,
+      transparent 55%
+    );
+}
+.inner-hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(
+    circle,
+    rgba(15, 23, 42, 0.07) 1px,
+    transparent 1px
+  );
+  background-size: 28px 28px;
+}
+[data-theme="dark"] .inner-hero-bg::after {
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.05) 1px,
+    transparent 1px
+  );
 }
 .inner-hero-inner {
   max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
 }
 .inner-hero-title {
   font-family: var(--font-head);
@@ -5139,6 +5199,8 @@ h6 {
   color: var(--muted);
   line-height: 1.7;
   max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ============================================================
