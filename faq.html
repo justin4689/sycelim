@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FAQ — Sycelim Technologies</title>
   <meta name="description" content="Questions fréquentes sur Sycelim Technologies, notre méthode de travail et nos projets logiciels." />
+  <meta name="theme-color" content="#00a0ff" />
+  <meta property="og:title" content="FAQ — Sycelim Technologies" />
+  <meta property="og:description" content="Questions fréquentes sur Sycelim Technologies, notre méthode de travail et nos projets logiciels." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="logos/logo_all.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="logos/logo_icon.png" />
 </head>
 <body>
 
@@ -67,13 +73,13 @@
   <main>
 
     <!-- Inner hero -->
-    <section class="inner-hero">
-      <div class="inner-hero-bg"></div>
+    <section class="inner-hero" aria-labelledby="faq-hero-title">
+      <div class="inner-hero-bg" aria-hidden="true"></div>
       <div class="container">
         <div class="inner-hero-inner">
-          <div class="eyebrow" data-i18n="faq.eyebrow">Questions fréquentes</div>
-          <h1 class="inner-hero-title anim-fade-up" data-i18n="faq.title">Ce qu'on nous demande le plus souvent.</h1>
-          <p class="inner-hero-lead anim-fade-up anim-delay-1" data-i18n="faq.lead">Des réponses directes sur qui nous sommes, comment nous travaillons, et ce que nous construisons.</p>
+          <span class="eyebrow" data-i18n="faq.eyebrow">Questions fréquentes</span>
+          <h1 class="inner-hero-title" id="faq-hero-title" data-i18n="faq.title">Ce qu'on nous demande le plus souvent.</h1>
+          <p class="inner-hero-lead" data-i18n="faq.lead">Des réponses directes sur qui nous sommes, comment nous travaillons, et ce que nous construisons.</p>
         </div>
       </div>
     </section>

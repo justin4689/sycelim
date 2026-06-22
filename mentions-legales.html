@@ -9,7 +9,7 @@
   <meta name="theme-color" content="#00a0ff" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" type="image/png" href="logos/logo_icon.png" />
 </head>
@@ -69,13 +69,13 @@
 <main>
 
   <!-- Inner hero -->
-  <section class="inner-hero">
-    <div class="inner-hero-bg"></div>
+  <section class="inner-hero" aria-labelledby="ml-hero-title">
+    <div class="inner-hero-bg" aria-hidden="true"></div>
     <div class="container">
       <div class="inner-hero-inner">
-        <div class="eyebrow" data-i18n="legal.ml.eyebrow">Mentions légales</div>
-        <h1 class="inner-hero-title anim-fade-up" data-i18n="legal.ml.title">Mentions légales</h1>
-        <p class="inner-hero-lead anim-fade-up anim-delay-1" data-i18n="legal.ml.lead">Informations légales relatives à Sycelim Technologies et au présent site.</p>
+        <span class="eyebrow" data-i18n="legal.ml.eyebrow">Mentions légales</span>
+        <h1 class="inner-hero-title" id="ml-hero-title" data-i18n="legal.ml.title">Mentions légales</h1>
+        <p class="inner-hero-lead" data-i18n="legal.ml.lead">Informations légales relatives à Sycelim Technologies et au présent site.</p>
       </div>
     </div>
   </section>
