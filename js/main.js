@@ -1066,6 +1066,74 @@ function initMethodeTracker() {
   });
 }
 
+/* ─── Marquee infini — recyclage DOM (aucun reset) ─── */
+function initMarquee() {
+  const marqueeEl = document.querySelector('.clients-marquee');
+  if (!marqueeEl) return;
+  const track = marqueeEl.querySelector('.marquee-track');
+  if (!track) return;
+
+  track.style.animation = 'none';
+  track.querySelectorAll('[aria-hidden]').forEach(el => el.remove());
+
+  const origCards = [...track.children];
+  if (!origCards.length) return;
+
+  requestAnimationFrame(() => {
+    const gap = parseFloat(getComputedStyle(track).columnGap) || 16;
+
+    /* Remplit la piste jusqu'à 3× la largeur de l'écran pour que
+       la fin du track soit toujours bien au-delà du bord droit. */
+    const minWidth = window.innerWidth * 3;
+    let totalWidth = origCards.reduce((s, c) => s + c.offsetWidth + gap, 0);
+
+    while (totalWidth < minWidth) {
+      origCards.forEach(card => {
+        const clone = card.cloneNode(true);
+        clone.setAttribute('aria-hidden', 'true');
+        track.appendChild(clone);
+        totalWidth += clone.offsetWidth + gap;
+      });
+    }
+
+    /* Cache des largeurs dans l'ordre actuel du DOM */
+    let cardWidths = [...track.children].map(c => c.offsetWidth + gap);
+
+    const SPEED = 55;
+    let offset = 0;
+    let paused = false;
+    let lastTime = null;
+
+    function tick(ts) {
+      if (!lastTime) lastTime = ts;
+      const dt = Math.min(ts - lastTime, 50);
+      lastTime = ts;
+
+      if (!paused) {
+        offset += SPEED * dt / 1000;
+
+        /* Quand la 1re carte sort entièrement à gauche :
+           → déplace-la en fin de track (elle réapparaît après la dernière carte, hors écran à droite)
+           → ajuste offset pour que la position visuelle ne change pas */
+        while (offset >= cardWidths[0]) {
+          offset -= cardWidths[0];
+          cardWidths.push(cardWidths.shift());
+          track.appendChild(track.firstElementChild);
+        }
+
+        track.style.transform = `translateX(-${offset}px)`;
+      }
+
+      requestAnimationFrame(tick);
+    }
+
+    marqueeEl.addEventListener('mouseenter', () => { paused = true; });
+    marqueeEl.addEventListener('mouseleave', () => { paused = false; lastTime = null; });
+
+    requestAnimationFrame(ts => { lastTime = ts; requestAnimationFrame(tick); });
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   /* Apply persisted settings immediately */
   applyTheme(currentTheme);
@@ -1096,4 +1164,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initFabSparkles();
   initServicesTabs();
   initMethodeTracker();
+  initMarquee();
 });
