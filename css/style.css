@@ -6083,6 +6083,76 @@ h6 {
 /* ============================================================
    ÉQUIPE PAGE
    ============================================================ */
+.team-comp-section {
+  padding: var(--s80) 0;
+  border-bottom: 1px solid var(--border);
+}
+.team-comp-card {
+  max-width: 780px;
+  margin: 0 auto;
+  border: 1px solid var(--border);
+  border-radius: var(--r16);
+  background: var(--bg-2);
+  overflow: hidden;
+}
+.team-comp-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.team-comp-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s20);
+  padding: var(--s20) var(--s32);
+  border-bottom: 1px solid var(--border);
+}
+.team-comp-item:last-child {
+  border-bottom: none;
+}
+.team-comp-count {
+  flex-shrink: 0;
+  min-width: 28px;
+  height: 28px;
+  border-radius: 9999px;
+  background: rgba(0,160,255,0.1);
+  color: var(--blue);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  border: 1px solid rgba(0,160,255,0.2);
+  white-space: nowrap;
+  margin-top: 2px;
+}
+.team-comp-count--orange {
+  background: rgba(255,122,26,0.1);
+  color: var(--orange);
+  border-color: rgba(255,122,26,0.2);
+}
+.team-comp-count--grey {
+  background: var(--bg);
+  color: var(--muted);
+  border-color: var(--border);
+}
+.team-comp-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.team-comp-name {
+  font-family: var(--font-head);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+.team-comp-desc {
+  font-size: 0.875rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
 .team-roles-section {
   padding: var(--s80) 0;
   border-bottom: 1px solid var(--border);
