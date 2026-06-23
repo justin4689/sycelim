@@ -3154,7 +3154,8 @@ h6 {
     padding: 0 var(--s16);
   }
   .hero {
-    padding: 96px 0 56px;
+    padding: 110px 0 56px;
+    min-height: unset;
   }
   .hero-title {
     font-size: 1.9rem;
@@ -3166,11 +3167,17 @@ h6 {
     width: 100%;
   }
   .hero-kpi-strip {
-    flex-direction: column;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
   }
   .hero-kpi-sep {
-    width: 100%;
-    height: 1px;
+    width: 1px;
+    align-self: stretch;
+    height: auto;
+  }
+  .hero-kpi-lbl {
+    max-width: 120px;
   }
   .hero-deco-year {
     display: none;
@@ -3250,6 +3257,16 @@ h6 {
   .positioning-grid {
     grid-template-columns: 1fr;
   }
+
+  /* Services sticky tabs: reduce padding so 5 tabs fit better */
+  .svc-tab {
+    padding: 11px 13px;
+    font-size: 0.75rem;
+    gap: 5px;
+  }
+  .svc-tab-n {
+    font-size: 0.65rem;
+  }
 }
 
 @media (max-width: 479px) {
@@ -3261,6 +3278,20 @@ h6 {
   }
   .org-grid {
     grid-template-columns: 1fr;
+  }
+
+  /* Index hero: slightly less top padding on 375px phones */
+  .hero {
+    padding: 100px 0 40px;
+  }
+
+  /* Services tabs: hide numbers, just labels on tiny screens */
+  .svc-tab-n {
+    display: none;
+  }
+  .svc-tab {
+    padding: 10px 12px;
+    font-size: 0.7rem;
   }
 }
 

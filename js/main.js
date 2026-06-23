@@ -437,12 +437,19 @@ function initServicesTabs() {
   const sections = Array.from(document.querySelectorAll('.svc-block[id]'));
   if (!sections.length) return;
 
+  /* Scroll the tab bar so the active tab is visible */
+  const scrollTabIntoView = tab => {
+    tab.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+  };
+
   /* Highlight active tab as sections enter viewport */
   const io = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const id = entry.target.id;
         tabs.forEach(t => t.classList.toggle('active', t.dataset.svc === id));
+        const active = tabs.find(t => t.dataset.svc === id);
+        if (active) scrollTabIntoView(active);
       }
     });
   }, { rootMargin: '-15% 0px -70% 0px', threshold: 0 });
@@ -460,6 +467,7 @@ function initServicesTabs() {
     tab.addEventListener('click', e => {
       e.preventDefault();
       scrollToSection(tab.getAttribute('href').slice(1));
+      scrollTabIntoView(tab);
     });
   });
 
