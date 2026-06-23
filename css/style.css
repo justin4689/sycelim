@@ -61,6 +61,9 @@
 
   /* Alias — used widely in sub-pages */
   --muted: var(--text-muted);
+
+  /* Spacing alias (used in contact form mobile) */
+  --s28: 28px;
 }
 
 /* Dark theme */
@@ -4224,7 +4227,7 @@ h6 {
 /* --- Hero --- */
 .mth-hero {
   position: relative;
-  padding: var(--s96) 0 var(--s80);
+  padding: 130px 0 var(--s80);
   overflow: hidden;
   background: var(--bg-2);
 }
@@ -5124,7 +5127,7 @@ h6 {
 }
 @media (max-width: 767px) {
   .mth-hero {
-    padding: var(--s64) 0;
+    padding: 110px 0 var(--s48);
   }
   .mth-step {
     padding: var(--s64) 0;
@@ -5156,7 +5159,7 @@ h6 {
    SHARED INNER PAGE HERO (réalisations, actualités, à propos…)
    ============================================================ */
 .inner-hero {
-  padding: var(--s80) 0 var(--s64);
+  padding: 130px 0 var(--s64);
   position: relative;
   overflow: hidden;
   background: var(--bg-2);
@@ -7043,4 +7046,142 @@ details[open] .faq-q-icon {
 .figure-num.is-counting,
 .team-stat-num.is-counting {
   animation: numIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* ============================================================
+   RESPONSIVE ADDITIONS — missing breakpoints across all pages
+   ============================================================ */
+
+/* Global: prevent horizontal scroll on any page */
+html { overflow-x: clip; }
+
+/* ─── 1023px — tablet additions ─── */
+@media (max-width: 1023px) {
+  /* About org grid already goes 2-col — also handle culture stack */
+  .about-culture-grid { gap: var(--s12); }
+
+  /* Contact form: reduce max-width constraint of sidebar */
+  .contact-layout { gap: var(--s40); }
+
+  /* Team collab: reduce section gap */
+  .team-collab-inner { gap: var(--s32); }
+}
+
+/* ─── 767px — mobile additions ─── */
+@media (max-width: 767px) {
+  /* Sub-page hero: 110px top clears navbar (70px) with 40px breathing room */
+  .inner-hero {
+    padding: 110px 0 var(--s48);
+  }
+
+  /* About vision card: tighter padding */
+  .about-vision-card {
+    padding: var(--s32) var(--s24);
+  }
+
+  /* About section padding already reduced via --s80 :root override */
+
+  /* Method final CTA: less padding on mobile */
+  .mth-final-cta { padding: var(--s64) 0; }
+
+  /* Team collab items: tighter on mobile */
+  .team-collab-item {
+    padding: var(--s12) var(--s16);
+    gap: var(--s12);
+  }
+
+  /* Réalisations stats grid stays 2-col (already set at 767px) */
+
+  /* Contact form card: slightly tighter on tablet/mobile */
+  .contact-form-card { padding: var(--s32); }
+
+  /* FAQ: tighter item padding */
+  .faq-item { padding: var(--s16) 0; }
+
+  /* Services: reduce outer hero padding */
+  .svc-page-hero { padding: 96px 0 var(--s48); }
+
+  /* Footer: tighter gap between columns when stacked */
+  .footer-grid { gap: var(--s32); }
+
+  /* Figures grid: ensure it doesn't get too cramped */
+  .figure-box { padding: var(--s24) var(--s16); }
+
+  /* Final CTA: buttons already stack, reduce outer spacing */
+  .final-cta { padding: var(--s64) 0; }
+
+  /* Pillar cards: full padding */
+  .pillar-card { padding: var(--s24); }
+
+  /* Service cards: smaller padding */
+  .service-card { padding: var(--s20); }
+}
+
+/* ─── 639px — small mobile additions ─── */
+@media (max-width: 639px) {
+  /* Legal tables: allow horizontal scroll on small screens */
+  .legal-ref-table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .legal-ref-table th {
+    white-space: normal;
+    width: auto;
+    min-width: 110px;
+  }
+
+  /* Act article aside: tighter */
+  .act-article-aside { padding: var(--s20) var(--s24); }
+
+  /* Services block: reduce padding */
+  .svc-block { padding: var(--s48) 0; }
+}
+
+/* ─── 479px — very small screens (375px phones) ─── */
+@media (max-width: 479px) {
+  /* Method cards: 1 column (2-col is too cramped at 375px) */
+  .method-cards { grid-template-columns: 1fr; }
+
+  /* Inner hero: 100px top still clears 70px navbar on very small screens */
+  .inner-hero { padding: 100px 0 var(--s32); }
+
+  /* Contact form card: minimal padding */
+  .contact-form-card { padding: var(--s20); }
+
+  /* KPI strip on index page: tighter */
+  .hero-kpi-strip {
+    gap: var(--s12);
+    padding: var(--s12) var(--s16);
+  }
+
+  /* Phone mockup on services: smaller */
+  .svc-phone { width: 160px; }
+
+  /* About org card: smaller padding */
+  .about-org-card { padding: var(--s20); }
+
+  /* Team role card: smaller padding */
+  .team-role-card { padding: var(--s24); }
+
+  /* Method card: smaller padding */
+  .method-card { padding: var(--s20); }
+
+  /* Act card: smaller padding */
+  .act-card { padding: var(--s24); }
+
+  /* Contact info list: tighter */
+  .contact-info-item { gap: var(--s12); }
+
+  /* Legal article: smaller padding */
+  .legal-article { padding: var(--s24) 0; }
+
+  /* Footer top padding */
+  .footer { padding-top: var(--s48); }
+
+  /* Navbar logo: ensure not too wide */
+  .navbar-logo img { height: 26px; }
+
+  /* Btn full-width in hero on tiny screens */
+  .hero-ctas .btn { width: 100%; justify-content: center; }
 }
