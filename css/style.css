@@ -58,6 +58,9 @@
   /* Transitions */
   --t: 200ms ease;
   --t-lg: 350ms ease;
+
+  /* Alias — used widely in sub-pages */
+  --muted: var(--text-muted);
 }
 
 /* Dark theme */
@@ -65,10 +68,12 @@
   --bg: #0c1220;
   --bg-2: #111827;
   --bg-3: #1e293b;
+  --ink: #f1f5f9;
   --text: #f1f5f9;
   --text-2: #cbd5e1;
   --text-muted: #94a3b8;
   --text-subtle: #475569;
+  --muted: #94a3b8;
   --border: #1e293b;
   --border-2: #334155;
   --nav-bg: rgba(12, 18, 32, 0.96);
@@ -80,6 +85,19 @@
   --sh-md: 0 4px 6px rgba(0, 0, 0, 0.45);
   --sh-lg: 0 10px 15px rgba(0, 0, 0, 0.4);
   --sh-xl: 0 20px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* ─── Dark mode: preserve intentionally dark surfaces ─── */
+[data-theme="dark"] .ps-col--solution,
+[data-theme="dark"] .pos-col--yes {
+  background: var(--bg-3);
+  color: #f1f5f9;
+}
+[data-theme="dark"] .mth-final-cta {
+  background: #080d18;
+}
+[data-theme="dark"] .about-vision-card {
+  background: #1a2235;
 }
 
 /* === RESET === */
