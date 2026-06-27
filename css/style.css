@@ -1509,17 +1509,13 @@ h6 {
 }
 .pillar-card:hover {
   border-color: var(--blue);
-  box-shadow:
-    0 0 0 1px var(--blue),
-    var(--sh-lg);
+  box-shadow: var(--sh-lg);
   transform: translateY(-3px);
 }
 .pillar-card--orange .pillar-icon { background: var(--orange); }
 .pillar-card--orange:hover {
   border-color: var(--orange);
-  box-shadow:
-    0 0 0 1px var(--orange),
-    var(--sh-lg);
+  box-shadow: var(--sh-lg);
 }
 .pillar-icon {
   width: 48px;
@@ -7026,17 +7022,19 @@ details[open] .faq-q-icon {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
+  left: 50%;
+  width: 95%;
+  height: 2px;
   background: var(--blue);
-  transform: scaleX(0);
-  transform-origin: left;
+  border-radius: 2px;
+
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .pillar-card--orange::after { background: var(--orange); }
 .pillar-card:hover { transform: translateY(-5px); }
-.pillar-card:hover::after { transform: scaleX(1); }
+.pillar-card:hover::after { transform: translateX(-50%) scaleX(1); }
 
 /* ─── Service card enhanced hover ─── */
 .service-card:hover {
