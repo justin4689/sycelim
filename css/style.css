@@ -3355,7 +3355,7 @@ h6 {
 .svc-page-hero-inner {
   position: relative;
   z-index: 1;
-  max-width: 760px;
+  max-width: 1000px;
   margin: 0 auto;
   text-align: center;
 }
@@ -3366,6 +3366,9 @@ h6 {
   letter-spacing: -0.03em;
   color: var(--text);
   margin: var(--s12) 0 var(--s20);
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .svc-page-hero-lead {
   font-size: 1.0625rem;
@@ -3378,7 +3381,7 @@ h6 {
 /* ── Hero pills ── */
 .svc-hero-pills {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   gap: 10px;
   margin-top: 36px;
@@ -3418,6 +3421,8 @@ h6 {
 }
 .svc-tabs {
   display: flex;
+  justify-content: center;
+  align-items: center;
   overflow-x: auto;
   scrollbar-width: none;
   -webkit-mask-image: linear-gradient(to right, black 90%, transparent 100%);
@@ -4237,6 +4242,7 @@ h6 {
   }
   .svc-hero-pills {
     gap: 7px;
+    flex-wrap: wrap;
   }
   .svc-hero-pill {
     font-size: 0.8125rem;
@@ -4309,7 +4315,7 @@ h6 {
   );
 }
 .mth-hero-inner {
-  max-width: 820px;
+  max-width: 1000px;
   margin: 0 auto;
   text-align: center;
   position: relative;
@@ -4323,6 +4329,9 @@ h6 {
   color: var(--ink);
   line-height: 1.1;
   margin: var(--s16) 0 var(--s20);
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .mth-hero-lead {
   font-size: 1.0625rem;
@@ -4335,7 +4344,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 8px;
 }
 .mth-hero-pill {
@@ -5190,6 +5199,7 @@ h6 {
   }
   .mth-hero-pills {
     gap: 5px;
+    flex-wrap: wrap;
   }
   .mth-hero-pill {
     font-size: 0.8125rem;
