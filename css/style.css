@@ -2834,6 +2834,13 @@ h6 {
   border-radius: var(--r16);
   padding: var(--s24);
 }
+.contact-map {
+  border-radius: var(--r16);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  height: 400px;
+  flex-shrink: 0;
+}
 .contact-info-title {
   font-size: 0.75rem;
   font-weight: 700;
