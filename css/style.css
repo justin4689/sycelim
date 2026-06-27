@@ -5214,7 +5214,7 @@ h6 {
    SHARED INNER PAGE HERO (réalisations, actualités, à propos…)
    ============================================================ */
 .inner-hero {
-  padding: 130px 0 var(--s64);
+  padding: 130px 0 var(--s80);
   position: relative;
   overflow: hidden;
   background: var(--bg-2);
@@ -5279,7 +5279,6 @@ h6 {
   margin-left: auto;
   margin-right: auto;
 }
-
 /* ============================================================
    RÉALISATIONS PAGE
    ============================================================ */
@@ -6410,7 +6409,7 @@ h6 {
    CONTACT PAGE
    ============================================================ */
 .contact-section {
-  padding: var(--s64) 0;
+  padding: var(--s80) 0;
 }
 .contact-layout {
   display: grid;
