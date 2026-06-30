@@ -1473,7 +1473,7 @@ h6 {
 }
 .ps-item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: var(--s12);
   font-size: 0.9375rem;
   line-height: 1.6;
@@ -1488,7 +1488,6 @@ h6 {
   width: 18px;
   height: 18px;
   flex-shrink: 0;
-  margin-top: 2px;
 }
 
 /* ============================================================
@@ -6006,7 +6005,7 @@ h6 {
 }
 .about-pos-item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: var(--s12);
   font-size: 0.9375rem;
   color: var(--ink);
@@ -6015,7 +6014,6 @@ h6 {
   width: 18px;
   height: 18px;
   flex-shrink: 0;
-  margin-top: 1px;
 }
 /* Organisation */
 .about-org-grid {
